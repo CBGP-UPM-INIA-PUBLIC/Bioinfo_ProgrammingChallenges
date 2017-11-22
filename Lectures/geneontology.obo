@@ -1,0 +1,2983 @@
+format-version: 1.2
+subsetdef: goantislim_grouping "Grouping classes that can be excluded"
+subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
+subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
+subsetdef: goslim_agr "AGR slim"
+subsetdef: goslim_aspergillus "Aspergillus GO slim"
+subsetdef: goslim_candida "Candida GO slim"
+subsetdef: goslim_chembl "ChEMBL protein targets summary"
+subsetdef: goslim_generic "Generic GO slim"
+subsetdef: goslim_goa "GOA and proteome slim"
+subsetdef: goslim_metagenomics "Metagenomics GO slim"
+subsetdef: goslim_mouse "Mouse GO slim"
+subsetdef: goslim_pir "PIR GO slim"
+subsetdef: goslim_plant "Plant GO slim"
+subsetdef: goslim_pombe "Fission yeast GO slim"
+subsetdef: goslim_synapse "synapse GO slim"
+subsetdef: goslim_virus "Viral GO slim"
+subsetdef: goslim_yeast "Yeast GO slim"
+subsetdef: gosubset_prok "Prokaryotic GO subset"
+subsetdef: mf_needs_review "Catalytic activity terms in need of attention"
+subsetdef: termgenie_unvetted "Terms created by TermGenie that do not follow a template and require additional vetting by editors"
+subsetdef: virus_checked "Viral overhaul terms"
+synonymtypedef: syngo_official_label "label approved by the SynGO project"
+synonymtypedef: systematic_synonym "Systematic synonym" EXACT
+ontology: go/subsets/goslim_plant
+
+[Term]
+id: GO:0000003
+name: reproduction
+namespace: biological_process
+alt_id: GO:0019952
+alt_id: GO:0050876
+def: "The production of new individuals that contain some portion of genetic material inherited from one or more parent organisms." [GOC:go_curators, GOC:isa_complete, GOC:jl, ISBN:0198506732]
+subset: goslim_agr
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "reproductive physiological process" EXACT []
+xref: Wikipedia:Reproduction
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0000166
+name: nucleotide binding
+namespace: molecular_function
+def: "Interacting selectively and non-covalently with a nucleotide, any compound consisting of a nucleoside that is esterified with (ortho)phosphate or an oligophosphate at any hydroxyl group on the ribose or deoxyribose." [GOC:mah, ISBN:0198547684]
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+is_a: GO:0005488 ! binding
+
+[Term]
+id: GO:0003674
+name: molecular_function
+namespace: molecular_function
+alt_id: GO:0005554
+def: "The actions of a single gene product or complex at the molecular level consisting of a single biochemical activity or multiple causally linked biochemical activities. A given gene product may exhibit one or more molecular functions." [GOC:go_curators]
+comment: Note that, in addition to forming the root of the molecular function ontology, this term is recommended for use for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this. Despite its name, this is not a type of 'function' in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "molecular function" EXACT []
+
+[Term]
+id: GO:0003676
+name: nucleic acid binding
+namespace: molecular_function
+def: "Interacting selectively and non-covalently with any nucleic acid." [GOC:jl]
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+is_a: GO:0005488 ! binding
+
+[Term]
+id: GO:0003677
+name: DNA binding
+namespace: molecular_function
+alt_id: GO:0043566
+def: "Any molecular function by which a gene product interacts selectively and non-covalently with DNA (deoxyribonucleic acid)." [GOC:dph, GOC:jl, GOC:tb, GOC:vw]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "microtubule/chromatin interaction" RELATED []
+synonym: "plasmid binding" NARROW []
+synonym: "structure specific DNA binding" RELATED []
+synonym: "structure-specific DNA binding" RELATED []
+is_a: GO:0003676 ! nucleic acid binding
+
+[Term]
+id: GO:0003682
+name: chromatin binding
+namespace: molecular_function
+def: "Interacting selectively and non-covalently with chromatin, the network of fibers of DNA, protein, and sometimes RNA, that make up the chromosomes of the eukaryotic nucleus during interphase." [GOC:jl, ISBN:0198506732, PMID:20404130]
+subset: goslim_chembl
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+synonym: "lamin/chromatin binding" BROAD []
+synonym: "microtubule/chromatin interaction" RELATED []
+synonym: "nuclear membrane vesicle binding to chromatin" NARROW []
+is_a: GO:0005488 ! binding
+
+[Term]
+id: GO:0003700
+name: DNA binding transcription factor activity
+namespace: molecular_function
+alt_id: GO:0000130
+alt_id: GO:0001071
+def: "Interacting selectively and non-covalently with a specific DNA sequence (sometimes referred to as a motif) within the regulatory region of a gene in order to modulate transcription." [GOC:curators, GOC:txnOH]
+subset: goslim_agr
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_mouse
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "nucleic acid binding transcription factor activity" NARROW []
+synonym: "sequence-specific DNA binding transcription factor activity" EXACT []
+synonym: "transcription factor activity" BROAD []
+is_a: GO:0003674 ! molecular_function
+relationship: part_of GO:0008150 ! biological_process
+created_by: kchris
+creation_date: 2010-10-21T04:37:54Z
+
+[Term]
+id: GO:0003723
+name: RNA binding
+namespace: molecular_function
+alt_id: GO:0044822
+def: "Interacting selectively and non-covalently with an RNA molecule or a portion thereof." [GOC:jl, GOC:mah]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "poly(A) RNA binding" RELATED []
+synonym: "poly(A)-RNA binding" RELATED []
+synonym: "poly-A RNA binding" RELATED []
+xref: Reactome:REACT_101703 "Exportin-5 recognizes 3' overhang of pre-miRNA, Xenopus tropicalis"
+xref: Reactome:REACT_103323 "Exportin-5 recognizes 3' overhang of pre-miRNA, Dictyostelium discoideum"
+xref: Reactome:REACT_106430 "Exportin-5 recognizes 3' overhang of pre-miRNA, Mus musculus"
+xref: Reactome:REACT_107757 "Exportin-5 recognizes 3' overhang of pre-miRNA, Drosophila melanogaster"
+xref: Reactome:REACT_108232 "Exportin-5 recognizes 3' overhang of pre-miRNA, Oryza sativa"
+xref: Reactome:REACT_108368 "Exportin-5 recognizes 3' overhang of pre-miRNA, Saccharomyces cerevisiae"
+xref: Reactome:REACT_109723 "Exportin-5 recognizes 3' overhang of pre-miRNA, Arabidopsis thaliana"
+xref: Reactome:REACT_12458 "Exportin-5 recognizes 3' overhang of pre-miRNA, Homo sapiens"
+xref: Reactome:REACT_29965 "Exportin-5 recognizes 3' overhang of pre-miRNA, Canis familiaris"
+xref: Reactome:REACT_77167 "Exportin-5 recognizes 3' overhang of pre-miRNA, Gallus gallus"
+xref: Reactome:REACT_78197 "Exportin-5 recognizes 3' overhang of pre-miRNA, Sus scrofa"
+xref: Reactome:REACT_87164 "Exportin-5 recognizes 3' overhang of pre-miRNA, Schizosaccharomyces pombe"
+xref: Reactome:REACT_89329 "Exportin-5 recognizes 3' overhang of pre-miRNA, Rattus norvegicus"
+xref: Reactome:REACT_90531 "Exportin-5 recognizes 3' overhang of pre-miRNA, Danio rerio"
+xref: Reactome:REACT_98683 "Exportin-5 recognizes 3' overhang of pre-miRNA, Taeniopygia guttata"
+is_a: GO:0003676 ! nucleic acid binding
+
+[Term]
+id: GO:0003774
+name: motor activity
+namespace: molecular_function
+def: "Catalysis of the generation of force resulting either in movement along a microfilament or microtubule, or in torque resulting in membrane scission, coupled to the hydrolysis of a nucleoside triphosphate." [GOC:mah, GOC:vw, ISBN:0815316194, PMID:11242086]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+is_a: GO:0016787 ! hydrolase activity
+
+[Term]
+id: GO:0003824
+name: catalytic activity
+namespace: molecular_function
+def: "Catalysis of a biochemical reaction at physiological temperatures. In biologically catalyzed reactions, the reactants are known as substrates, and the catalysts are naturally occurring macromolecular substances known as enzymes. Enzymes possess specific binding sites for substrates, and are usually composed wholly or largely of protein, but RNA that has catalytic activity (ribozyme) is often also regarded as enzymatic." [GOC:vw, ISBN:0198506732]
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "enzyme activity" EXACT [GOC:dph, GOC:tb]
+xref: Wikipedia:Enzyme
+is_a: GO:0003674 ! molecular_function
+
+[Term]
+id: GO:0004518
+name: nuclease activity
+namespace: molecular_function
+def: "Catalysis of the hydrolysis of ester linkages within nucleic acids." [ISBN:0198547684]
+comment: Note that 'tRNA nucleotidyltransferase activity ; GO:0009022', also known as 'ribonuclease PH', and 'DNA-(apurinic or apyrimidinic site) lyase activity ; GO:0003906' do not have parentage in the 'nuclease activity' branch of the ontology because both GO and the Enzyme Commission define nuclease activity as a type of hydrolysis.
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+xref: EC:3.1
+is_a: GO:0016787 ! hydrolase activity
+relationship: part_of GO:0006139 ! nucleobase-containing compound metabolic process
+
+[Term]
+id: GO:0004871
+name: signal transducer activity
+namespace: molecular_function
+alt_id: GO:0005062
+alt_id: GO:0009369
+alt_id: GO:0009370
+def: "Conveys a signal across a cell to trigger a change in cell function or state. A signal is a physical entity or change in state that is used to transfer information in order to trigger a response." [GOC:go_curators]
+comment: Ligands do NOT have the molecular function 'signal transducer activity'.
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "hematopoietin/interferon-class (D200-domain) cytokine receptor signal transducer activity" NARROW []
+synonym: "quorum sensing response regulator activity" NARROW []
+synonym: "quorum sensing signal generator activity" NARROW []
+is_a: GO:0003674 ! molecular_function
+intersection_of: GO:0003674 ! molecular_function
+intersection_of: part_of GO:0007165 ! signal transduction
+relationship: part_of GO:0007165 ! signal transduction
+
+[Term]
+id: GO:0004872
+name: receptor activity
+namespace: molecular_function
+alt_id: GO:0019041
+def: "Combining with an extracellular or intracellular messenger to initiate a change in cell activity." [GOC:ceb, ISBN:0198506732]
+subset: goslim_agr
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_mouse
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "receptor guanylate cyclase activity" NARROW []
+synonym: "viral antireceptor activity" NARROW []
+is_a: GO:0003674 ! molecular_function
+
+[Term]
+id: GO:0005102
+name: receptor binding
+namespace: molecular_function
+def: "Interacting selectively and non-covalently with one or more specific sites on a receptor molecule, a macromolecule that undergoes combination with a hormone, neurotransmitter, drug or intracellular messenger to initiate a change in cell function." [GOC:bf, GOC:ceb, ISBN:0198506732]
+comment: Where appropriate, also consider annotating to 'receptor agonist activity ; GO:0048018'.
+subset: goslim_agr
+subset: goslim_chembl
+subset: goslim_mouse
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "receptor ligand" NARROW []
+synonym: "receptor-associated protein activity" RELATED []
+xref: Wikipedia:Ligand_(biochemistry)
+is_a: GO:0005515 ! protein binding
+
+[Term]
+id: GO:0005198
+name: structural molecule activity
+namespace: molecular_function
+def: "The action of a molecule that contributes to the structural integrity of a complex or its assembly within or outside a cell." [GOC:mah, GOC:vw]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+is_a: GO:0003674 ! molecular_function
+
+[Term]
+id: GO:0005215
+name: transporter activity
+namespace: molecular_function
+alt_id: GO:0005478
+def: "Enables the directed movement of substances (such as macromolecules, small molecules, ions) into, out of or within a cell, or between cells." [GOC:ai, GOC:dgf]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "carrier" NARROW []
+xref: Reactome:REACT_6315 "Virion-associated M2 protein mediated ion infusion, Homo sapiens"
+is_a: GO:0003674 ! molecular_function
+
+[Term]
+id: GO:0005488
+name: binding
+namespace: molecular_function
+def: "The selective, non-covalent, often stoichiometric, interaction of a molecule with one or more specific sites on another molecule." [GOC:ceb, GOC:mah, ISBN:0198506732]
+comment: Note that this term is in the subset of terms that should not be used for direct, manual gene product annotation. Please choose a more specific child term, or request a new one if no suitable term is available. For ligands that bind to signal transducing receptors, consider the molecular function term 'receptor binding ; GO:0005102' and its children.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "ligand" NARROW []
+xref: Wikipedia:Binding_(molecular)
+is_a: GO:0003674 ! molecular_function
+
+[Term]
+id: GO:0005515
+name: protein binding
+namespace: molecular_function
+alt_id: GO:0001948
+alt_id: GO:0045308
+def: "Interacting selectively and non-covalently with any protein or protein complex (a complex of two or more proteins that may include other nonprotein molecules)." [GOC:go_curators]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "glycoprotein binding" NARROW []
+synonym: "protein amino acid binding" EXACT []
+xref: Reactome:REACT_100287 "Formation of the IGF:IGFBP-4 Complex, Canis familiaris"
+xref: Reactome:REACT_101129 "Formation of the IGF:IGFBP-3:ALS Complex, Rattus norvegicus"
+xref: Reactome:REACT_102084 "Formation of the IGF:IGFBP-5:ALS Complex, Mus musculus"
+xref: Reactome:REACT_102457 "An anchoring protein, SARA, recruits SMAD2/3, Canis familiaris"
+xref: Reactome:REACT_103972 "Type II receptor recruits type I receptor, Xenopus tropicalis"
+xref: Reactome:REACT_104029 "Formation of the IGF:IGFBP-6 Complex, Bos taurus"
+xref: Reactome:REACT_104599 "Type II receptor recruits type I receptor, Sus scrofa"
+xref: Reactome:REACT_105776 "Formation of the IGF:IGFBP-3:ALS Complex, Danio rerio"
+xref: Reactome:REACT_105895 "Formation of the IGF:IGFBP-4 Complex, Bos taurus"
+xref: Reactome:REACT_106168 "Formation of the IGF:IGFBP-2 Complex, Bos taurus"
+xref: Reactome:REACT_106189 "Formation of the IGF:IGFBP-5:ALS Complex, Gallus gallus"
+xref: Reactome:REACT_107402 "Formation of the IGF:IGFBP-4 Complex, Mus musculus"
+xref: Reactome:REACT_108283 "Formation of the IGF:IGFBP-4 Complex, Xenopus tropicalis"
+xref: Reactome:REACT_109392 "Formation of the IGF:IGFBP-3:ALS Complex, Gallus gallus"
+xref: Reactome:REACT_110419 "Type II receptor recruits type I receptor, Bos taurus"
+xref: Reactome:REACT_110570 "Formation of the IGF:IGFBP-3:ALS Complex, Sus scrofa"
+xref: Reactome:REACT_15321 "Formation of the IGF:IGFBP-1 Complex, Homo sapiens"
+xref: Reactome:REACT_15325 "Formation of the IGF:IGFBP-4 Complex, Homo sapiens"
+xref: Reactome:REACT_15355 "Formation of the IGF:IGFBP-5:ALS Complex, Homo sapiens"
+xref: Reactome:REACT_15417 "Formation of the IGF:IGFBP-3:ALS Complex, Homo sapiens"
+xref: Reactome:REACT_15419 "Formation of the IGF:IGFBP-2 Complex, Homo sapiens"
+xref: Reactome:REACT_15506 "Formation of the IGF:IGFBP-6 Complex, Homo sapiens"
+xref: Reactome:REACT_15541 "Traversal of the cortical actin network and docking at plasma membrane, Homo sapiens"
+xref: Reactome:REACT_20509 "Exocytosis of Insulin, Mus musculus"
+xref: Reactome:REACT_20539 "Traversal of the cortical actin network., Mus musculus"
+xref: Reactome:REACT_28794 "Formation of the IGF:IGFBP-4 Complex, Sus scrofa"
+xref: Reactome:REACT_30571 "Formation of the IGF:IGFBP-6 Complex, Danio rerio"
+xref: Reactome:REACT_30672 "Formation of the IGF:IGFBP-2 Complex, Taeniopygia guttata"
+xref: Reactome:REACT_31305 "Formation of the IGF:IGFBP-3:ALS Complex, Taeniopygia guttata"
+xref: Reactome:REACT_31537 "Formation of the IGF:IGFBP-6 Complex, Rattus norvegicus"
+xref: Reactome:REACT_31641 "Type II receptor recruits type I receptor, Danio rerio"
+xref: Reactome:REACT_31648 "An anchoring protein, SARA, recruits SMAD2/3, Mus musculus"
+xref: Reactome:REACT_32973 "Formation of the IGF:IGFBP-1 Complex, Canis familiaris"
+xref: Reactome:REACT_33135 "An anchoring protein, SARA, recruits SMAD2/3, Rattus norvegicus"
+xref: Reactome:REACT_34719 "Formation of the IGF:IGFBP-1 Complex, Danio rerio"
+xref: Reactome:REACT_6923 "An anchoring protein, SARA, recruits SMAD2/3, Homo sapiens"
+xref: Reactome:REACT_6945 "Type II receptor recruits type I receptor, Homo sapiens"
+xref: Reactome:REACT_78382 "Formation of the IGF:IGFBP-1 Complex, Mus musculus"
+xref: Reactome:REACT_78466 "Formation of the IGF:IGFBP-6 Complex, Canis familiaris"
+xref: Reactome:REACT_79634 "Formation of the IGF:IGFBP-5:ALS Complex, Canis familiaris"
+xref: Reactome:REACT_80470 "Formation of the IGF:IGFBP-1 Complex, Rattus norvegicus"
+xref: Reactome:REACT_80778 "Type II receptor recruits type I receptor, Mus musculus"
+xref: Reactome:REACT_83147 "Type II receptor recruits type I receptor, Rattus norvegicus"
+xref: Reactome:REACT_83165 "Formation of the IGF:IGFBP-5:ALS Complex, Sus scrofa"
+xref: Reactome:REACT_83532 "Formation of the IGF:IGFBP-2 Complex, Xenopus tropicalis"
+xref: Reactome:REACT_85250 "Formation of the IGF:IGFBP-2 Complex, Canis familiaris"
+xref: Reactome:REACT_85858 "Formation of the IGF:IGFBP-2 Complex, Gallus gallus"
+xref: Reactome:REACT_85975 "An anchoring protein, SARA, recruits SMAD2/3, Danio rerio"
+xref: Reactome:REACT_87187 "An anchoring protein, SARA, recruits SMAD2/3, Xenopus tropicalis"
+xref: Reactome:REACT_87374 "Formation of the IGF:IGFBP-6 Complex, Sus scrofa"
+xref: Reactome:REACT_87652 "Formation of the IGF:IGFBP-5:ALS Complex, Bos taurus"
+xref: Reactome:REACT_88068 "Formation of the IGF:IGFBP-3:ALS Complex, Canis familiaris"
+xref: Reactome:REACT_88138 "Formation of the IGF:IGFBP-5:ALS Complex, Danio rerio"
+xref: Reactome:REACT_88223 "Formation of the IGF:IGFBP-1 Complex, Sus scrofa"
+xref: Reactome:REACT_89261 "Formation of the IGF:IGFBP-4 Complex, Taeniopygia guttata"
+xref: Reactome:REACT_90027 "Formation of the IGF:IGFBP-2 Complex, Rattus norvegicus"
+xref: Reactome:REACT_90105 "Formation of the IGF:IGFBP-1 Complex, Xenopus tropicalis"
+xref: Reactome:REACT_90666 "An anchoring protein, SARA, recruits SMAD2/3, Sus scrofa"
+xref: Reactome:REACT_91560 "Type II receptor recruits type I receptor, Canis familiaris"
+xref: Reactome:REACT_92029 "Formation of the IGF:IGFBP-4 Complex, Rattus norvegicus"
+xref: Reactome:REACT_93175 "Formation of the IGF:IGFBP-1 Complex, Gallus gallus"
+xref: Reactome:REACT_93938 "Formation of the IGF:IGFBP-5:ALS Complex, Rattus norvegicus"
+xref: Reactome:REACT_94522 "Formation of the IGF:IGFBP-5:ALS Complex, Taeniopygia guttata"
+xref: Reactome:REACT_94808 "Formation of the IGF:IGFBP-6 Complex, Mus musculus"
+xref: Reactome:REACT_95241 "Formation of the IGF:IGFBP-3:ALS Complex, Mus musculus"
+xref: Reactome:REACT_95561 "Formation of the IGF:IGFBP-5:ALS Complex, Xenopus tropicalis"
+xref: Reactome:REACT_95647 "Formation of the IGF:IGFBP-3:ALS Complex, Bos taurus"
+xref: Reactome:REACT_96236 "Formation of the IGF:IGFBP-2 Complex, Mus musculus"
+xref: Reactome:REACT_96264 "Formation of the IGF:IGFBP-2 Complex, Danio rerio"
+xref: Reactome:REACT_98028 "Formation of the IGF:IGFBP-1 Complex, Taeniopygia guttata"
+xref: Reactome:REACT_98807 "An anchoring protein, SARA, recruits SMAD2/3, Bos taurus"
+is_a: GO:0005488 ! binding
+
+[Term]
+id: GO:0005575
+name: cellular_component
+namespace: cellular_component
+alt_id: GO:0008372
+def: "The part of a cell, extracellular environment or virus in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together." [GOC:go_curators, NIF_Subcellular:sao-1337158144]
+comment: Note that, in addition to forming the root of the cellular component ontology, this term is recommended for use for the annotation of gene products whose cellular component is unknown. Note that when this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "cell or subcellular entity" EXACT []
+synonym: "cellular component" EXACT []
+synonym: "subcellular entity" RELATED [NIF_Subcellular:nlx_subcell_100315]
+xref: NIF_Subcellular:sao-1337158144
+xref: NIF_Subcellular:sao1337158144
+
+[Term]
+id: GO:0005576
+name: extracellular region
+namespace: cellular_component
+def: "The space external to the outermost structure of a cell. For cells without external protective or external encapsulating structures this refers to space outside of the plasma membrane. This term covers the host cell environment outside an intracellular parasite." [GOC:go_curators]
+comment: Note that this term is intended to annotate gene products that are not attached to the cell surface. For gene products from multicellular organisms which are secreted from a cell but retained within the organism (i.e. released into the interstitial fluid or blood), consider the cellular component term 'extracellular space ; GO:0005615'.
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "extracellular" EXACT []
+xref: Wikipedia:Extracellular
+is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0005578
+name: proteinaceous extracellular matrix
+namespace: cellular_component
+def: "A layer consisting mainly of proteins (especially collagen) and glycosaminoglycans (mostly as proteoglycans) that forms a sheet underlying or overlying cells such as endothelial and epithelial cells. The proteins are secreted by cells in the vicinity. An example of this component is found in Mus musculus." [GOC:mtg_sensu, ISBN:0198547684]
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_plant
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005576 ! extracellular region
+
+[Term]
+id: GO:0005615
+name: extracellular space
+namespace: cellular_component
+def: "That part of a multicellular organism outside the cells proper, usually taken to be outside the plasma membranes, and occupied by fluid." [ISBN:0198547684]
+comment: Note that for multicellular organisms, the extracellular space refers to everything outside a cell, but still within the organism (excluding the extracellular matrix). Gene products from a multi-cellular organism that are secreted from a cell into the interstitial fluid or blood can therefore be annotated to this term.
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_plant
+synonym: "intercellular space" RELATED []
+xref: NIF_Subcellular:sao1425028079
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005576 ! extracellular region
+
+[Term]
+id: GO:0005618
+name: cell wall
+namespace: cellular_component
+def: "The rigid or semi-rigid envelope lying outside the cell membrane of plant, fungal, most prokaryotic cells and some protozoan parasites, maintaining their shape and protecting them from osmotic lysis. In plants it is made of cellulose and, often, lignin; in fungi it is composed largely of polysaccharides; in bacteria it is composed of peptidoglycan; in protozoan parasites such as Giardia species, it's made of carbohydrates and proteins." [GOC:giardia, http://en.wikipedia.org/wiki/Microbial_cyst, ISBN:0198547684, PMID:15134259]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+xref: Wikipedia:Cell_wall
+is_a: GO:0030312 ! external encapsulating structure
+
+[Term]
+id: GO:0005622
+name: intracellular
+namespace: cellular_component
+def: "The living contents of a cell; the matter contained within (but not including) the plasma membrane, usually taken to exclude large vacuoles and masses of secretory or ingested material. In eukaryotes it includes the nucleus and cytoplasm." [ISBN:0198506732]
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "internal to cell" EXACT []
+synonym: "nucleocytoplasm" RELATED [GOC:mah]
+synonym: "protoplasm" EXACT []
+synonym: "protoplast" RELATED [GOC:mah]
+xref: Wikipedia:Intracellular
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005623 ! cell
+
+[Term]
+id: GO:0005623
+name: cell
+namespace: cellular_component
+def: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope." [GOC:go_curators]
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_plant
+subset: gosubset_prok
+xref: NIF_Subcellular:sao1813327414
+xref: Wikipedia:Cell_(biology)
+is_a: GO:0005575 ! cellular_component
+property_value: IAO:0000589 "cell and encapsulating structures" xsd:string
+
+[Term]
+id: GO:0005634
+name: nucleus
+namespace: cellular_component
+def: "A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell's chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent." [GOC:go_curators]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+synonym: "cell nucleus" EXACT []
+xref: NIF_Subcellular:sao1702920020
+xref: Wikipedia:Cell_nucleus
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005622 ! intracellular
+
+[Term]
+id: GO:0005635
+name: nuclear envelope
+namespace: cellular_component
+alt_id: GO:0005636
+def: "The double lipid bilayer enclosing the nucleus and separating its contents from the rest of the cytoplasm; includes the intermembrane space, a gap of width 20-40 nm (also called the perinuclear space)." [ISBN:0198547684]
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_plant
+xref: Wikipedia:Nuclear_envelope
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005634 ! nucleus
+
+[Term]
+id: GO:0005654
+name: nucleoplasm
+namespace: cellular_component
+def: "That part of the nuclear content other than the chromosomes or the nucleolus." [GOC:ma, ISBN:0124325653]
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_plant
+xref: NIF_Subcellular:sao661522542
+xref: Wikipedia:Nucleoplasm
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005634 ! nucleus
+
+[Term]
+id: GO:0005730
+name: nucleolus
+namespace: cellular_component
+def: "A small, dense body one or more of which are present in the nucleus of eukaryotic cells. It is rich in RNA and protein, is not bounded by a limiting membrane, and is not seen during mitosis. Its prime function is the transcription of the nucleolar DNA into 45S ribosomal-precursor RNA, the processing of this RNA into 5.8S, 18S, and 28S components of ribosomal RNA, and the association of these components with 5S RNA and proteins synthesized outside the nucleolus. This association results in the formation of ribonucleoprotein precursors; these pass into the cytoplasm and mature into the 40S and 60S subunits of the ribosome." [ISBN:0198506732]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+xref: NIF_Subcellular:sao1820400233
+xref: Wikipedia:Nucleolus
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005634 ! nucleus
+
+[Term]
+id: GO:0005737
+name: cytoplasm
+namespace: cellular_component
+def: "All of the contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures." [ISBN:0198547684]
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+xref: Wikipedia:Cytoplasm
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005622 ! intracellular
+
+[Term]
+id: GO:0005739
+name: mitochondrion
+namespace: cellular_component
+def: "A semiautonomous, self replicating organelle that occurs in varying numbers, shapes, and sizes in the cytoplasm of virtually all eukaryotic cells. It is notably the site of tissue respiration." [GOC:giardia, ISBN:0198506732]
+comment: Some anaerobic or microaerophilic organisms (e.g. Entamoeba histolytica, Giardia intestinalis and several Microsporidia species) do not have mitochondria, and contain mitochondrion-related organelles (MROs) instead, called mitosomes or hydrogenosomes, very likely derived from mitochondria. To annotate gene products located in these mitochondrial relics in species such as Entamoeba histolytica, Giardia intestinalis or others, please use GO:0032047 'mitosome' or GO:0042566 'hydrogenosome'. (See PMID:24316280 for a list of species currently known to contain mitochondrion-related organelles.)
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+synonym: "mitochondria" EXACT []
+xref: NIF_Subcellular:sao1860313010
+xref: Wikipedia:Mitochondrion
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005737 ! cytoplasm
+
+[Term]
+id: GO:0005764
+name: lysosome
+namespace: cellular_component
+def: "A small lytic vacuole that has cell cycle-independent morphology and is found in most animal cells and that contains a variety of hydrolases, most of which have their maximal activities in the pH range 5-6. The contained enzymes display latency if properly isolated. About 40 different lysosomal hydrolases are known and lysosomes have a great variety of morphologies and functions." [GOC:mah, ISBN:0198506732]
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_plant
+xref: NIF_Subcellular:sao585356902
+xref: Wikipedia:Lysosome
+is_a: GO:0005773 ! vacuole
+
+[Term]
+id: GO:0005768
+name: endosome
+namespace: cellular_component
+def: "A vacuole to which materials ingested by endocytosis are delivered." [ISBN:0198506732, PMID:19696797]
+subset: goslim_agr
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+xref: NIF_Subcellular:sao1720343330
+xref: Wikipedia:Endosome
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005737 ! cytoplasm
+
+[Term]
+id: GO:0005773
+name: vacuole
+namespace: cellular_component
+def: "A closed structure, found only in eukaryotic cells, that is completely surrounded by unit membrane and contains liquid material. Cells contain one or several vacuoles, that may have different functions from each other. Vacuoles have a diverse array of functions. They can act as a storage organelle for nutrients or waste products, as a degradative compartment, as a cost-effective way of increasing cell size, and as a homeostatic regulator controlling both turgor pressure and pH of the cytosol." [GOC:mtg_sensu, ISBN:0198506732]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "vacuolar carboxypeptidase Y" RELATED []
+xref: Wikipedia:Vacuole
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005737 ! cytoplasm
+
+[Term]
+id: GO:0005777
+name: peroxisome
+namespace: cellular_component
+alt_id: GO:0019818
+def: "A small organelle enclosed by a single membrane, and found in most eukaryotic cells. Contains peroxidases and other enzymes involved in a variety of metabolic processes including free radical detoxification, lipid catabolism and biosynthesis, and hydrogen peroxide metabolism." [GOC:pm, PMID:9302272, UniProtKB-KW:KW-0576]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_plant
+subset: goslim_yeast
+synonym: "peroxisomal" RELATED [GOC:curators]
+synonym: "peroxisome vesicle" BROAD []
+xref: NIF_Subcellular:sao499555322
+xref: Wikipedia:Peroxisome
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005737 ! cytoplasm
+
+[Term]
+id: GO:0005783
+name: endoplasmic reticulum
+namespace: cellular_component
+def: "The irregular network of unit membranes, visible only by electron microscopy, that occurs in the cytoplasm of many eukaryotic cells. The membranes form a complex meshwork of tubular channels, which are often expanded into slitlike cavities called cisternae. The ER takes two forms, rough (or granular), with ribosomes adhering to the outer surface, and smooth (with no ribosomes attached)." [ISBN:0198506732]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+synonym: "ER" EXACT []
+xref: NIF_Subcellular:sao1036339110
+xref: Wikipedia:Endoplasmic_reticulum
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005737 ! cytoplasm
+
+[Term]
+id: GO:0005794
+name: Golgi apparatus
+namespace: cellular_component
+def: "A compound membranous cytoplasmic organelle of eukaryotic cells, consisting of flattened, ribosome-free vesicles arranged in a more or less regular stack. The Golgi apparatus differs from the endoplasmic reticulum in often having slightly thicker membranes, appearing in sections as a characteristic shallow semicircle so that the convex side (cis or entry face) abuts the endoplasmic reticulum, secretory vesicles emerging from the concave side (trans or exit face). In vertebrate cells there is usually one such organelle, while in invertebrates and plants, where they are known usually as dictyosomes, there may be several scattered in the cytoplasm. The Golgi apparatus processes proteins produced on the ribosomes of the rough endoplasmic reticulum; such processing includes modification of the core oligosaccharides of glycoproteins, and the sorting and packaging of proteins for transport to a variety of cellular locations. Three different regions of the Golgi are now recognized both in terms of structure and function: cis, in the vicinity of the cis face, trans, in the vicinity of the trans face, and medial, lying between the cis and trans regions." [ISBN:0198506732]
+comment: Note that the Golgi apparatus can be located in various places in the cytoplasm. In plants and lower animal cells, the Golgi apparatus exists as many copies of discrete stacks dispersed throughout the cytoplasm, while the Golgi apparatus of interphase mammalian cells is a juxtanuclear, often pericentriolar reticulum, where the discrete Golgi stacks are stitched together to form a compact and interconnected ribbon, sometimes called the Golgi ribbon.
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+synonym: "Golgi" BROAD []
+synonym: "Golgi complex" EXACT []
+synonym: "Golgi ribbon" NARROW []
+xref: NIF_Subcellular:sao451912436
+xref: Wikipedia:Golgi_apparatus
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005737 ! cytoplasm
+
+[Term]
+id: GO:0005829
+name: cytosol
+namespace: cellular_component
+def: "The part of the cytoplasm that does not contain organelles but which does contain other particulate matter, such as protein complexes." [GOC:hjd, GOC:jl]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_plant
+subset: gosubset_prok
+xref: NIF_Subcellular:sao101633890
+xref: Wikipedia:Cytosol
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005737 ! cytoplasm
+
+[Term]
+id: GO:0005840
+name: ribosome
+namespace: cellular_component
+alt_id: GO:0033279
+def: "An intracellular organelle, about 200 A in diameter, consisting of RNA and protein. It is the site of protein biosynthesis resulting from translation of messenger RNA (mRNA). It consists of two subunits, one large and one small, each containing only protein and RNA. Both the ribosome and its subunits are characterized by their sedimentation coefficients, expressed in Svedberg units (symbol: S). Hence, the prokaryotic ribosome (70S) comprises a large (50S) subunit and a small (30S) subunit, while the eukaryotic ribosome (80S) comprises a large (60S) subunit and a small (40S) subunit. Two sites on the ribosomal large subunit are involved in translation, namely the aminoacyl site (A site) and peptidyl site (P site). Ribosomes from prokaryotes, eukaryotes, mitochondria, and chloroplasts have characteristically distinct ribosomal proteins." [ISBN:0198506732]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "free ribosome" NARROW [NIF_Subcellular:sao1139385046]
+synonym: "membrane bound ribosome" NARROW [NIF_Subcellular:sao1291545653]
+synonym: "ribosomal RNA" RELATED []
+xref: NIF_Subcellular:sao1429207766
+xref: Wikipedia:Ribosome
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005737 ! cytoplasm
+
+[Term]
+id: GO:0005856
+name: cytoskeleton
+namespace: cellular_component
+def: "Any of the various filamentous elements that form the internal framework of cells, and typically remain after treatment of the cells with mild detergent to remove membrane constituents and soluble components of the cytoplasm. The term embraces intermediate filaments, microfilaments, microtubules, the microtrabecular lattice, and other structures characterized by a polymeric filamentous nature and long-range order within the cell. The various elements of the cytoskeleton not only serve in the maintenance of cellular shape but also have roles in other cellular functions, including cellular movement, cell division, endocytosis, and movement of organelles." [GOC:mah, ISBN:0198547684, PMID:16959967]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+xref: Wikipedia:Cytoskeleton
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005622 ! intracellular
+
+[Term]
+id: GO:0005886
+name: plasma membrane
+namespace: cellular_component
+alt_id: GO:0005904
+def: "The membrane surrounding a cell that separates the cell from its external environment. It consists of a phospholipid bilayer and associated proteins." [ISBN:0716731363]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_mouse
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "bacterial inner membrane" NARROW []
+synonym: "cell membrane" EXACT []
+synonym: "cellular membrane" EXACT [NIF_Subcellular:sao6433132645]
+synonym: "cytoplasmic membrane" EXACT []
+synonym: "inner endospore membrane" NARROW []
+synonym: "juxtamembrane" BROAD []
+synonym: "plasma membrane lipid bilayer" NARROW [GOC:mah]
+synonym: "plasmalemma" EXACT []
+xref: NIF_Subcellular:sao1663586795
+xref: Wikipedia:Cell_membrane
+is_a: GO:0016020 ! membrane
+relationship: part_of GO:0005623 ! cell
+
+[Term]
+id: GO:0005975
+name: carbohydrate metabolic process
+namespace: biological_process
+alt_id: GO:0044723
+def: "The chemical reactions and pathways involving carbohydrates, any of a group of organic compounds based of the general formula Cx(H2O)y. Includes the formation of carbohydrate derivatives by the addition of a carbohydrate residue to another molecule." [GOC:mah, ISBN:0198506732]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_pombe
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "carbohydrate metabolism" EXACT []
+synonym: "single-organism carbohydrate metabolic process" RELATED []
+xref: Reactome:REACT_102834 "Metabolism of carbohydrates, Mus musculus"
+xref: Reactome:REACT_103806 "Metabolism of carbohydrates, Mycobacterium tuberculosis"
+xref: Reactome:REACT_104502 "Metabolism of carbohydrates, Gallus gallus"
+xref: Reactome:REACT_105321 "Metabolism of carbohydrates, Escherichia coli"
+xref: Reactome:REACT_106046 "Metabolism of carbohydrates, Drosophila melanogaster"
+xref: Reactome:REACT_107409 "Metabolism of carbohydrates, Caenorhabditis elegans"
+xref: Reactome:REACT_115733 "Carbohydrate metabolism, Gallus gallus"
+xref: Reactome:REACT_28218 "Metabolism of carbohydrates, Xenopus tropicalis"
+xref: Reactome:REACT_32291 "Metabolism of carbohydrates, Staphylococcus aureus N315"
+xref: Reactome:REACT_33141 "Metabolism of carbohydrates, Taeniopygia guttata"
+xref: Reactome:REACT_33953 "Metabolism of carbohydrates, Rattus norvegicus"
+xref: Reactome:REACT_34800 "Metabolism of carbohydrates, Danio rerio"
+xref: Reactome:REACT_474 "Metabolism of carbohydrates, Homo sapiens"
+xref: Reactome:REACT_77669 "Metabolism of carbohydrates, Plasmodium falciparum"
+xref: Reactome:REACT_81945 "Metabolism of carbohydrates, Schizosaccharomyces pombe"
+xref: Reactome:REACT_83038 "Metabolism of carbohydrates, Arabidopsis thaliana"
+xref: Reactome:REACT_83329 "Metabolism of carbohydrates, Saccharomyces cerevisiae"
+xref: Reactome:REACT_88330 "Metabolism of carbohydrates, Bos taurus"
+xref: Reactome:REACT_88558 "Metabolism of carbohydrates, Canis familiaris"
+xref: Reactome:REACT_90099 "Metabolism of carbohydrates, Sus scrofa"
+xref: Reactome:REACT_96375 "Metabolism of carbohydrates, Dictyostelium discoideum"
+xref: Reactome:REACT_98394 "Metabolism of carbohydrates, Oryza sativa"
+xref: Wikipedia:Carbohydrate_metabolism
+is_a: GO:0008152 ! metabolic process
+created_by: janelomax
+creation_date: 2012-10-23T15:40:34Z
+
+[Term]
+id: GO:0006091
+name: generation of precursor metabolites and energy
+namespace: biological_process
+def: "The chemical reactions and pathways resulting in the formation of precursor metabolites, substances from which energy is derived, and any process involved in the liberation of energy from these substances." [GOC:jl]
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_pombe
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "energy pathways" BROAD []
+synonym: "intermediary metabolism" RELATED [GOC:mah]
+synonym: "metabolic energy generation" RELATED []
+is_a: GO:0008152 ! metabolic process
+is_a: GO:0009987 ! cellular process
+
+[Term]
+id: GO:0006139
+name: nucleobase-containing compound metabolic process
+namespace: biological_process
+alt_id: GO:0055134
+def: "Any cellular metabolic process involving nucleobases, nucleosides, nucleotides and nucleic acids." [GOC:ai]
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "cellular nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" EXACT []
+synonym: "cellular nucleobase, nucleoside, nucleotide and nucleic acid metabolism" EXACT []
+synonym: "nucleobase, nucleoside and nucleotide metabolic process" RELATED []
+synonym: "nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" RELATED [GOC:dph, GOC:tb]
+synonym: "nucleobase, nucleoside, nucleotide and nucleic acid metabolism" EXACT []
+is_a: GO:0008152 ! metabolic process
+is_a: GO:0009987 ! cellular process
+
+[Term]
+id: GO:0006259
+name: DNA metabolic process
+namespace: biological_process
+alt_id: GO:0055132
+def: "Any cellular metabolic process involving deoxyribonucleic acid. This is one of the two main types of nucleic acid, consisting of a long, unbranched macromolecule formed from one, or more commonly, two, strands of linked deoxyribonucleotides." [ISBN:0198506732]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "cellular DNA metabolism" EXACT []
+synonym: "DNA metabolism" EXACT []
+is_a: GO:0006139 ! nucleobase-containing compound metabolic process
+
+[Term]
+id: GO:0006412
+name: translation
+namespace: biological_process
+alt_id: GO:0006416
+alt_id: GO:0006453
+alt_id: GO:0043037
+def: "The cellular metabolic process in which a protein is formed, using the sequence of a mature mRNA or circRNA molecule to specify the sequence of amino acids in a polypeptide chain. Translation is mediated by the ribosome, and begins with the formation of a ternary complex between aminoacylated initiator methionine tRNA, GTP, and initiation factor 2, which subsequently associates with the small subunit of the ribosome and an mRNA or circRNA. Translation ends with the release of a polypeptide chain from the ribosome." [GOC:go_curators]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "protein anabolism" EXACT []
+synonym: "protein biosynthesis" EXACT []
+synonym: "protein biosynthetic process" EXACT [GOC:curators]
+synonym: "protein formation" EXACT []
+synonym: "protein synthesis" EXACT []
+synonym: "protein translation" EXACT []
+xref: Reactome:REACT_100338 "Translation, Sus scrofa"
+xref: Reactome:REACT_100851 "Translation, Saccharomyces cerevisiae"
+xref: Reactome:REACT_101045 "Translation, Dictyostelium discoideum"
+xref: Reactome:REACT_101324 "Translation, Canis familiaris"
+xref: Reactome:REACT_1014 "Translation, Homo sapiens"
+xref: Reactome:REACT_103420 "Translation, Plasmodium falciparum"
+xref: Reactome:REACT_105544 "Translation, Arabidopsis thaliana"
+xref: Reactome:REACT_29980 "Translation, Bos taurus"
+xref: Reactome:REACT_33559 "Translation, Rattus norvegicus"
+xref: Reactome:REACT_77710 "Translation, Drosophila melanogaster"
+xref: Reactome:REACT_79784 "Translation, Danio rerio"
+xref: Reactome:REACT_81734 "Translation, Schizosaccharomyces pombe"
+xref: Reactome:REACT_81833 "Translation, Caenorhabditis elegans"
+xref: Reactome:REACT_82171 "Translation, Xenopus tropicalis"
+xref: Reactome:REACT_83429 "Translation, Taeniopygia guttata"
+xref: Reactome:REACT_83530 "Translation, Gallus gallus"
+xref: Reactome:REACT_86996 "Translation, Oryza sativa"
+xref: Reactome:REACT_95535 "Translation, Mus musculus"
+xref: Reactome:REACT_96394 "Translation, Escherichia coli"
+xref: Wikipedia:Translation_(genetics)
+is_a: GO:0009058 ! biosynthetic process
+is_a: GO:0009987 ! cellular process
+is_a: GO:0019538 ! protein metabolic process
+relationship: has_part GO:0016043 ! cellular component organization
+relationship: part_of GO:0008152 ! metabolic process
+
+[Term]
+id: GO:0006464
+name: cellular protein modification process
+namespace: biological_process
+def: "The covalent alteration of one or more amino acids occurring in proteins, peptides and nascent polypeptides (co-translational, post-translational modifications) occurring at the level of an individual cell. Includes the modification of charged tRNAs that are destined to occur in a protein (pre-translation modification)." [GOC:go_curators]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "process resulting in protein modification" RELATED []
+synonym: "protein modification process" BROAD [GOC:bf, GOC:jl]
+synonym: "protein tagging activity" RELATED []
+is_a: GO:0009987 ! cellular process
+is_a: GO:0019538 ! protein metabolic process
+
+[Term]
+id: GO:0006629
+name: lipid metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving lipids, compounds soluble in an organic solvent but not, or sparingly, in an aqueous solvent. Includes fatty acids; neutral fats, other fatty-acid esters, and soaps; long-chain (fatty) alcohols and waxes; sphingoids and other long-chain bases; glycolipids, phospholipids and sphingolipids; and carotenes, polyprenols, sterols, terpenes and other isoprenoids." [GOC:ma]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_pombe
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "lipid metabolism" EXACT []
+xref: Reactome:REACT_104930 "Lipid digestion, mobilization, and transport, Drosophila melanogaster"
+xref: Reactome:REACT_107479 "Lipid digestion, mobilization, and transport, Xenopus tropicalis"
+xref: Reactome:REACT_108775 "Lipid digestion, mobilization, and transport, Canis familiaris"
+xref: Reactome:REACT_114669 "Lipid digestion, mobilization, and transport, Staphylococcus aureus N315"
+xref: Reactome:REACT_115652 "Lipid metabolism, Gallus gallus"
+xref: Reactome:REACT_28745 "Lipid digestion, mobilization, and transport, Saccharomyces cerevisiae"
+xref: Reactome:REACT_31395 "Lipid digestion, mobilization, and transport, Sus scrofa"
+xref: Reactome:REACT_32539 "Lipid digestion, mobilization, and transport, Bos taurus"
+xref: Reactome:REACT_33836 "Lipid digestion, mobilization, and transport, Rattus norvegicus"
+xref: Reactome:REACT_602 "Lipid digestion, mobilization, and transport, Homo sapiens"
+xref: Reactome:REACT_77176 "Lipid digestion, mobilization, and transport, Danio rerio"
+xref: Reactome:REACT_77191 "Lipid digestion, mobilization, and transport, Arabidopsis thaliana"
+xref: Reactome:REACT_79244 "Lipid digestion, mobilization, and transport, Plasmodium falciparum"
+xref: Reactome:REACT_81778 "Lipid digestion, mobilization, and transport, Oryza sativa"
+xref: Reactome:REACT_82512 "Lipid digestion, mobilization, and transport, Taeniopygia guttata"
+xref: Reactome:REACT_82723 "Lipid digestion, mobilization, and transport, Escherichia coli"
+xref: Reactome:REACT_87884 "Lipid digestion, mobilization, and transport, Caenorhabditis elegans"
+xref: Reactome:REACT_90757 "Lipid digestion, mobilization, and transport, Mus musculus"
+xref: Reactome:REACT_94607 "Lipid digestion, mobilization, and transport, Mycobacterium tuberculosis"
+xref: Reactome:REACT_97906 "Lipid digestion, mobilization, and transport, Gallus gallus"
+xref: Reactome:REACT_98129 "Lipid digestion, mobilization, and transport, Schizosaccharomyces pombe"
+xref: Reactome:REACT_99706 "Lipid digestion, mobilization, and transport, Dictyostelium discoideum"
+xref: Wikipedia:Lipid_metabolism
+is_a: GO:0008152 ! metabolic process
+
+[Term]
+id: GO:0006810
+name: transport
+namespace: biological_process
+alt_id: GO:0015457
+alt_id: GO:0015460
+alt_id: GO:0044765
+def: "The directed movement of substances (such as macromolecules, small molecules, ions) or cellular components (such as complexes and organelles) into, out of or within a cell, or between cells, or within a multicellular organism by means of some agent such as a transporter, pore or motor protein." [GOC:dos, GOC:dph, GOC:jl, GOC:mah]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "single-organism transport" RELATED []
+synonym: "small molecule transport" NARROW []
+synonym: "solute:solute exchange" NARROW []
+is_a: GO:0008150 ! biological_process
+created_by: janelomax
+creation_date: 2012-12-13T16:25:32Z
+
+[Term]
+id: GO:0006950
+name: response to stress
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [GOC:mah]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "response to abiotic stress" RELATED []
+synonym: "response to biotic stress" RELATED []
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0007049
+name: cell cycle
+namespace: biological_process
+def: "The progression of biochemical and morphological phases and events that occur in a cell during successive cell replication or nuclear replication events. Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in endocycles or syncytial cells nuclear replication or nuclear division may not be followed by cell division." [GOC:go_curators, GOC:mtg_cell_cycle]
+subset: gocheck_do_not_manually_annotate
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "cell-division cycle" EXACT []
+xref: Wikipedia:Cell_cycle
+is_a: GO:0009987 ! cellular process
+
+[Term]
+id: GO:0007154
+name: cell communication
+namespace: biological_process
+def: "Any process that mediates interactions between a cell and its surroundings. Encompasses interactions such as signaling or attachment between one cell and another cell, between a cell and an extracellular matrix, or between a cell and any other aspect of its environment." [GOC:mah]
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+xref: Wikipedia:Cell_signaling
+is_a: GO:0009987 ! cellular process
+
+[Term]
+id: GO:0007165
+name: signal transduction
+namespace: biological_process
+alt_id: GO:0023033
+def: "The cellular process in which a signal is conveyed to trigger a change in the activity or state of a cell. Signal transduction begins with reception of a signal (e.g. a ligand binding to a receptor or receptor activation by a stimulus such as light), or for signal transduction in the absence of ligand, signal-withdrawal or the activity of a constitutively active receptor. Signal transduction ends with regulation of a downstream cellular process, e.g. regulation of transcription or regulation of a metabolic process. Signal transduction covers signaling from receptors located on the surface of the cell and signaling via molecules located within the cell. For signaling between cells, signal transduction is restricted to events at and within the receiving cell." [GOC:go_curators, GOC:mtg_signaling_feb11]
+comment: Note that signal transduction is defined broadly to include a ligand interacting with a receptor, downstream signaling steps and a response being triggered. A change in form of the signal in every step is not necessary. Note that in many cases the end of this process is regulation of the initiation of transcription. Note that specific transcription factors may be annotated to this term, but core/general transcription machinery such as RNA polymerase should not.
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "signaling cascade" NARROW []
+synonym: "signaling pathway" RELATED []
+synonym: "signalling cascade" NARROW []
+synonym: "signalling pathway" RELATED [GOC:mah]
+xref: Reactome:REACT_100624 "EGFR interacts with phospholipase C-gamma, Gallus gallus"
+xref: Reactome:REACT_102354 "EGFR interacts with phospholipase C-gamma, Canis familiaris"
+xref: Reactome:REACT_112130 "EGFR interacts with phospholipase C-gamma, Oryza sativa"
+xref: Reactome:REACT_112549 "EGFR interacts with phospholipase C-gamma, Arabidopsis thaliana"
+xref: Reactome:REACT_113151 "EGFR interacts with phospholipase C-gamma, Mycobacterium tuberculosis"
+xref: Reactome:REACT_113601 "EGFR interacts with phospholipase C-gamma, Drosophila melanogaster"
+xref: Reactome:REACT_113964 "EGFR interacts with phospholipase C-gamma, Bos taurus"
+xref: Reactome:REACT_114657 "EGFR interacts with phospholipase C-gamma, Dictyostelium discoideum"
+xref: Reactome:REACT_114690 "EGFR interacts with phospholipase C-gamma, Saccharomyces cerevisiae"
+xref: Reactome:REACT_114820 "EGFR interacts with phospholipase C-gamma, Sus scrofa"
+xref: Reactome:REACT_114910 "EGFR interacts with phospholipase C-gamma, Caenorhabditis elegans"
+xref: Reactome:REACT_115037 "EGFR interacts with phospholipase C-gamma, Plasmodium falciparum"
+xref: Reactome:REACT_115147 "EGFR interacts with phospholipase C-gamma, Schizosaccharomyces pombe"
+xref: Reactome:REACT_12478 "EGFR interacts with phospholipase C-gamma, Homo sapiens"
+xref: Reactome:REACT_31232 "EGFR interacts with phospholipase C-gamma, Rattus norvegicus"
+xref: Reactome:REACT_78535 "EGFR interacts with phospholipase C-gamma, Xenopus tropicalis"
+xref: Reactome:REACT_89740 "EGFR interacts with phospholipase C-gamma, Taeniopygia guttata"
+xref: Reactome:REACT_93680 "EGFR interacts with phospholipase C-gamma, Danio rerio"
+xref: Reactome:REACT_98872 "EGFR interacts with phospholipase C-gamma, Mus musculus"
+xref: Wikipedia:Signal_transduction
+is_a: GO:0009987 ! cellular process
+relationship: part_of GO:0007154 ! cell communication
+relationship: regulates GO:0009987 ! cellular process
+
+[Term]
+id: GO:0007267
+name: cell-cell signaling
+namespace: biological_process
+def: "Any process that mediates the transfer of information from one cell to another. This process includes signal transduction in the receiving cell and, where applicable, release of a ligand and any processes that actively facilitate its transport and presentation to the receiving cell.  Examples include signaling via soluble ligands, via cell adhesion molecules and via gap junctions." [GOC:dos, GOC:mah]
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "cell-cell signalling" EXACT []
+is_a: GO:0007154 ! cell communication
+
+[Term]
+id: GO:0007275
+name: multicellular organism development
+namespace: biological_process
+def: "The biological process whose specific outcome is the progression of a multicellular organism over time from an initial condition (e.g. a zygote or a young adult) to a later condition (e.g. a multicellular animal or an aged adult)." [GOC:dph, GOC:ems, GOC:isa_complete, GOC:tb]
+comment: Note that this term was 'developmental process'.
+subset: goslim_chembl
+subset: goslim_plant
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0007610
+name: behavior
+namespace: biological_process
+alt_id: GO:0044708
+def: "The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity." [GOC:ems, GOC:jl, ISBN:0395448956, PMID:20160973]
+comment: 1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.\n2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis).
+subset: gocheck_do_not_manually_annotate
+subset: goslim_agr
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "behavioral response to stimulus" EXACT []
+synonym: "behaviour" EXACT []
+synonym: "behavioural response to stimulus" EXACT []
+synonym: "single-organism behavior" RELATED []
+xref: Wikipedia:Behavior
+is_a: GO:0008150 ! biological_process
+created_by: janelomax
+creation_date: 2012-09-20T14:06:08Z
+
+[Term]
+id: GO:0008135
+name: translation factor activity, RNA binding
+namespace: molecular_function
+def: "Functions during translation by interacting selectively and non-covalently with RNA during polypeptide synthesis at the ribosome." [GOC:ai, GOC:vw]
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "translation factor activity, nucleic acid binding" BROAD [GOC:mah]
+is_a: GO:0003723 ! RNA binding
+relationship: part_of GO:0006412 ! translation
+
+[Term]
+id: GO:0008150
+name: biological_process
+namespace: biological_process
+alt_id: GO:0000004
+alt_id: GO:0007582
+alt_id: GO:0044699
+def: "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end." [GOC:go_curators, GOC:isa_complete]
+comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_pombe
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "biological process" EXACT []
+synonym: "physiological process" EXACT []
+synonym: "single organism process" RELATED []
+synonym: "single-organism process" RELATED []
+xref: Wikipedia:Biological_process
+created_by: janelomax
+creation_date: 2012-09-19T15:05:24Z
+
+[Term]
+id: GO:0008152
+name: metabolic process
+namespace: biological_process
+alt_id: GO:0044710
+def: "The chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances. Metabolic processes typically transform small molecules, but also include macromolecular processes such as DNA repair and replication, and protein synthesis and degradation." [GOC:go_curators, ISBN:0198547684]
+comment: Note that metabolic processes do not include single functions or processes such as protein-protein interactions, protein-nucleic acids, nor receptor-ligand interactions.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "metabolic process resulting in cell growth" NARROW []
+synonym: "metabolism" EXACT []
+synonym: "metabolism resulting in cell growth" NARROW []
+synonym: "single-organism metabolic process" RELATED []
+xref: Wikipedia:Metabolism
+is_a: GO:0008150 ! biological_process
+created_by: janelomax
+creation_date: 2012-10-17T15:46:40Z
+
+[Term]
+id: GO:0008219
+name: cell death
+namespace: biological_process
+def: "Any biological process that results in permanent cessation of all vital functions of a cell. A cell should be considered dead when any one of the following molecular or morphological criteria is met: (1) the cell has lost the integrity of its plasma membrane; (2) the cell, including its nucleus, has undergone complete fragmentation into discrete bodies (frequently referred to as apoptotic bodies). The cell corpse (or its fragments) may be engulfed by an adjacent cell in vivo, but engulfment of whole cells should not be considered a strict criteria to define cell death as, under some circumstances, live engulfed cells can be released from phagosomes (see PMID:18045538)." [GOC:mah, GOC:mtg_apoptosis, PMID:25236395]
+comment: This term should not be used for direct annotation. The only exception should be when experimental data (e.g., staining with trypan blue or propidium iodide) show that cell death has occurred, but fail to provide details on death modality (accidental versus programmed). When information is provided on the cell death mechanism, annotations should be made to the appropriate descendant of 'cell death' (such as, but not limited to, GO:0097300 'programmed necrotic cell death' or GO:0006915 'apoptotic process'). Also, if experimental data suggest that a gene product influences cell death indirectly, rather than being involved in the death process directly, consider annotating to a 'regulation' term.
+subset: goslim_agr
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "accidental cell death" RELATED []
+synonym: "necrosis" RELATED []
+is_a: GO:0009987 ! cellular process
+
+[Term]
+id: GO:0008289
+name: lipid binding
+namespace: molecular_function
+def: "Interacting selectively and non-covalently with a lipid." [GOC:ai]
+subset: goslim_agr
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+is_a: GO:0005488 ! binding
+
+[Term]
+id: GO:0009056
+name: catabolic process
+namespace: biological_process
+alt_id: GO:0044712
+def: "The chemical reactions and pathways resulting in the breakdown of substances, including the breakdown of carbon compounds with the liberation of energy for use by the cell or organism." [ISBN:0198547684]
+subset: goslim_agr
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "breakdown" EXACT []
+synonym: "catabolism" EXACT []
+synonym: "degradation" EXACT []
+synonym: "single-organism catabolic process" RELATED []
+xref: Wikipedia:Catabolism
+is_a: GO:0008152 ! metabolic process
+created_by: janelomax
+creation_date: 2012-10-17T15:52:35Z
+
+[Term]
+id: GO:0009058
+name: biosynthetic process
+namespace: biological_process
+alt_id: GO:0044711
+def: "The chemical reactions and pathways resulting in the formation of substances; typically the energy-requiring part of metabolism in which simpler substances are transformed into more complex ones." [GOC:curators, ISBN:0198547684]
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "anabolism" EXACT []
+synonym: "biosynthesis" EXACT []
+synonym: "formation" RELATED []
+synonym: "single-organism biosynthetic process" RELATED []
+synonym: "synthesis" EXACT []
+xref: Wikipedia:Anabolism
+is_a: GO:0008152 ! metabolic process
+created_by: janelomax
+creation_date: 2012-10-17T15:52:18Z
+
+[Term]
+id: GO:0009536
+name: plastid
+namespace: cellular_component
+def: "Any member of a family of organelles found in the cytoplasm of plants and some protists, which are membrane-bounded and contain DNA. Plant plastids develop from a common type, the proplastid." [GOC:jl, ISBN:0198547684]
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+xref: Wikipedia:Plastid
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005737 ! cytoplasm
+
+[Term]
+id: GO:0009579
+name: thylakoid
+namespace: cellular_component
+def: "A membranous cellular structure that bears the photosynthetic pigments in plants, algae, and cyanobacteria. In cyanobacteria thylakoids are of various shapes and are attached to, or continuous with, the plasma membrane. In eukaryotes they are flattened, membrane-bounded disk-like structures located in the chloroplasts; in the chloroplasts of higher plants the thylakoids form dense stacks called grana. Isolated thylakoid preparations can carry out photosynthetic electron transport and the associated phosphorylation." [GOC:ds, GOC:mtg_sensu, ISBN:0198506732]
+comment: A thylakoid is not considered an organelle, but some thylakoids are part of organelles.
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "photosynthetic membrane" RELATED []
+xref: Wikipedia:Thylakoid
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005622 ! intracellular
+
+[Term]
+id: GO:0009605
+name: response to external stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an external stimulus." [GOC:hb]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "response to environmental stimulus" EXACT []
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0009606
+name: tropism
+namespace: biological_process
+def: "The movement of an organism, or part of an organism, in response to an external source of stimulus, usually toward or away from it." [GOC:curators, ISBN:0877795088]
+subset: goslim_plant
+xref: Wikipedia:Tropism
+is_a: GO:0009605 ! response to external stimulus
+
+[Term]
+id: GO:0009607
+name: response to biotic stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a biotic stimulus, a stimulus caused or produced by a living organism." [GOC:hb]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_metagenomics
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "response to biotic stress" NARROW []
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0009628
+name: response to abiotic stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an abiotic (non-living) stimulus." [GOC:hb]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_metagenomics
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "response to abiotic stress" NARROW []
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0009653
+name: anatomical structure morphogenesis
+namespace: biological_process
+def: "The process in which anatomical structures are generated and organized. Morphogenesis pertains to the creation of form." [GOC:go_curators, ISBN:0521436125]
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "anatomical structure organization" EXACT []
+synonym: "embryogenesis and morphogenesis" BROAD []
+synonym: "morphogenesis" EXACT []
+xref: Wikipedia:Morphogenesis
+is_a: GO:0008150 ! biological_process
+relationship: part_of GO:0008150 ! biological_process
+
+[Term]
+id: GO:0009719
+name: response to endogenous stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus arising within the organism." [GOC:sm]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_plant
+subset: gosubset_prok
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0009790
+name: embryo development
+namespace: biological_process
+alt_id: GO:0009795
+def: "The process whose specific outcome is the progression of an embryo from its formation until the end of its embryonic life stage. The end of the embryonic stage is organism-specific. For example, for mammals, the process would begin with zygote formation and end with birth. For insects, the process would begin at zygote formation and end with larval hatching. For plant zygotic embryos, this would be from zygote formation to the end of seed dormancy. For plant vegetative embryos, this would be from the initial determination of the cell or group of cells to form an embryo until the point when the embryo becomes independent of the parent plant." [GOC:go_curators, GOC:isa_complete, GOC:mtg_sensu]
+subset: gocheck_do_not_manually_annotate
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_plant
+synonym: "embryogenesis" EXACT []
+synonym: "embryogenesis and morphogenesis" BROAD []
+synonym: "embryonal development" EXACT []
+xref: Wikipedia:Embryogenesis
+is_a: GO:0007275 ! multicellular organism development
+
+[Term]
+id: GO:0009791
+name: post-embryonic development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the organism over time, from the completion of embryonic development to the mature structure. See embryonic development." [GOC:go_curators]
+subset: goslim_plant
+is_a: GO:0008150 ! biological_process
+relationship: part_of GO:0007275 ! multicellular organism development
+
+[Term]
+id: GO:0009835
+name: fruit ripening
+namespace: biological_process
+def: "An aging process that has as participant a fruit. Ripening causes changes in one or more characteristics of a fruit (color, aroma, flavor, texture, hardness, cell wall structure) and may make it more attractive to animals and aid in seed dispersal." [GOC:lr]
+subset: goslim_plant
+synonym: "fruit maturation" RELATED [GOC:PO_curators]
+synonym: "fruit senescence" RELATED [GOC:PO_curators]
+xref: Wikipedia:Ripening
+is_a: GO:0008150 ! biological_process
+relationship: part_of GO:0000003 ! reproduction
+relationship: part_of GO:0007275 ! multicellular organism development
+
+[Term]
+id: GO:0009838
+name: abscission
+namespace: biological_process
+def: "The controlled shedding of a body part." [ISBN:0140514031]
+subset: goslim_plant
+xref: Wikipedia:Abscission
+is_a: GO:0008150 ! biological_process
+relationship: part_of GO:0007275 ! multicellular organism development
+
+[Term]
+id: GO:0009856
+name: pollination
+namespace: biological_process
+def: "The cascade of biological processes occurring in plants beginning when the pollen lands on the female reproductive organs of a plant and continuing up to, but not including, fertilization, as defined by sperm-egg cell fusion." [GOC:tb, PMID:10973091]
+subset: goslim_plant
+xref: Wikipedia:Pollination
+is_a: GO:0008150 ! biological_process
+relationship: part_of GO:0000003 ! reproduction
+
+[Term]
+id: GO:0009875
+name: pollen-pistil interaction
+namespace: biological_process
+def: "The interaction between a pollen grain and pistil." [GOC:go_curators]
+subset: goslim_plant
+is_a: GO:0007154 ! cell communication
+relationship: part_of GO:0009856 ! pollination
+
+[Term]
+id: GO:0009908
+name: flower development
+namespace: biological_process
+alt_id: GO:0048409
+def: "The process whose specific outcome is the progression of the flower over time, from its formation to the mature structure. The flower is the reproductive structure in a plant, and its development begins with the transition of the vegetative or inflorescence meristem into a floral meristem." [GOC:tb, ISBN:0879015322]
+subset: goslim_plant
+is_a: GO:0009791 ! post-embryonic development
+relationship: part_of GO:0000003 ! reproduction
+
+[Term]
+id: GO:0009987
+name: cellular process
+namespace: biological_process
+alt_id: GO:0008151
+alt_id: GO:0044763
+alt_id: GO:0050875
+def: "Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." [GOC:go_curators, GOC:isa_complete]
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "cell growth and/or maintenance" NARROW []
+synonym: "cell physiology" EXACT []
+synonym: "cellular physiological process" EXACT []
+synonym: "single-organism cellular process" RELATED []
+is_a: GO:0008150 ! biological_process
+created_by: janelomax
+creation_date: 2012-12-11T16:56:55Z
+
+[Term]
+id: GO:0009991
+name: response to extracellular stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an extracellular stimulus." [GOC:go_curators]
+subset: goslim_plant
+subset: gosubset_prok
+is_a: GO:0009605 ! response to external stimulus
+
+[Term]
+id: GO:0015979
+name: photosynthesis
+namespace: biological_process
+def: "The synthesis by organisms of organic chemical compounds, especially carbohydrates, from carbon dioxide (CO2) using energy obtained from light rather than from the oxidation of chemical compounds." [ISBN:0198547684]
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+xref: Wikipedia:Photosynthesis
+is_a: GO:0008152 ! metabolic process
+is_a: GO:0009987 ! cellular process
+
+[Term]
+id: GO:0016020
+name: membrane
+namespace: cellular_component
+def: "A lipid bilayer along with all the proteins and protein complexes embedded in it an attached to it." [GOC:dos, GOC:mah, ISBN:0815316194]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+xref: Wikipedia:Biological_membrane
+is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0016043
+name: cellular component organization
+namespace: biological_process
+alt_id: GO:0044235
+alt_id: GO:0071842
+def: "A process that results in the assembly, arrangement of constituent parts, or disassembly of a cellular component." [GOC:ai, GOC:jl, GOC:mah]
+subset: goslim_agr
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "cell organisation" EXACT []
+synonym: "cell organization and biogenesis" RELATED [GOC:mah]
+synonym: "cellular component organisation at cellular level" EXACT [GOC:mah]
+synonym: "cellular component organisation in other organism" EXACT [GOC:mah]
+synonym: "cellular component organization at cellular level" EXACT []
+synonym: "cellular component organization in other organism" EXACT []
+is_a: GO:0009987 ! cellular process
+
+[Term]
+id: GO:0016049
+name: cell growth
+namespace: biological_process
+alt_id: GO:0048591
+def: "The process in which a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present." [GOC:ai]
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "cell expansion" RELATED []
+synonym: "cellular growth" EXACT []
+synonym: "growth of cell" EXACT []
+synonym: "metabolic process resulting in cell growth" RELATED []
+synonym: "metabolism resulting in cell growth" RELATED []
+synonym: "non-developmental cell growth" RELATED [GOC:mah]
+synonym: "non-developmental growth of a unicellular organism" RELATED [GOC:mah]
+is_a: GO:0009987 ! cellular process
+is_a: GO:0040007 ! growth
+
+[Term]
+id: GO:0016301
+name: kinase activity
+namespace: molecular_function
+def: "Catalysis of the transfer of a phosphate group, usually from ATP, to a substrate molecule." [ISBN:0198506732]
+comment: Note that this term encompasses all activities that transfer a single phosphate group; although ATP is by far the most common phosphate donor, reactions using other phosphate donors are included in this term.
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "phosphokinase activity" EXACT []
+xref: Reactome:REACT_100073 "Activation of S6K1, Schizosaccharomyces pombe"
+xref: Reactome:REACT_100078 "Wee1-mediated phosphorylation of Cyclin A:phospho-Cdc2 complexes, Canis familiaris"
+xref: Reactome:REACT_100159 "Inactivation of Myt1 kinase, Mus musculus"
+xref: Reactome:REACT_100260 "Partial autophosphorylation of PAK-2 at Ser-19, Ser-20, Ser-55, Ser-192, and Ser-197, Taeniopygia guttata"
+xref: Reactome:REACT_100298 "Phosphorylation of L1 by CK-II, Rattus norvegicus"
+xref: Reactome:REACT_100305 "Regulation of NUDC by phosphorylation, Caenorhabditis elegans"
+xref: Reactome:REACT_100311 "Intermolecular autophosphorylation of ATM within dimeric ATM complexes, Canis familiaris"
+xref: Reactome:REACT_100390 "Phosphorylation of phospho-(Ser45,Thr41,Ser37) at Ser33 by GSK-3, Canis familiaris"
+xref: Reactome:REACT_100465 "Phosphorylation and inactivation of eEF2K by activated S6K1, Dictyostelium discoideum"
+xref: Reactome:REACT_100495 "Cdc6 protein is phosphorylated by CDK, Xenopus tropicalis"
+xref: Reactome:REACT_100519 "Intermolecular autophosphorylation of ATM within dimeric ATM complexes, Bos taurus"
+xref: Reactome:REACT_100636 "Phosphorylation of proteins involved in the G1/S transition by Cyclin A:Cdk2, Canis familiaris"
+xref: Reactome:REACT_100637 "Phosphorylation of the Scc1:Cohesion Complex, Mus musculus"
+xref: Reactome:REACT_101024 "Phosphorylation and inactivation of eEF2K by activated S6K1, Bos taurus"
+xref: Reactome:REACT_101170 "Phosphorylation of APC component of the destruction complex, Drosophila melanogaster"
+xref: Reactome:REACT_101303 "Activation of the Anaphase Promoting Complex (APC) by PLK1, Mus musculus"
+xref: Reactome:REACT_101431 "Mcm2-7 is phosphorylated by DDK, Danio rerio"
+xref: Reactome:REACT_101543 "CAK-mediated phosphorylation of Cyclin E:Cdk2, Canis familiaris"
+xref: Reactome:REACT_101596 "Phosphorylation of Cyclin D:Cdk4/6 complexes, Canis familiaris"
+xref: Reactome:REACT_101638 "Phosphorylation and activation of CHK2 by ATM, Bos taurus"
+xref: Reactome:REACT_101667 "Down Regulation of Emi1 through Phosphorylation of Emi1, Bos taurus"
+xref: Reactome:REACT_101841 "Phosphorylation of Cdc25C at Ser216, Rattus norvegicus"
+xref: Reactome:REACT_101862 "Myt-1 mediated phosphorylation of Cyclin A:Cdc2, Xenopus tropicalis"
+xref: Reactome:REACT_101914 "Wee1- mediated phosphorylation of Cyclin B1:phospho-Cdc2 complexes, Xenopus tropicalis"
+xref: Reactome:REACT_102090 "Phosphoryation of phospho- (Ser45, Thr41) beta-catenin at Ser37 by GSK-3, Taeniopygia guttata"
+xref: Reactome:REACT_102093 "Phosphorylation and activation of eIF4G by activated S6K1, Danio rerio"
+xref: Reactome:REACT_102154 "Autophosphorylation of PAK-2p34 in the activation loop, Schizosaccharomyces pombe"
+xref: Reactome:REACT_102322 "RAF1 phosphorylates MEK2, Danio rerio"
+xref: Reactome:REACT_102330 "Phosphorylation of MDM2 at serine-395 by ATM kinase, Xenopus tropicalis"
+xref: Reactome:REACT_102380 "Regulation of KIF23 (MKLP1) by phosphorylation, Xenopus tropicalis"
+xref: Reactome:REACT_102475 "Inactivation of Myt1 kinase, Rattus norvegicus"
+xref: Reactome:REACT_102499 "CAK-mediated phosphorylation of Cyclin A:Cdc2 complexes, Canis familiaris"
+xref: Reactome:REACT_102552 "Phosphorylation of Cdc25A at Ser-123 in response to DNA damage, Canis familiaris"
+xref: Reactome:REACT_102607 "Phosphorylation of Cdc25A at Ser-123 in response to DNA damage, Drosophila melanogaster"
+xref: Reactome:REACT_102711 "Phosphorylation of L1 by CK-II, Caenorhabditis elegans"
+xref: Reactome:REACT_102729 "RAF1 phosphorylates MEK1, Xenopus tropicalis"
+xref: Reactome:REACT_102817 "Phosphorylation of L1 by ERK, Mus musculus"
+xref: Reactome:REACT_102887 "Mcm2-7 is phosphorylated by DDK, Rattus norvegicus"
+xref: Reactome:REACT_102908 "Phosphorylation of the Scc1:Cohesion Complex, Rattus norvegicus"
+xref: Reactome:REACT_102915 "Activation of S6K1, Arabidopsis thaliana"
+xref: Reactome:REACT_103060 "Phosphorylation of MDC1/NFBD1 by ATM (within 2 c-term BRCT domains), Arabidopsis thaliana"
+xref: Reactome:REACT_103291 "Phosphorylation of complexed TSC2 by PKB, Drosophila melanogaster"
+xref: Reactome:REACT_103327 "Phosphorylation of Cyclin E2:Cdk2 complexes by Myt1, Rattus norvegicus"
+xref: Reactome:REACT_103359 "Wee1- mediated phosphorylation of Cyclin B1:phospho-Cdc2 complexes, Danio rerio"
+xref: Reactome:REACT_103468 "Activation of Cdc25C, Drosophila melanogaster"
+xref: Reactome:REACT_103691 "Phosphorylation of COP1 at Ser-387 by ATM, Xenopus tropicalis"
+xref: Reactome:REACT_103727 "Phosphorylation of NBS1 by ATM, Drosophila melanogaster"
+xref: Reactome:REACT_103804 "Phosphorylation of AKT2 by PDK1, Canis familiaris"
+xref: Reactome:REACT_103989 "Phosphorylation of NBS1 by ATM, Danio rerio"
+xref: Reactome:REACT_104022 "Phosphorylation of p53 at ser-15 by ATM kinase, Xenopus tropicalis"
+xref: Reactome:REACT_104044 "Phosphorylation and activation of Chk1 by ATM, Sus scrofa"
+xref: Reactome:REACT_104109 "Phosphorylation of proteins involved in the G1/S transition by Cyclin A:Cdk2, Danio rerio"
+xref: Reactome:REACT_104209 "Activation of S6K1, Caenorhabditis elegans"
+xref: Reactome:REACT_104323 "Wee1-mediated phosphorylation of Cyclin A:phospho-Cdc2 complexes, Rattus norvegicus"
+xref: Reactome:REACT_104386 "Phosphorylation and activation of eIF4B by activated S6K1, Bos taurus"
+xref: Reactome:REACT_104523 "Inactivation of Wee1 kinase, Bos taurus"
+xref: Reactome:REACT_104644 "Regulation of KIF20A (MKL2) by phosphorylation, Bos taurus"
+xref: Reactome:REACT_104687 "Phosphorylation of L1 by CK-II, Canis familiaris"
+xref: Reactome:REACT_104730 "Activation of the Anaphase Promoting Complex (APC) by PLK1, Schizosaccharomyces pombe"
+xref: Reactome:REACT_104822 "Phosphorylation of COP1 at Ser-387 by ATM, Rattus norvegicus"
+xref: Reactome:REACT_104837 "SOS phosphorylation and dissociation (SHC), Mus musculus"
+xref: Reactome:REACT_104878 "Phosphorylation of Cyclin E:Cdk2 complexes by Wee-1, Xenopus tropicalis"
+xref: Reactome:REACT_105254 "Phosphorylation of Cyclin E:Cdk2 complexes by Wee-1, Danio rerio"
+xref: Reactome:REACT_105274 "Regulation of KIF20A (MKL2) by phosphorylation, Danio rerio"
+xref: Reactome:REACT_105345 "Phosphoryation of phospho- (Ser45, Thr41) beta-catenin at Ser37 by GSK-3, Drosophila melanogaster"
+xref: Reactome:REACT_105373 "Phosphorylation of phospho-(Ser45 ) at Thr 41 by GSK-3, Gallus gallus"
+xref: Reactome:REACT_105503 "Phosphorylation of L1 by ERK, Bos taurus"
+xref: Reactome:REACT_105561 "Phosphorylation of complexed TSC2 by PKB, Xenopus tropicalis"
+xref: Reactome:REACT_105569 "CAK-mediated phosphorylation of Cyclin A:Cdc2 complexes, Xenopus tropicalis"
+xref: Reactome:REACT_105589 "Phosphorylation of p53 at ser-15 by ATM kinase, Canis familiaris"
+xref: Reactome:REACT_105664 "Akt1 phosphorylates BAD protein, Rattus norvegicus"
+xref: Reactome:REACT_105700 "Phosphorylation of PDE3B, Rattus norvegicus"
+xref: Reactome:REACT_105971 "Phosphorylation of Cyclin A:Cdk2 at Tyr 15, Xenopus tropicalis"
+xref: Reactome:REACT_105976 "Partial autophosphorylation of PAK-2 at Ser-19, Ser-20, Ser-55, Ser-192, and Ser-197, Xenopus tropicalis"
+xref: Reactome:REACT_106075 "Akt1 phosphorylates BAD protein, Canis familiaris"
+xref: Reactome:REACT_106144 "Phosphorylation of Cyclin E1:Cdk2 complexes by Myt1, Xenopus tropicalis"
+xref: Reactome:REACT_106159 "Wee1- mediated phosphorylation of Cyclin B1:phospho-Cdc2 complexes, Canis familiaris"
+xref: Reactome:REACT_106186 "Phosphorylation of TSC2 by PKB, Drosophila melanogaster"
+xref: Reactome:REACT_106225 "Activation of the Anaphase Promoting Complex (APC) by PLK1, Canis familiaris"
+xref: Reactome:REACT_1063 "Phosphorylation of Wee1 kinase by Chk1, Schizosaccharomyces pombe"
+xref: Reactome:REACT_106324 "Activation of Cdc25C, Mus musculus"
+xref: Reactome:REACT_106383 "Phosphorylation of L1 by ERK, Xenopus tropicalis"
+xref: Reactome:REACT_106411 "Phosphorylation and inactivation of eEF2K by activated S6K1, Gallus gallus"
+xref: Reactome:REACT_106420 "Regulation of KIF23 (MKLP1) by phosphorylation, Taeniopygia guttata"
+xref: Reactome:REACT_106500 "Phosphorylation of Cdc25A at Ser-123 by Chk2, Drosophila melanogaster"
+xref: Reactome:REACT_106505 "Phosphorylation of histone H2AX at Serine-139 by ATM at the site of DSB, Rattus norvegicus"
+xref: Reactome:REACT_106514 "Phosphorylation of NBS1 by ATM, Mus musculus"
+xref: Reactome:REACT_106567 "CAK-mediated phosphorylation of Cyclin E:Cdk2, Mus musculus"
+xref: Reactome:REACT_106599 "Intermolecular autophosphorylation of ATM within dimeric ATM complexes, Xenopus tropicalis"
+xref: Reactome:REACT_106681 "Phosphorylation of Cyclin A:Cdk2 at Tyr 15, Rattus norvegicus"
+xref: Reactome:REACT_106722 "CAK-mediated phosphorylation of Cyclin E:Cdk2, Xenopus tropicalis"
+xref: Reactome:REACT_106738 "SOS phosphorylation and dissociation (IRS, Crk), Canis familiaris"
+xref: Reactome:REACT_106897 "CAK-mediated phosphorylation of Cyclin E:Cdk2, Danio rerio"
+xref: Reactome:REACT_107009 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Arabidopsis thaliana"
+xref: Reactome:REACT_107055 "Phosphorylation of Cdc25C at Ser216, Bos taurus"
+xref: Reactome:REACT_107102 "SOS phosphorylation and dissociation (IRS, Crk), Danio rerio"
+xref: Reactome:REACT_107243 "Phosphorylation of APC component of the destruction complex, Mus musculus"
+xref: Reactome:REACT_107247 "Phosphorylation of TSC2 by PKB, Mus musculus"
+xref: Reactome:REACT_107310 "CAK-mediated phosphorylation of Cyclin A:Cdc2 complexes, Danio rerio"
+xref: Reactome:REACT_107424 "Inactivation of Myt1 kinase, Canis familiaris"
+xref: Reactome:REACT_107623 "Phosphorylation of histone H2AX at Serine-139 by ATM at the site of DSB, Mus musculus"
+xref: Reactome:REACT_107685 "Phosphorylation of Cyclin E:Cdk2 complexes by Wee-1, Sus scrofa"
+xref: Reactome:REACT_107732 "Phosphorylation of the Emi1 DSGxxS degron by Plk1, Danio rerio"
+xref: Reactome:REACT_107736 "Phosphorylation of Cdc25C at Ser216, Sus scrofa"
+xref: Reactome:REACT_107787 "Phosphorylation and activation of CHK2 by ATM, Drosophila melanogaster"
+xref: Reactome:REACT_107849 "Phosphorylation of DLC2 by MAPK-8, Bos taurus"
+xref: Reactome:REACT_107854 "Phosphorylation of Cyclin D1 at T286 by glycogen synthase kinase-3 beta, Canis familiaris"
+xref: Reactome:REACT_108002 "Plk1-mediated phosphorylation of Nlp, Bos taurus"
+xref: Reactome:REACT_108096 "Phosphorylation of beta-catenin at Ser45 by CK1 alpha, Rattus norvegicus"
+xref: Reactome:REACT_108132 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Gallus gallus"
+xref: Reactome:REACT_108362 "Phosphorylation of proteins involved in the G1/S transition by Cyclin A:Cdk2, Mus musculus"
+xref: Reactome:REACT_108394 "Intermolecular autophosphorylation of ATM within dimeric ATM complexes, Danio rerio"
+xref: Reactome:REACT_108520 "Phosphorylation and activation of Chk1 by ATM, Danio rerio"
+xref: Reactome:REACT_108578 "Inactivation of Myt1 kinase, Xenopus tropicalis"
+xref: Reactome:REACT_108776 "Free APC/C phosphorylated by Plk1, Taeniopygia guttata"
+xref: Reactome:REACT_108840 "Phosphorylation of beta-catenin at Ser45 by CK1 alpha, Canis familiaris"
+xref: Reactome:REACT_108871 "Free APC/C phosphorylated by Plk1, Mus musculus"
+xref: Reactome:REACT_108971 "Phosphorylation of Cyclin B1 in the CRS domain, Xenopus tropicalis"
+xref: Reactome:REACT_108985 "Phosphorylation of cPLA2 by ERK-2, Gallus gallus"
+xref: Reactome:REACT_109045 "Phosphorylation of Cyclin E1:Cdk2 complexes by Myt1, Danio rerio"
+xref: Reactome:REACT_109065 "Phosphorylation of Cdc25A at Ser-123 by Chk2, Taeniopygia guttata"
+xref: Reactome:REACT_109117 "Phosphorylation of 4E-BP1 by activated mTORC1, Dictyostelium discoideum"
+xref: Reactome:REACT_109197 "SOS phosphorylation and dissociation (IRS), Mus musculus"
+xref: Reactome:REACT_109244 "Inactivation of Myt1 kinase, Schizosaccharomyces pombe"
+xref: Reactome:REACT_109260 "Free APC/C phosphorylated by Plk1, Xenopus tropicalis"
+xref: Reactome:REACT_109264 "SOS phosphorylation and dissociation (IRS), Canis familiaris"
+xref: Reactome:REACT_109331 "Activation of the Anaphase Promoting Complex (APC) by PLK1, Drosophila melanogaster"
+xref: Reactome:REACT_109367 "Phosphorylation of APC component of the destruction complex, Gallus gallus"
+xref: Reactome:REACT_109549 "Regulation of KIF20A (MKL2) by phosphorylation, Xenopus tropicalis"
+xref: Reactome:REACT_109641 "CAK-mediated phosphorylation of Cyclin A:Cdk2, Sus scrofa"
+xref: Reactome:REACT_109769 "Free APC/C phosphorylated by Plk1, Gallus gallus"
+xref: Reactome:REACT_109799 "Phosphorylation of Cyclin E:Cdk2 complexes by Wee-1, Mus musculus"
+xref: Reactome:REACT_110175 "Phosphorylation of MDC1/NFBD1 by ATM (within 2 c-term BRCT domains), Mus musculus"
+xref: Reactome:REACT_110254 "Phosphorylation of APC component of the destruction complex, Rattus norvegicus"
+xref: Reactome:REACT_110296 "Phosphorylation and activation of Chk1 by ATM, Schizosaccharomyces pombe"
+xref: Reactome:REACT_110351 "Phosphorylation and inactivation of eEF2K by activated S6K1, Canis familiaris"
+xref: Reactome:REACT_110382 "Phosphorylation of MDC1/NFBD1 by ATM (within 2 c-term BRCT domains), Oryza sativa"
+xref: Reactome:REACT_110530 "Down Regulation of Emi1 through Phosphorylation of Emi1, Mus musculus"
+xref: Reactome:REACT_110583 "Phosphorylation of DLC2 by MAPK-8, Mus musculus"
+xref: Reactome:REACT_110643 "Mcm2-7 is phosphorylated by DDK, Xenopus tropicalis"
+xref: Reactome:REACT_110679 "Phosphorylation of histone H2AX at Serine-139 by ATM at the site of DSB, Danio rerio"
+xref: Reactome:REACT_110774 "Inactivation of Myt1 kinase, Drosophila melanogaster"
+xref: Reactome:REACT_110775 "Phosphorylation of Cdc25A at Ser-123 in response to DNA damage, Rattus norvegicus"
+xref: Reactome:REACT_110947 "Regulation of KIF23 (MKLP1) by phosphorylation, Drosophila melanogaster"
+xref: Reactome:REACT_110995 "Phosphorylation and activation of eIF4G by activated S6K1, Xenopus tropicalis"
+xref: Reactome:REACT_111124 "FGFR associated PI3K phosphorylates PIP2 to PIP3, Homo sapiens"
+xref: Reactome:REACT_111171 "FGFR-associated PI3K phosphorylates PIP2 to PIP3, Homo sapiens"
+xref: Reactome:REACT_1116 "Intermolecular autophosphorylation of ATM within dimeric ATM complexes, Homo sapiens"
+xref: Reactome:REACT_111930 "Phosphorylation of Cdc25A at Ser-123 by Chk2, Caenorhabditis elegans"
+xref: Reactome:REACT_1120 "Regulation of KIF20A (MKL2) by phosphorylation, Homo sapiens"
+xref: Reactome:REACT_112075 "Mcm2-7 is phosphorylated by DDK, Drosophila melanogaster"
+xref: Reactome:REACT_112101 "Phosphorylation of L1 by CK-II, Xenopus tropicalis"
+xref: Reactome:REACT_112156 "Phosphorylation of AKT2 by PDK1, Saccharomyces cerevisiae"
+xref: Reactome:REACT_112214 "Hyperphosphorylation (Ser2) of RNA Pol II CTD by P-TEFb complex, Schizosaccharomyces pombe"
+xref: Reactome:REACT_112270 "Akt1 phosphorylates BAD protein, Xenopus tropicalis"
+xref: Reactome:REACT_112298 "Autophosphorylation of DNA-PKcs, Dictyostelium discoideum"
+xref: Reactome:REACT_112324 "Phosphorylation and activation of eIF4G by activated S6K1, Oryza sativa"
+xref: Reactome:REACT_112360 "Regulation of KIF23 (MKLP1) by phosphorylation, Dictyostelium discoideum"
+xref: Reactome:REACT_112413 "Phosphorylation of Cdc25A at Ser-123 by Chk2, Saccharomyces cerevisiae"
+xref: Reactome:REACT_112480 "Inactivation of Wee1 kinase, Dictyostelium discoideum"
+xref: Reactome:REACT_112545 "Phosphorylation and activation of eIF4G by activated S6K1, Drosophila melanogaster"
+xref: Reactome:REACT_112633 "CAK-mediated phosphorylation of Cyclin E:Cdk2, Saccharomyces cerevisiae"
+xref: Reactome:REACT_112709 "Phosphorylation of L1 by ERK, Saccharomyces cerevisiae"
+xref: Reactome:REACT_112722 "Hyperphosphorylation (Ser2) of RNA Pol II CTD by P-TEFb complex, Drosophila melanogaster"
+xref: Reactome:REACT_112790 "Phosphorylation of Cdc25A at Ser-123 in response to DNA damage, Caenorhabditis elegans"
+xref: Reactome:REACT_112846 "Phosphorylation of Cyclin E1:Cdk2 complexes by Myt1, Saccharomyces cerevisiae"
+xref: Reactome:REACT_112892 "Phosphorylation of BRCA1 at multiple sites by ATM, Oryza sativa"
+xref: Reactome:REACT_112948 "Autophosphorylation of DNA-PKcs, Rattus norvegicus"
+xref: Reactome:REACT_113022 "Phosphorylation of Cyclin B1 in the CRS domain, Schizosaccharomyces pombe"
+xref: Reactome:REACT_113051 "Phosphorylation of Cyclin D1 at T286 by glycogen synthase kinase-3 beta, Arabidopsis thaliana"
+xref: Reactome:REACT_113121 "Phosphorylation and activation of eIF4B by activated S6K1, Schizosaccharomyces pombe"
+xref: Reactome:REACT_113227 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Saccharomyces cerevisiae"
+xref: Reactome:REACT_113244 "CAK-mediated phosphorylation of Cyclin E:Cdk2, Drosophila melanogaster"
+xref: Reactome:REACT_113269 "Activation of S6K1, Saccharomyces cerevisiae"
+xref: Reactome:REACT_113435 "Phosphorylation of Cyclin D1 at T286 by glycogen synthase kinase-3 beta, Oryza sativa"
+xref: Reactome:REACT_113527 "Autophosphorylation of DNA-PKcs, Bos taurus"
+xref: Reactome:REACT_113569 "Activation of Cdc25C, Saccharomyces cerevisiae"
+xref: Reactome:REACT_113811 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Bos taurus"
+xref: Reactome:REACT_113820 "Phosphorylation of Cyclin B1 in the CRS domain, Saccharomyces cerevisiae"
+xref: Reactome:REACT_113894 "PIP2 conversion to PIP3, Caenorhabditis elegans"
+xref: Reactome:REACT_113929 "Phosphorylation of Cdc25A at Ser-123 by Chk1, Caenorhabditis elegans"
+xref: Reactome:REACT_113990 "Activation of Cdc25C, Schizosaccharomyces pombe"
+xref: Reactome:REACT_114160 "CAK-mediated phosphorylation of Cyclin B1:Cdc2 complexes, Saccharomyces cerevisiae"
+xref: Reactome:REACT_114198 "Phosphorylation of the Scc1:Cohesion Complex, Schizosaccharomyces pombe"
+xref: Reactome:REACT_114207 "Phosphorylation of Cdc25A at Ser-123 by Chk1, Schizosaccharomyces pombe"
+xref: Reactome:REACT_114227 "Phosphorylation of Cyclin E1:Cdk2 complexes by Myt1, Schizosaccharomyces pombe"
+xref: Reactome:REACT_114233 "Autophosphorylation of DNA-PKcs, Sus scrofa"
+xref: Reactome:REACT_114255 "Autophosphorylation of DNA-PKcs, Mus musculus"
+xref: Reactome:REACT_114268 "Phosphorylation of Cdc25A at Ser-123 in response to DNA damage, Schizosaccharomyces pombe"
+xref: Reactome:REACT_114280 "Phosphorylation of Cdc25A at Ser-123 in response to DNA damage, Saccharomyces cerevisiae"
+xref: Reactome:REACT_114319 "Hyperphosphorylation (Ser2) of RNA Pol II CTD by P-TEFb complex, Caenorhabditis elegans"
+xref: Reactome:REACT_114323 "Activation of Cdc25C, Caenorhabditis elegans"
+xref: Reactome:REACT_114395 "Phosphorylation of DLC1 by MAPK 8, Xenopus tropicalis"
+xref: Reactome:REACT_114434 "Autophosphorylation of DNA-PKcs, Taeniopygia guttata"
+xref: Reactome:REACT_114461 "Phosphorylation of AKT2 by PDK1, Schizosaccharomyces pombe"
+xref: Reactome:REACT_114522 "Phosphorylation of BRCA1 at multiple sites by ATM, Arabidopsis thaliana"
+xref: Reactome:REACT_114553 "Phosphorylation of Cdc25A at Ser-123 by Chk1, Saccharomyces cerevisiae"
+xref: Reactome:REACT_114599 "Phosphorylation of TSC2 by PKB, Schizosaccharomyces pombe"
+xref: Reactome:REACT_114624 "Phosphorylation of Cyclin E1:Cdk2 complexes by Myt1, Drosophila melanogaster"
+xref: Reactome:REACT_114771 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Canis familiaris"
+xref: Reactome:REACT_114906 "Phosphorylation and activation of eIF4G by activated S6K1, Arabidopsis thaliana"
+xref: Reactome:REACT_114984 "Autophosphorylation of DNA-PKcs, Xenopus tropicalis"
+xref: Reactome:REACT_115006 "Phosphorylation of Cyclin D1 at T286 by glycogen synthase kinase-3 beta, Caenorhabditis elegans"
+xref: Reactome:REACT_115135 "Phosphorylation and activation of eIF4G by activated S6K1, Dictyostelium discoideum"
+xref: Reactome:REACT_115168 "Autophosphorylation of DNA-PKcs, Gallus gallus"
+xref: Reactome:REACT_115199 "Autophosphorylation of DNA-PKcs, Canis familiaris"
+xref: Reactome:REACT_115358 "Phosphorylation of Cyclin E:Cdk2 complexes by Wee-1, Drosophila melanogaster"
+xref: Reactome:REACT_115384 "CAK-mediated phosphorylation of Cyclin B1:Cdc2 complexes, Schizosaccharomyces pombe"
+xref: Reactome:REACT_115440 "Hyperphosphorylation (Ser2) of RNA Pol II CTD by P-TEFb complex, Danio rerio"
+xref: Reactome:REACT_115472 "Phosphorylation of the SA2 Cohesin Complex, Schizosaccharomyces pombe"
+xref: Reactome:REACT_115475 "CAK-mediated phosphorylation of Cyclin E:Cdk2, Schizosaccharomyces pombe"
+xref: Reactome:REACT_115521 "Autophosphorylation of DNA-PKcs, Danio rerio"
+xref: Reactome:REACT_115527 "Phosphorylation of Cdc25A at Ser-123 by Chk2, Schizosaccharomyces pombe"
+xref: Reactome:REACT_115747 "Phosphorylation of H2AX at S139 by ATM at the site of DSB, Gallus gallus"
+xref: Reactome:REACT_116149 "Phosphorylation of RAD51 by tyrosine kinase Abelson family protein members, Gallus gallus"
+xref: Reactome:REACT_118137 "Phosphorylation of the Scc1:Cohesion Complex, Taeniopygia guttata"
+xref: Reactome:REACT_118229 "Phosphorylation of the SA2 Cohesin Complex, Taeniopygia guttata"
+xref: Reactome:REACT_118284 "Phosphorylation of the Scc1:Cohesion Complex, Saccharomyces cerevisiae"
+xref: Reactome:REACT_118307 "Phosphorylation of the SA2 Cohesin Complex, Gallus gallus"
+xref: Reactome:REACT_118367 "Phosphorylation of the Scc1:Cohesion Complex, Gallus gallus"
+xref: Reactome:REACT_118462 "Phosphorylation of the SA2 Cohesin Complex, Saccharomyces cerevisiae"
+xref: Reactome:REACT_1185 "Phosphorylation (Ser5) of RNA pol II CTD, Homo sapiens"
+xref: Reactome:REACT_1279 "Cdc6 protein is phosphorylated by CDK, Homo sapiens"
+xref: Reactome:REACT_128 "Phosphorylation of Cdc25C at Ser216, Homo sapiens"
+xref: Reactome:REACT_132 "Phosphorylation of Cyclin D1 at T286 by glycogen synthase kinase-3 beta, Homo sapiens"
+xref: Reactome:REACT_1326 "Regulation of NUDC by phosphorylation, Homo sapiens"
+xref: Reactome:REACT_13431 "Partial autophosphorylation of PAK-2 at Ser-19, Ser-20, Ser-55, Ser-192, and Ser-197, Homo sapiens"
+xref: Reactome:REACT_13581 "Partial autophosphorylation of PAK-2 at Ser-19, Ser-20, Ser-55, Ser-192, and Ser-197, Oryctolagus cuniculus"
+xref: Reactome:REACT_1362 "Phosphorylation of the Scc1:Cohesion Complex, Homo sapiens"
+xref: Reactome:REACT_13817 "Autophosphorylation of PAK-2p34, Oryctolagus cuniculus"
+xref: Reactome:REACT_1382 "Phosphorylation of PDE3B by AKT-1, Mus musculus"
+xref: Reactome:REACT_13820 "Autophosphorylation of PAK-2p34 in the activation loop, Homo sapiens"
+xref: Reactome:REACT_1420 "SOS phosphorylation and dissociation (SHC), Homo sapiens"
+xref: Reactome:REACT_1481 "Phosphorylation of the SA2 Cohesin Complex, Homo sapiens"
+xref: Reactome:REACT_1517 "Phosphorylation of histone H2AX at Serine-139 by ATM at the site of DSB, Homo sapiens"
+xref: Reactome:REACT_15386 "Plk1-mediated phosphorylation of Nlp, Homo sapiens"
+xref: Reactome:REACT_1603 "Phosphorylation and activation of CHK2 by ATM, Homo sapiens"
+xref: Reactome:REACT_1657 "Phosphorylation of Cyclin E1:Cdk2 complexes by Myt1, Homo sapiens"
+xref: Reactome:REACT_1680 "Phosphorylation of Cdc25A at Ser-123 in response to DNA damage, Homo sapiens"
+xref: Reactome:REACT_169 "SOS phosphorylation and dissociation (IRS), Homo sapiens"
+xref: Reactome:REACT_1727 "RAF1 phosphorylates MEK2, Homo sapiens"
+xref: Reactome:REACT_1756 "Phosphorylation of p53 at ser-15 by ATM kinase, Homo sapiens"
+xref: Reactome:REACT_1782 "Phosphorylation of MDC1/NFBD1 by ATM (within 2 c-term BRCT domains), Homo sapiens"
+xref: Reactome:REACT_1808 "Activation of the Anaphase Promoting Complex (APC) by PLK1, Homo sapiens"
+xref: Reactome:REACT_1878 "Phosphorylation of PDE3B, Homo sapiens"
+xref: Reactome:REACT_188 "Akt1 phosphorylates BAD protein, Homo sapiens"
+xref: Reactome:REACT_1888 "Phosphorylation of DLC1 by MAPK 8, Homo sapiens"
+xref: Reactome:REACT_1930 "Regulation of KIF23 (MKLP1) by phosphorylation, Homo sapiens"
+xref: Reactome:REACT_19312 "Phosphorylation of PD-1, Homo sapiens"
+xref: Reactome:REACT_1944 "Inactivation of Wee1 kinase, Homo sapiens"
+xref: Reactome:REACT_1981 "Phosphorylation of DLC2 by MAPK-8, Homo sapiens"
+xref: Reactome:REACT_2009 "Phosphorylation of NBS1 by ATM, Homo sapiens"
+xref: Reactome:REACT_203 "Raf1 phosphorylates MEK1, Rattus norvegicus"
+xref: Reactome:REACT_20503 "Phosphorylation of CREB by ribosomal protein S6 kinase, Homo sapiens"
+xref: Reactome:REACT_20543 "Phosphorylation of COP1 at Ser-387 by ATM, Homo sapiens"
+xref: Reactome:REACT_20562 "Phosphorylation by MAPK/ERK, Homo sapiens"
+xref: Reactome:REACT_20578 "Raf activation, Homo sapiens"
+xref: Reactome:REACT_20583 "Phosphorylation of CREB by PKA, Homo sapiens"
+xref: Reactome:REACT_20631 "Activation of MAPK, Homo sapiens"
+xref: Reactome:REACT_20640 "Phophorylation by PDK1, Homo sapiens"
+xref: Reactome:REACT_2066 "Hyperphosphorylation (Ser2) of RNA Pol II CTD by P-TEFb complex, Homo sapiens"
+xref: Reactome:REACT_2111 "Orc1 is phosphorylated by cyclin A/CDK2, Homo sapiens"
+xref: Reactome:REACT_2119 "Activation of Cdc25C, Homo sapiens"
+xref: Reactome:REACT_215 "Autophosphorylation of DNA-PKcs, Homo sapiens"
+xref: Reactome:REACT_22099 "Phosphorylation of L1 by ERK, Homo sapiens"
+xref: Reactome:REACT_22378 "Phosphorylation of L1 by CK-II, Homo sapiens"
+xref: Reactome:REACT_23976 "Raf1 phosphorylates MEK2, Rattus norvegicus"
+xref: Reactome:REACT_23990 "Phosphorylation of cPLA2 by ERK-2, Homo sapiens"
+xref: Reactome:REACT_244 "PIP2 conversion to PIP3, Homo sapiens"
+xref: Reactome:REACT_26 "SOS phosphorylation and dissociation (IRS, Crk), Homo sapiens"
+xref: Reactome:REACT_264 "Phosphorylation of Wee1 kinase by Chk1, Homo sapiens"
+xref: Reactome:REACT_28054 "Phosphorylation of BRCA1 at multiple sites by ATM, Mus musculus"
+xref: Reactome:REACT_28091 "Inactivation of Wee1 kinase, Canis familiaris"
+xref: Reactome:REACT_28113 "RAF1 phosphorylates MEK1, Taeniopygia guttata"
+xref: Reactome:REACT_28163 "Phosphorylation of MDC1/NFBD1 by ATM (within 2 c-term BRCT domains), Canis familiaris"
+xref: Reactome:REACT_28264 "Phosphorylation of Wee1 kinase by Chk1, Arabidopsis thaliana"
+xref: Reactome:REACT_28480 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Danio rerio"
+xref: Reactome:REACT_28555 "Activation of the Anaphase Promoting Complex (APC) by PLK1, Xenopus tropicalis"
+xref: Reactome:REACT_28681 "Phosphorylation of Cyclin E:Cdk2 complexes by Wee-1, Rattus norvegicus"
+xref: Reactome:REACT_28719 "Phosphorylation and activation of eIF4B by activated S6K1, Xenopus tropicalis"
+xref: Reactome:REACT_28743 "RAF1 phosphorylates MEK2, Mus musculus"
+xref: Reactome:REACT_28746 "Phosphorylation of MDM2 at serine-395 by ATM kinase, Danio rerio"
+xref: Reactome:REACT_28824 "Down Regulation of Emi1 through Phosphorylation of Emi1, Danio rerio"
+xref: Reactome:REACT_29029 "Phosphorylation of L1 by ERK, Caenorhabditis elegans"
+xref: Reactome:REACT_29168 "Phosphorylation of Cyclin A:Cdk2 at Tyr 15, Canis familiaris"
+xref: Reactome:REACT_29201 "Partial autophosphorylation of PAK-2 at Ser-19, Ser-20, Ser-55, Ser-192, and Ser-197, Saccharomyces cerevisiae"
+xref: Reactome:REACT_29213 "Activation of Cdc25C, Rattus norvegicus"
+xref: Reactome:REACT_29277 "CAK-mediated phosphorylation of Cyclin B1:Cdc2 complexes, Drosophila melanogaster"
+xref: Reactome:REACT_29284 "Phosphorylation of beta-catenin at Ser45 by CK1 alpha, Xenopus tropicalis"
+xref: Reactome:REACT_29289 "Activation of S6K1, Gallus gallus"
+xref: Reactome:REACT_29300 "Phosphorylation of L1 by ERK, Drosophila melanogaster"
+xref: Reactome:REACT_29334 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Rattus norvegicus"
+xref: Reactome:REACT_29395 "Phosphorylation of AKT2 by PDK1, Xenopus tropicalis"
+xref: Reactome:REACT_29396 "Orc1 is phosphorylated by cyclin A/CDK2, Canis familiaris"
+xref: Reactome:REACT_29410 "Regulation of KIF20A (MKL2) by phosphorylation, Rattus norvegicus"
+xref: Reactome:REACT_29451 "Phosphorylation of Cyclin D1 at T286 by glycogen synthase kinase-3 beta, Bos taurus"
+xref: Reactome:REACT_29588 "Phosphorylation of 4E-BP1 by activated mTORC1, Taeniopygia guttata"
+xref: Reactome:REACT_29614 "Regulation of NUDC by phosphorylation, Rattus norvegicus"
+xref: Reactome:REACT_29689 "Cdc6 protein is phosphorylated by CDK, Bos taurus"
+xref: Reactome:REACT_29694 "Phosphorylation of PDE3B, Canis familiaris"
+xref: Reactome:REACT_29759 "Hyperphosphorylation (Ser2) of RNA Pol II CTD by P-TEFb complex, Bos taurus"
+xref: Reactome:REACT_29788 "Wee1-mediated phosphorylation of Cyclin A:phospho-Cdc2 complexes, Xenopus tropicalis"
+xref: Reactome:REACT_29873 "Phosphorylation of APC component of the destruction complex, Taeniopygia guttata"
+xref: Reactome:REACT_29914 "Down Regulation of Emi1 through Phosphorylation of Emi1, Canis familiaris"
+xref: Reactome:REACT_30020 "Phosphorylation (Ser5) of RNA pol II CTD, Rattus norvegicus"
+xref: Reactome:REACT_30023 "Phosphorylation (Ser5) of RNA pol II CTD, Xenopus tropicalis"
+xref: Reactome:REACT_30052 "Phosphorylation of BRCA1 at multiple sites by ATM, Bos taurus"
+xref: Reactome:REACT_30070 "Phosphorylation of L1 by CK-II, Mus musculus"
+xref: Reactome:REACT_30084 "PIP2 conversion to PIP3, Canis familiaris"
+xref: Reactome:REACT_30113 "SOS phosphorylation and dissociation (IRS, Crk), Drosophila melanogaster"
+xref: Reactome:REACT_30116 "Phosphorylation and activation of eIF4B by activated S6K1, Canis familiaris"
+xref: Reactome:REACT_30165 "Phosphorylation of the Emi1 DSGxxS degron by Plk1, Gallus gallus"
+xref: Reactome:REACT_302 "Phosphorylation and activation of Chk1 by ATM, Homo sapiens"
+xref: Reactome:REACT_30230 "Phosphorylation of the SA2 Cohesin Complex, Caenorhabditis elegans"
+xref: Reactome:REACT_30345 "RAF1 phosphorylates MEK1, Gallus gallus"
+xref: Reactome:REACT_30490 "Inactivation of Myt1 kinase, Danio rerio"
+xref: Reactome:REACT_30496 "Phosphorylation of the Scc1:Cohesion Complex, Xenopus tropicalis"
+xref: Reactome:REACT_30679 "Phosphorylation and inactivation of eEF2K by activated S6K1, Mus musculus"
+xref: Reactome:REACT_30700 "Phosphorylation of BRCA1 at multiple sites by ATM, Gallus gallus"
+xref: Reactome:REACT_30836 "Inactivation of Myt1 kinase, Bos taurus"
+xref: Reactome:REACT_30921 "Phosphorylation and activation of Chk1 by ATM, Xenopus tropicalis"
+xref: Reactome:REACT_30938 "Hyperphosphorylation (Ser2) of RNA Pol II CTD by P-TEFb complex, Canis familiaris"
+xref: Reactome:REACT_30948 "PIP2 conversion to PIP3, Gallus gallus"
+xref: Reactome:REACT_30985 "Plk1-mediated phosphorylation of Nlp, Canis familiaris"
+xref: Reactome:REACT_30997 "Intermolecular autophosphorylation of ATM within dimeric ATM complexes, Rattus norvegicus"
+xref: Reactome:REACT_31081 "Phosphorylation of TSC2 by PKB, Canis familiaris"
+xref: Reactome:REACT_31149 "Phosphorylation of the Scc1:Cohesion Complex, Danio rerio"
+xref: Reactome:REACT_31196 "Phosphorylation of histone H2AX at Serine-139 by ATM at the site of DSB, Canis familiaris"
+xref: Reactome:REACT_31227 "Regulation of KIF20A (MKL2) by phosphorylation, Gallus gallus"
+xref: Reactome:REACT_31273 "Phosphorylation of the Scc1:Cohesion Complex, Canis familiaris"
+xref: Reactome:REACT_31290 "Orc1 is phosphorylated by cyclin A/CDK2, Rattus norvegicus"
+xref: Reactome:REACT_31293 "Phosphorylation of Cdc25A at Ser-123 in response to DNA damage, Danio rerio"
+xref: Reactome:REACT_31449 "Phosphorylation and activation of CHK2 by ATM, Danio rerio"
+xref: Reactome:REACT_31466 "Activation of S6K1, Bos taurus"
+xref: Reactome:REACT_31519 "Phosphorylation of the SA2 Cohesin Complex, Danio rerio"
+xref: Reactome:REACT_31536 "Phosphorylation of NBS1 by ATM, Taeniopygia guttata"
+xref: Reactome:REACT_31571 "Autophosphorylation of PAK-2p34 in the activation loop, Gallus gallus"
+xref: Reactome:REACT_31625 "Phosphorylation of L1 by ERK, Taeniopygia guttata"
+xref: Reactome:REACT_31639 "SOS phosphorylation and dissociation (SHC), Rattus norvegicus"
+xref: Reactome:REACT_31868 "Phosphorylation and activation of CHK2 by ATM, Canis familiaris"
+xref: Reactome:REACT_31915 "Phosphorylation of L1 by CK-II, Drosophila melanogaster"
+xref: Reactome:REACT_31935 "Partial autophosphorylation of PAK-2 at Ser-19, Ser-20, Ser-55, Ser-192, and Ser-197, Sus scrofa"
+xref: Reactome:REACT_31984 "Phosphorylation (Ser5) of RNA pol II CTD, Arabidopsis thaliana"
+xref: Reactome:REACT_32009 "Wee1- mediated phosphorylation of Cyclin B1:phospho-Cdc2 complexes, Mus musculus"
+xref: Reactome:REACT_32077 "Inactivation of Myt1 kinase, Dictyostelium discoideum"
+xref: Reactome:REACT_32079 "Phosphorylation of MDC1/NFBD1 by ATM (within 2 c-term BRCT domains), Danio rerio"
+xref: Reactome:REACT_32145 "Phosphorylation of COP1 at Ser-387 by ATM, Canis familiaris"
+xref: Reactome:REACT_32150 "Phosphorylation of NBS1 by ATM, Arabidopsis thaliana"
+xref: Reactome:REACT_32271 "Phosphorylation of cPLA2 by ERK-2, Taeniopygia guttata"
+xref: Reactome:REACT_32358 "Phosphorylation of MDM2 at serine-395 by ATM kinase, Canis familiaris"
+xref: Reactome:REACT_32374 "Mcm2-7 is phosphorylated by DDK, Canis familiaris"
+xref: Reactome:REACT_32438 "Phosphorylation of proteins involved in the G1/S transition by Cyclin A:Cdk2, Sus scrofa"
+xref: Reactome:REACT_32492 "Phosphorylation of BRCA1 at multiple sites by ATM, Rattus norvegicus"
+xref: Reactome:REACT_32565 "Phosphorylation of NBS1 by ATM, Gallus gallus"
+xref: Reactome:REACT_32598 "Phosphorylation and activation of eIF4B by activated S6K1, Taeniopygia guttata"
+xref: Reactome:REACT_32620 "Phosphorylation of the Emi1 DSGxxS degron by Plk1, Bos taurus"
+xref: Reactome:REACT_32845 "Phosphorylation of Cyclin D:Cdk4/6 complexes, Rattus norvegicus"
+xref: Reactome:REACT_32906 "Phosphorylation and inactivation of eEF2K by activated S6K1, Sus scrofa"
+xref: Reactome:REACT_32956 "Phosphorylation of phospho-(Ser45 ) at Thr 41 by GSK-3, Mus musculus"
+xref: Reactome:REACT_33003 "Phosphorylation of the SA2 Cohesin Complex, Dictyostelium discoideum"
+xref: Reactome:REACT_33009 "Phosphorylation of L1 by ERK, Danio rerio"
+xref: Reactome:REACT_33080 "Phosphorylation of histone H2AX at Serine-139 by ATM at the site of DSB, Taeniopygia guttata"
+xref: Reactome:REACT_33369 "Phosphorylation of NBS1 by ATM, Rattus norvegicus"
+xref: Reactome:REACT_33385 "Partial autophosphorylation of PAK-2 at Ser-19, Ser-20, Ser-55, Ser-192, and Ser-197, Canis familiaris"
+xref: Reactome:REACT_33519 "Phosphorylation of the Emi1 DSGxxS degron by Plk1, Mus musculus"
+xref: Reactome:REACT_33532 "Phosphorylation of complexed TSC2 by PKB, Bos taurus"
+xref: Reactome:REACT_33692 "Phosphorylation of BRCA1 at multiple sites by ATM, Taeniopygia guttata"
+xref: Reactome:REACT_33840 "Regulation of KIF23 (MKLP1) by phosphorylation, Schizosaccharomyces pombe"
+xref: Reactome:REACT_33928 "Phosphorylation of Cyclin D1 at T286 by glycogen synthase kinase-3 beta, Sus scrofa"
+xref: Reactome:REACT_33979 "Phosphorylation of the Emi1 DSGxxS degron by Plk1, Rattus norvegicus"
+xref: Reactome:REACT_34080 "Phosphorylation of PD-1, Mus musculus"
+xref: Reactome:REACT_34111 "Phosphorylation of Cdc25A at Ser-123 by Chk1, Canis familiaris"
+xref: Reactome:REACT_34145 "Phosphorylation of cPLA2 by ERK-2, Xenopus tropicalis"
+xref: Reactome:REACT_34222 "Phosphorylation of L1 by ERK, Rattus norvegicus"
+xref: Reactome:REACT_34285 "Activation of Cdc25C, Bos taurus"
+xref: Reactome:REACT_34310 "Phosphorylation and activation of Chk1 by ATM, Bos taurus"
+xref: Reactome:REACT_34403 "Phosphorylation (Ser5) of RNA pol II CTD, Danio rerio"
+xref: Reactome:REACT_34514 "Phosphorylation and inactivation of eEF2K by activated S6K1, Danio rerio"
+xref: Reactome:REACT_34516 "Cdc6 protein is phosphorylated by CDK, Canis familiaris"
+xref: Reactome:REACT_34607 "Phosphorylation of 4E-BP1 by activated mTORC1, Bos taurus"
+xref: Reactome:REACT_34741 "Phosphorylation of MDC1/NFBD1 by ATM (within 2 c-term BRCT domains), Rattus norvegicus"
+xref: Reactome:REACT_34788 "Phosphorylation and inactivation of eEF2K by activated S6K1, Xenopus tropicalis"
+xref: Reactome:REACT_34804 "Phosphoryation of phospho- (Ser45, Thr41) beta-catenin at Ser37 by GSK-3, Gallus gallus"
+xref: Reactome:REACT_384 "Phosphorylation of Cyclin E2:Cdk2 complexes by Myt1, Homo sapiens"
+xref: Reactome:REACT_414 "Inactivation of Myt1 kinase, Homo sapiens"
+xref: Reactome:REACT_41715 "Hyperphosphorylation (Ser2) of RNA Pol II CTD by P-TEFb complex, Mus musculus"
+xref: Reactome:REACT_43 "Phosphorylation of Cdc25A at Ser-123 by Chk2, Homo sapiens"
+xref: Reactome:REACT_496 "Down Regulation of Emi1 through Phosphorylation of Emi1, Homo sapiens"
+xref: Reactome:REACT_54449 "Phosphorylation and activation of eIF4G by activated S6K1, Mus musculus"
+xref: Reactome:REACT_545 "RAF1 phosphorylates MEK1, Homo sapiens"
+xref: Reactome:REACT_559 "Phosphorylation and activation of Chk1 by ATM kinase, Mus musculus"
+xref: Reactome:REACT_58131 "PIP2 conversion to PIP3, Mus musculus"
+xref: Reactome:REACT_6139 "CAK-mediated phosphorylation of Cyclin A:Cdc2 complexes, Homo sapiens"
+xref: Reactome:REACT_6170 "Hyperphosphorylation (Ser2) of RNA Pol II CTD by the P-TEFb(Cyclin T1:Cdk9) complex, Homo sapiens"
+xref: Reactome:REACT_6178 "Wee1- mediated phosphorylation of Cyclin B1:phospho-Cdc2 complexes, Homo sapiens"
+xref: Reactome:REACT_6234 "Phosphorylation (Ser5) of RNA pol II CTD, Homo sapiens"
+xref: Reactome:REACT_6297 "Hyperphosphorylation (Ser2) of RNA Pol II CTD by P-TEFb complex, Homo sapiens"
+xref: Reactome:REACT_6311 "Phosphorylation of NEFL by the P-TEFb(Cyclin T1:Cdk9) complex, Homo sapiens"
+xref: Reactome:REACT_6314 "CAK-mediated phosphorylation of Cyclin B1:Cdc2 complexes, Homo sapiens"
+xref: Reactome:REACT_6316 "Phosphorylation of DSIF by the P-TEFb(Cyclin T1:Cdk9) complex, Human immunodeficiency virus 1"
+xref: Reactome:REACT_6327 "Wee1-mediated phosphorylation of Cyclin A:phospho-Cdc2 complexes, Homo sapiens"
+xref: Reactome:REACT_6342 "Myt-1 mediated phosphorylation of Cyclin A:Cdc2, Homo sapiens"
+xref: Reactome:REACT_6353 "Phosphorylation of Cyclin B1 in the CRS domain, Homo sapiens"
+xref: Reactome:REACT_6725 "Phosphorylation of TSC2 by PKB, Homo sapiens"
+xref: Reactome:REACT_6778 "Phosphorylation and activation of eIF4B by activated S6K1, Homo sapiens"
+xref: Reactome:REACT_6859 "Free APC/C phosphorylated by Plk1, Homo sapiens"
+xref: Reactome:REACT_6861 "Phosphorylation of the Emi1 DSGxxS degron by Plk1, Homo sapiens"
+xref: Reactome:REACT_6870 "Phosphorylation and activation of eIF4G by activated S6K1, Homo sapiens"
+xref: Reactome:REACT_6873 "Phosphorylation of 4E-BP1 by activated mTORC1, Homo sapiens"
+xref: Reactome:REACT_6883 "Phosphorylation and inactivation of eEF2K by activated S6K1, Homo sapiens"
+xref: Reactome:REACT_6912 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Homo sapiens"
+xref: Reactome:REACT_6948 "Activation of S6K1, Homo sapiens"
+xref: Reactome:REACT_6952 "Phosphorylation of complexed TSC2 by PKB, Homo sapiens"
+xref: Reactome:REACT_76979 "Phosphorylation of Cyclin D:Cdk4/6 complexes, Danio rerio"
+xref: Reactome:REACT_77040 "Phosphorylation of COP1 at Ser-387 by ATM, Oryza sativa"
+xref: Reactome:REACT_77074 "Phosphorylation of MDM2 at serine-395 by ATM kinase, Mus musculus"
+xref: Reactome:REACT_77179 "Phosphorylation of Cdc25A at Ser-123 by Chk2, Bos taurus"
+xref: Reactome:REACT_77231 "Phosphorylation of DLC2 by MAPK-8, Gallus gallus"
+xref: Reactome:REACT_77234 "Plk1-mediated phosphorylation of Nlp, Gallus gallus"
+xref: Reactome:REACT_773 "Phosphorylation of Cyclin E:Cdk2 complexes by Wee-1, Homo sapiens"
+xref: Reactome:REACT_77326 "RAF1 phosphorylates MEK2, Taeniopygia guttata"
+xref: Reactome:REACT_77362 "Partial autophosphorylation of PAK-2 at Ser-19, Ser-20, Ser-55, Ser-192, and Ser-197, Rattus norvegicus"
+xref: Reactome:REACT_77365 "Phosphorylation of the Emi1 DSGxxS degron by Plk1, Xenopus tropicalis"
+xref: Reactome:REACT_77397 "Phosphorylation of Cdc25A at Ser-123 in response to DNA damage, Mus musculus"
+xref: Reactome:REACT_77407 "Regulation of NUDC by phosphorylation, Bos taurus"
+xref: Reactome:REACT_77443 "Activation of the Anaphase Promoting Complex (APC) by PLK1, Danio rerio"
+xref: Reactome:REACT_77450 "Phosphorylation of L1 by CK-II, Sus scrofa"
+xref: Reactome:REACT_77535 "Phosphorylation of Cyclin D:Cdk4/6 complexes, Mus musculus"
+xref: Reactome:REACT_77550 "CAK-mediated phosphorylation of Cyclin A:Cdc2 complexes, Drosophila melanogaster"
+xref: Reactome:REACT_77566 "CAK-mediated phosphorylation of Cyclin A:Cdc2 complexes, Gallus gallus"
+xref: Reactome:REACT_77606 "Phosphoryation of phospho- (Ser45, Thr41) beta-catenin at Ser37 by GSK-3, Canis familiaris"
+xref: Reactome:REACT_77615 "Phosphorylation of phospho-(Ser45,Thr41,Ser37) at Ser33 by GSK-3, Gallus gallus"
+xref: Reactome:REACT_77654 "CAK-mediated phosphorylation of Cyclin A:Cdk2, Drosophila melanogaster"
+xref: Reactome:REACT_77660 "Regulation of KIF23 (MKLP1) by phosphorylation, Caenorhabditis elegans"
+xref: Reactome:REACT_77733 "Phosphorylation of PDE3B, Danio rerio"
+xref: Reactome:REACT_77834 "Activation of the Anaphase Promoting Complex (APC) by PLK1, Rattus norvegicus"
+xref: Reactome:REACT_77857 "Phosphorylation (Ser5) of RNA pol II CTD, Drosophila melanogaster"
+xref: Reactome:REACT_77897 "Phosphorylation of Wee1 kinase by Chk1, Taeniopygia guttata"
+xref: Reactome:REACT_77911 "Mcm2-7 is phosphorylated by DDK, Taeniopygia guttata"
+xref: Reactome:REACT_77928 "Autophosphorylation of PAK-2p34 in the activation loop, Sus scrofa"
+xref: Reactome:REACT_77949 "Phosphorylation of Wee1 kinase by Chk1, Drosophila melanogaster"
+xref: Reactome:REACT_77977 "Phosphorylation of Cyclin B1 in the CRS domain, Bos taurus"
+xref: Reactome:REACT_78014 "Plk1-mediated phosphorylation of Nlp, Taeniopygia guttata"
+xref: Reactome:REACT_78035 "Phosphorylation of phospho-(Ser45 ) at Thr 41 by GSK-3, Taeniopygia guttata"
+xref: Reactome:REACT_78087 "Phosphorylation of TSC2 by PKB, Xenopus tropicalis"
+xref: Reactome:REACT_78121 "Phosphorylation of Cdc25A at Ser-123 by Chk2, Gallus gallus"
+xref: Reactome:REACT_78226 "Regulation of NUDC by phosphorylation, Xenopus tropicalis"
+xref: Reactome:REACT_78281 "Phosphoryation of phospho- (Ser45, Thr41) beta-catenin at Ser37 by GSK-3, Rattus norvegicus"
+xref: Reactome:REACT_78427 "Myt-1 mediated phosphorylation of Cyclin A:Cdc2, Danio rerio"
+xref: Reactome:REACT_78450 "Phosphorylation and activation of eIF4B by activated S6K1, Drosophila melanogaster"
+xref: Reactome:REACT_78451 "CAK-mediated phosphorylation of Cyclin A:Cdc2 complexes, Taeniopygia guttata"
+xref: Reactome:REACT_78503 "Phosphorylation of histone H2AX at Serine-139 by ATM at the site of DSB, Bos taurus"
+xref: Reactome:REACT_78533 "Wee1-mediated phosphorylation of Cyclin A:phospho-Cdc2 complexes, Danio rerio"
+xref: Reactome:REACT_78539 "Down Regulation of Emi1 through Phosphorylation of Emi1, Xenopus tropicalis"
+xref: Reactome:REACT_78556 "Free APC/C phosphorylated by Plk1, Drosophila melanogaster"
+xref: Reactome:REACT_78625 "Phosphorylation and inactivation of eEF2K by activated S6K1, Caenorhabditis elegans"
+xref: Reactome:REACT_78651 "CAK-mediated phosphorylation of Cyclin B1:Cdc2 complexes, Rattus norvegicus"
+xref: Reactome:REACT_78696 "Phosphorylation of phospho-(Ser45 ) at Thr 41 by GSK-3, Xenopus tropicalis"
+xref: Reactome:REACT_78748 "Cdc6 protein is phosphorylated by CDK, Drosophila melanogaster"
+xref: Reactome:REACT_78901 "Phosphorylation (Ser5) of RNA pol II CTD, Mus musculus"
+xref: Reactome:REACT_79012 "Partial autophosphorylation of PAK-2 at Ser-19, Ser-20, Ser-55, Ser-192, and Ser-197, Schizosaccharomyces pombe"
+xref: Reactome:REACT_79039 "Autophosphorylation of PAK-2p34 in the activation loop, Caenorhabditis elegans"
+xref: Reactome:REACT_79087 "Phosphorylation of Wee1 kinase by Chk1, Oryza sativa"
+xref: Reactome:REACT_79125 "SOS phosphorylation and dissociation (IRS), Bos taurus"
+xref: Reactome:REACT_79182 "Phosphorylation of Cyclin B1 in the CRS domain, Canis familiaris"
+xref: Reactome:REACT_79208 "Mcm2-7 is phosphorylated by DDK, Bos taurus"
+xref: Reactome:REACT_79220 "Phosphorylation of 4E-BP1 by activated mTORC1, Canis familiaris"
+xref: Reactome:REACT_79255 "Phosphorylation of p53 at ser-15 by ATM kinase, Danio rerio"
+xref: Reactome:REACT_79372 "Cdc6 protein is phosphorylated by CDK, Danio rerio"
+xref: Reactome:REACT_79573 "Phosphorylation of p53 at ser-15 by ATM kinase, Mus musculus"
+xref: Reactome:REACT_79686 "Phosphorylation of the Scc1:Cohesion Complex, Drosophila melanogaster"
+xref: Reactome:REACT_79694 "Autophosphorylation of PAK-2p34 in the activation loop, Xenopus tropicalis"
+xref: Reactome:REACT_79700 "Activation of S6K1, Taeniopygia guttata"
+xref: Reactome:REACT_79709 "Orc1 is phosphorylated by cyclin A/CDK2, Mus musculus"
+xref: Reactome:REACT_79720 "Phosphorylation of Cyclin E2:Cdk2 complexes by Myt1, Danio rerio"
+xref: Reactome:REACT_80110 "Phosphorylation of proteins involved in the G1/S transition by Cyclin A:Cdk2, Drosophila melanogaster"
+xref: Reactome:REACT_80144 "Phosphorylation of complexed TSC2 by PKB, Sus scrofa"
+xref: Reactome:REACT_80185 "Phosphorylation of Cyclin E1:Cdk2 complexes by Myt1, Mus musculus"
+xref: Reactome:REACT_80213 "Activation of S6K1, Canis familiaris"
+xref: Reactome:REACT_80218 "Phosphorylation of the Scc1:Cohesion Complex, Dictyostelium discoideum"
+xref: Reactome:REACT_80239 "Regulation of KIF20A (MKL2) by phosphorylation, Dictyostelium discoideum"
+xref: Reactome:REACT_80255 "Mcm2-7 is phosphorylated by DDK, Mus musculus"
+xref: Reactome:REACT_80591 "Regulation of KIF20A (MKL2) by phosphorylation, Drosophila melanogaster"
+xref: Reactome:REACT_80606 "Phosphorylation of NBS1 by ATM, Oryza sativa"
+xref: Reactome:REACT_80617 "Inactivation of Wee1 kinase, Xenopus tropicalis"
+xref: Reactome:REACT_80632 "Phosphorylation of L1 by ERK, Schizosaccharomyces pombe"
+xref: Reactome:REACT_80665 "Down Regulation of Emi1 through Phosphorylation of Emi1, Taeniopygia guttata"
+xref: Reactome:REACT_80684 "Phosphorylation of COP1 at Ser-387 by ATM, Arabidopsis thaliana"
+xref: Reactome:REACT_80689 "Intermolecular autophosphorylation of ATM within dimeric ATM complexes, Oryza sativa"
+xref: Reactome:REACT_80699 "PIP2 conversion to PIP3, Danio rerio"
+xref: Reactome:REACT_80700 "Intermolecular autophosphorylation of ATM within dimeric ATM complexes, Sus scrofa"
+xref: Reactome:REACT_80714 "CAK-mediated phosphorylation of Cyclin A:Cdc2 complexes, Rattus norvegicus"
+xref: Reactome:REACT_80804 "Phosphorylation of PDE3B, Bos taurus"
+xref: Reactome:REACT_80853 "Phosphorylation (Ser5) of RNA pol II CTD, Dictyostelium discoideum"
+xref: Reactome:REACT_80860 "Phosphorylation of MDM2 at serine-395 by ATM kinase, Rattus norvegicus"
+xref: Reactome:REACT_80909 "Phosphorylation of Cdc25A at Ser-123 by Chk1, Drosophila melanogaster"
+xref: Reactome:REACT_81027 "PIP2 conversion to PIP3, Sus scrofa"
+xref: Reactome:REACT_81148 "Phosphorylation and activation of CHK2 by ATM, Taeniopygia guttata"
+xref: Reactome:REACT_81218 "Phosphorylation and activation of CHK2 by ATM, Rattus norvegicus"
+xref: Reactome:REACT_81439 "Phosphorylation of APC component of the destruction complex, Xenopus tropicalis"
+xref: Reactome:REACT_81458 "Phosphorylation of phospho-(Ser45 ) at Thr 41 by GSK-3, Bos taurus"
+xref: Reactome:REACT_81490 "Phosphorylation of phospho-(Ser45,Thr41,Ser37) at Ser33 by GSK-3, Xenopus tropicalis"
+xref: Reactome:REACT_81590 "Wee1- mediated phosphorylation of Cyclin B1:phospho-Cdc2 complexes, Bos taurus"
+xref: Reactome:REACT_81616 "Phosphorylation of Cyclin E2:Cdk2 complexes by Myt1, Canis familiaris"
+xref: Reactome:REACT_81647 "Phosphorylation of Cyclin E1:Cdk2 complexes by Myt1, Rattus norvegicus"
+xref: Reactome:REACT_81652 "Phosphorylation of Cdc25A at Ser-123 by Chk1, Rattus norvegicus"
+xref: Reactome:REACT_81693 "Phosphorylation of beta-catenin at Ser45 by CK1 alpha, Drosophila melanogaster"
+xref: Reactome:REACT_81715 "Orc1 is phosphorylated by cyclin A/CDK2, Drosophila melanogaster"
+xref: Reactome:REACT_81727 "Phosphorylation of Cyclin A:Cdk2 at Tyr 15, Danio rerio"
+xref: Reactome:REACT_81864 "Phosphorylation of Cx43 by c-src, Bos taurus"
+xref: Reactome:REACT_81941 "Phosphorylation of Cdc25A at Ser-123 by Chk1, Bos taurus"
+xref: Reactome:REACT_82037 "Partial autophosphorylation of PAK-2 at Ser-19, Ser-20, Ser-55, Ser-192, and Ser-197, Mus musculus"
+xref: Reactome:REACT_82115 "Phosphorylation and activation of Chk1 by ATM, Saccharomyces cerevisiae"
+xref: Reactome:REACT_82125 "Phosphorylation of complexed TSC2 by PKB, Danio rerio"
+xref: Reactome:REACT_82128 "PIP2 conversion to PIP3, Taeniopygia guttata"
+xref: Reactome:REACT_82261 "Phosphorylation of DLC2 by MAPK-8, Xenopus tropicalis"
+xref: Reactome:REACT_82270 "Autophosphorylation of PAK-2p34 in the activation loop, Rattus norvegicus"
+xref: Reactome:REACT_82303 "Phosphorylation of Cyclin D:Cdk4/6 complexes, Xenopus tropicalis"
+xref: Reactome:REACT_82310 "Phosphorylation and activation of Chk1 by ATM, Gallus gallus"
+xref: Reactome:REACT_82361 "CAK-mediated phosphorylation of Cyclin B1:Cdc2 complexes, Canis familiaris"
+xref: Reactome:REACT_82456 "Phosphorylation of Cdc25A at Ser-123 in response to DNA damage, Bos taurus"
+xref: Reactome:REACT_82473 "Phosphorylation of the SA2 Cohesin Complex, Canis familiaris"
+xref: Reactome:REACT_82616 "Phosphorylation of phospho-(Ser45,Thr41,Ser37) at Ser33 by GSK-3, Mus musculus"
+xref: Reactome:REACT_82678 "Phosphorylation of complexed TSC2 by PKB, Rattus norvegicus"
+xref: Reactome:REACT_82728 "Plk1-mediated phosphorylation of Nlp, Mus musculus"
+xref: Reactome:REACT_82751 "Down Regulation of Emi1 through Phosphorylation of Emi1, Rattus norvegicus"
+xref: Reactome:REACT_82824 "Inactivation of Wee1 kinase, Rattus norvegicus"
+xref: Reactome:REACT_82901 "Phosphorylation of DLC2 by MAPK-8, Canis familiaris"
+xref: Reactome:REACT_82927 "PIP2 conversion to PIP3, Rattus norvegicus"
+xref: Reactome:REACT_83006 "Partial autophosphorylation of PAK-2 at Ser-19, Ser-20, Ser-55, Ser-192, and Ser-197, Caenorhabditis elegans"
+xref: Reactome:REACT_83089 "Inactivation of Myt1 kinase, Saccharomyces cerevisiae"
+xref: Reactome:REACT_83110 "Phosphorylation (Ser5) of RNA pol II CTD, Schizosaccharomyces pombe"
+xref: Reactome:REACT_83178 "Phosphorylation and activation of Chk1 by ATM, Oryza sativa"
+xref: Reactome:REACT_83187 "Phosphorylation of the SA2 Cohesin Complex, Mus musculus"
+xref: Reactome:REACT_83239 "Phosphorylation and activation of eIF4G by activated S6K1, Gallus gallus"
+xref: Reactome:REACT_83279 "Phosphorylation of NBS1 by ATM, Canis familiaris"
+xref: Reactome:REACT_83297 "CAK-mediated phosphorylation of Cyclin A:Cdk2, Danio rerio"
+xref: Reactome:REACT_83436 "Intermolecular autophosphorylation of ATM within dimeric ATM complexes, Arabidopsis thaliana"
+xref: Reactome:REACT_83476 "Phosphorylation and activation of CHK2 by ATM, Mus musculus"
+xref: Reactome:REACT_83529 "Wee1- mediated phosphorylation of Cyclin B1:phospho-Cdc2 complexes, Drosophila melanogaster"
+xref: Reactome:REACT_83533 "Phosphorylation and activation of Chk1 by ATM, Rattus norvegicus"
+xref: Reactome:REACT_83579 "Phosphorylation of Wee1 kinase by Chk1, Gallus gallus"
+xref: Reactome:REACT_83582 "Plk1-mediated phosphorylation of Nlp, Danio rerio"
+xref: Reactome:REACT_83671 "Wee1-mediated phosphorylation of Cyclin A:phospho-Cdc2 complexes, Taeniopygia guttata"
+xref: Reactome:REACT_83696 "Free APC/C phosphorylated by Plk1, Bos taurus"
+xref: Reactome:REACT_83709 "Phosphorylation of Cdc25A at Ser-123 by Chk1, Mus musculus"
+xref: Reactome:REACT_83727 "Intermolecular autophosphorylation of ATM within dimeric ATM complexes, Gallus gallus"
+xref: Reactome:REACT_83899 "Phosphorylation of MDC1/NFBD1 by ATM (within 2 c-term BRCT domains), Sus scrofa"
+xref: Reactome:REACT_83979 "Phosphorylation of COP1 at Ser-387 by ATM, Mus musculus"
+xref: Reactome:REACT_84080 "Phosphorylation of the SA2 Cohesin Complex, Xenopus tropicalis"
+xref: Reactome:REACT_84082 "Phosphorylation of Wee1 kinase by Chk1, Rattus norvegicus"
+xref: Reactome:REACT_84208 "CAK-mediated phosphorylation of Cyclin B1:Cdc2 complexes, Mus musculus"
+xref: Reactome:REACT_84273 "Phosphorylation of L1 by ERK, Sus scrofa"
+xref: Reactome:REACT_84348 "Phosphorylation of COP1 at Ser-387 by ATM, Taeniopygia guttata"
+xref: Reactome:REACT_84405 "Phosphorylation of p53 at ser-15 by ATM kinase, Rattus norvegicus"
+xref: Reactome:REACT_845 "Phosphorylation of Cdc25A at Ser-123 by Chk1, Homo sapiens"
+xref: Reactome:REACT_84560 "Cdc6 protein is phosphorylated by CDK, Saccharomyces cerevisiae"
+xref: Reactome:REACT_84656 "Phosphoryation of phospho- (Ser45, Thr41) beta-catenin at Ser37 by GSK-3, Bos taurus"
+xref: Reactome:REACT_84932 "Phosphorylation of Wee1 kinase by Chk1, Sus scrofa"
+xref: Reactome:REACT_85009 "Phosphorylation of beta-catenin at Ser45 by CK1 alpha, Taeniopygia guttata"
+xref: Reactome:REACT_85017 "Activation of S6K1, Dictyostelium discoideum"
+xref: Reactome:REACT_85044 "Phosphorylation of Cyclin E1:Cdk2 complexes by Myt1, Canis familiaris"
+xref: Reactome:REACT_85066 "Activation of the Anaphase Promoting Complex (APC) by PLK1, Taeniopygia guttata"
+xref: Reactome:REACT_85256 "Phosphorylation of Cdc25C at Ser216, Mus musculus"
+xref: Reactome:REACT_85328 "Regulation of KIF20A (MKL2) by phosphorylation, Mus musculus"
+xref: Reactome:REACT_85379 "Phosphorylation of Cx43 by c-src, Sus scrofa"
+xref: Reactome:REACT_85449 "Phosphorylation and activation of eIF4G by activated S6K1, Bos taurus"
+xref: Reactome:REACT_85586 "Wee1-mediated phosphorylation of Cyclin A:phospho-Cdc2 complexes, Gallus gallus"
+xref: Reactome:REACT_85699 "Phosphorylation of Cyclin B1 in the CRS domain, Rattus norvegicus"
+xref: Reactome:REACT_85720 "Phosphorylation of L1 by ERK, Canis familiaris"
+xref: Reactome:REACT_85745 "CAK-mediated phosphorylation of Cyclin B1:Cdc2 complexes, Xenopus tropicalis"
+xref: Reactome:REACT_85751 "Phosphorylation of BRCA1 at multiple sites by ATM, Canis familiaris"
+xref: Reactome:REACT_85812 "Phosphorylation and activation of Chk1 by ATM, Drosophila melanogaster"
+xref: Reactome:REACT_85836 "Partial autophosphorylation of PAK-2 at Ser-19, Ser-20, Ser-55, Ser-192, and Ser-197, Gallus gallus"
+xref: Reactome:REACT_85871 "Intermolecular autophosphorylation of ATM within dimeric ATM complexes, Mus musculus"
+xref: Reactome:REACT_86014 "Phosphorylation of the SA2 Cohesin Complex, Bos taurus"
+xref: Reactome:REACT_86033 "Phosphorylation and activation of CHK2 by ATM, Schizosaccharomyces pombe"
+xref: Reactome:REACT_86061 "Phosphorylation of Cyclin E1:Cdk2 complexes by Myt1, Bos taurus"
+xref: Reactome:REACT_86092 "Phosphorylation of COP1 at Ser-387 by ATM, Bos taurus"
+xref: Reactome:REACT_86211 "Activation of the Anaphase Promoting Complex (APC) by PLK1, Saccharomyces cerevisiae"
+xref: Reactome:REACT_86252 "Phosphorylation of Cyclin A:Cdk2 at Tyr 15, Drosophila melanogaster"
+xref: Reactome:REACT_86261 "Regulation of NUDC by phosphorylation, Dictyostelium discoideum"
+xref: Reactome:REACT_86277 "Phosphorylation of TSC2 by PKB, Bos taurus"
+xref: Reactome:REACT_86365 "Phosphorylation and activation of eIF4G by activated S6K1, Rattus norvegicus"
+xref: Reactome:REACT_86372 "Akt1 phosphorylates BAD protein, Mus musculus"
+xref: Reactome:REACT_86415 "Phosphorylation of Cx43 by c-src, Xenopus tropicalis"
+xref: Reactome:REACT_86422 "Phosphorylation of PD-1, Rattus norvegicus"
+xref: Reactome:REACT_86533 "Cdc6 protein is phosphorylated by CDK, Sus scrofa"
+xref: Reactome:REACT_86736 "Phosphorylation of proteins involved in the G1/S transition by Cyclin A:Cdk2, Rattus norvegicus"
+xref: Reactome:REACT_86800 "Phosphorylation of Cyclin D1 at T286 by glycogen synthase kinase-3 beta, Danio rerio"
+xref: Reactome:REACT_86867 "Phosphorylation of p53 at ser-15 by ATM kinase, Bos taurus"
+xref: Reactome:REACT_86952 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Sus scrofa"
+xref: Reactome:REACT_86967 "Phosphorylation (Ser5) of RNA pol II CTD, Gallus gallus"
+xref: Reactome:REACT_87010 "Regulation of NUDC by phosphorylation, Danio rerio"
+xref: Reactome:REACT_87121 "Phosphorylation of cPLA2 by ERK-2, Bos taurus"
+xref: Reactome:REACT_87149 "Phosphorylation of L1 by CK-II, Danio rerio"
+xref: Reactome:REACT_87212 "Phosphorylation of Cx43 by c-src, Mus musculus"
+xref: Reactome:REACT_87222 "Cdc6 protein is phosphorylated by CDK, Schizosaccharomyces pombe"
+xref: Reactome:REACT_87298 "Phosphorylation of Cyclin A:Cdk2 at Tyr 15, Sus scrofa"
+xref: Reactome:REACT_87329 "Regulation of KIF23 (MKLP1) by phosphorylation, Mus musculus"
+xref: Reactome:REACT_87391 "Phosphorylation of Cx43 by c-src, Rattus norvegicus"
+xref: Reactome:REACT_87424 "SOS phosphorylation and dissociation (SHC), Danio rerio"
+xref: Reactome:REACT_87437 "Phosphorylation of AKT2 by PDK1, Caenorhabditis elegans"
+xref: Reactome:REACT_87485 "Activation of S6K1, Xenopus tropicalis"
+xref: Reactome:REACT_87497 "Akt1 phosphorylates BAD protein, Bos taurus"
+xref: Reactome:REACT_87503 "Phosphorylation of Cyclin E2:Cdk2 complexes by Myt1, Xenopus tropicalis"
+xref: Reactome:REACT_87523 "Phosphorylation of Cyclin B1 in the CRS domain, Mus musculus"
+xref: Reactome:REACT_87534 "Phosphorylation of MDM2 at serine-395 by ATM kinase, Gallus gallus"
+xref: Reactome:REACT_87593 "Activation of the Anaphase Promoting Complex (APC) by PLK1, Gallus gallus"
+xref: Reactome:REACT_87650 "Phosphorylation of proteins involved in the G1/S transition by Cyclin A:Cdk2, Xenopus tropicalis"
+xref: Reactome:REACT_87679 "Phosphorylation of PDE3B, Xenopus tropicalis"
+xref: Reactome:REACT_87753 "Wee1-mediated phosphorylation of Cyclin A:phospho-Cdc2 complexes, Bos taurus"
+xref: Reactome:REACT_87880 "CAK-mediated phosphorylation of Cyclin B1:Cdc2 complexes, Danio rerio"
+xref: Reactome:REACT_87967 "Hyperphosphorylation (Ser2) of RNA Pol II CTD by P-TEFb complex, Xenopus tropicalis"
+xref: Reactome:REACT_88025 "Activation of S6K1, Mus musculus"
+xref: Reactome:REACT_88055 "Phosphorylation of NBS1 by ATM, Sus scrofa"
+xref: Reactome:REACT_88091 "Phosphorylation of Cdc25A at Ser-123 by Chk1, Xenopus tropicalis"
+xref: Reactome:REACT_88220 "Regulation of KIF23 (MKLP1) by phosphorylation, Rattus norvegicus"
+xref: Reactome:REACT_88298 "Phosphorylation of Cdc25A at Ser-123 by Chk1, Taeniopygia guttata"
+xref: Reactome:REACT_88326 "CAK-mediated phosphorylation of Cyclin A:Cdk2, Canis familiaris"
+xref: Reactome:REACT_88374 "CAK-mediated phosphorylation of Cyclin A:Cdk2, Xenopus tropicalis"
+xref: Reactome:REACT_88421 "Phosphorylation and inactivation of eEF2K by activated S6K1, Rattus norvegicus"
+xref: Reactome:REACT_88430 "Orc1 is phosphorylated by cyclin A/CDK2, Bos taurus"
+xref: Reactome:REACT_88440 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Caenorhabditis elegans"
+xref: Reactome:REACT_88458 "Phosphorylation of cPLA2 by ERK-2, Danio rerio"
+xref: Reactome:REACT_88486 "Inactivation of Wee1 kinase, Taeniopygia guttata"
+xref: Reactome:REACT_88516 "Cdc6 protein is phosphorylated by CDK, Rattus norvegicus"
+xref: Reactome:REACT_88548 "Phosphorylation of the Emi1 DSGxxS degron by Plk1, Taeniopygia guttata"
+xref: Reactome:REACT_88564 "Plk1-mediated phosphorylation of Nlp, Xenopus tropicalis"
+xref: Reactome:REACT_88590 "Phosphorylation of Cdc25A at Ser-123 by Chk2, Rattus norvegicus"
+xref: Reactome:REACT_88665 "Phosphorylation of Cdc25A at Ser-123 by Chk2, Danio rerio"
+xref: Reactome:REACT_88668 "Intermolecular autophosphorylation of ATM within dimeric ATM complexes, Drosophila melanogaster"
+xref: Reactome:REACT_88766 "Phosphorylation (Ser5) of RNA pol II CTD, Oryza sativa"
+xref: Reactome:REACT_88871 "Hyperphosphorylation (Ser2) of RNA Pol II CTD by P-TEFb complex, Rattus norvegicus"
+xref: Reactome:REACT_88928 "Autophosphorylation of PAK-2p34 in the activation loop, Drosophila melanogaster"
+xref: Reactome:REACT_88987 "Free APC/C phosphorylated by Plk1, Canis familiaris"
+xref: Reactome:REACT_89001 "Phosphorylation of Cdc25A at Ser-123 by Chk1, Gallus gallus"
+xref: Reactome:REACT_89026 "Phosphorylation of PD-1, Gallus gallus"
+xref: Reactome:REACT_89122 "Activation of Cdc25C, Canis familiaris"
+xref: Reactome:REACT_89366 "Phosphorylation of APC component of the destruction complex, Canis familiaris"
+xref: Reactome:REACT_89427 "Phosphorylation of AKT2 by PDK1, Bos taurus"
+xref: Reactome:REACT_89464 "Phosphorylation of phospho-(Ser45,Thr41,Ser37) at Ser33 by GSK-3, Taeniopygia guttata"
+xref: Reactome:REACT_89547 "Phosphorylation of NBS1 by ATM, Xenopus tropicalis"
+xref: Reactome:REACT_89579 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Xenopus tropicalis"
+xref: Reactome:REACT_89769 "Phosphorylation of MDM2 at serine-395 by ATM kinase, Taeniopygia guttata"
+xref: Reactome:REACT_89794 "Phosphorylation of beta-catenin at Ser45 by CK1 alpha, Mus musculus"
+xref: Reactome:REACT_89879 "Phosphoryation of phospho- (Ser45, Thr41) beta-catenin at Ser37 by GSK-3, Mus musculus"
+xref: Reactome:REACT_89988 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Schizosaccharomyces pombe"
+xref: Reactome:REACT_9007 "Phosphorylation of proteins involved in the G1/S transition by Cyclin A:Cdk2, Homo sapiens"
+xref: Reactome:REACT_90132 "Phosphorylation of AKT2 by PDK1, Sus scrofa"
+xref: Reactome:REACT_90167 "Phosphorylation of Wee1 kinase by Chk1, Bos taurus"
+xref: Reactome:REACT_90220 "Wee1- mediated phosphorylation of Cyclin B1:phospho-Cdc2 complexes, Rattus norvegicus"
+xref: Reactome:REACT_90227 "Phosphorylation of AKT2 by PDK1, Mus musculus"
+xref: Reactome:REACT_90290 "Phosphorylation of Cdc25A at Ser-123 in response to DNA damage, Taeniopygia guttata"
+xref: Reactome:REACT_90364 "Regulation of NUDC by phosphorylation, Canis familiaris"
+xref: Reactome:REACT_90426 "Phosphorylation of Wee1 kinase by Chk1, Mus musculus"
+xref: Reactome:REACT_90449 "Phosphorylation of Cyclin E:Cdk2 complexes by Wee-1, Canis familiaris"
+xref: Reactome:REACT_90562 "Regulation of NUDC by phosphorylation, Drosophila melanogaster"
+xref: Reactome:REACT_9057 "Phosphorylation of Cyclin A:Cdk2 at Tyr 15, Homo sapiens"
+xref: Reactome:REACT_9067 "CAK-mediated phosphorylation of Cyclin E:Cdk2, Homo sapiens"
+xref: Reactome:REACT_90675 "Phosphorylation (Ser5) of RNA pol II CTD, Caenorhabditis elegans"
+xref: Reactome:REACT_907 "Mcm2-7 is phosphorylated by DDK, Homo sapiens"
+xref: Reactome:REACT_9070 "CAK-mediated phosphorylation of Cyclin A:Cdk2, Homo sapiens"
+xref: Reactome:REACT_908 "Phosphorylation of AKT2 by PDK1, Homo sapiens"
+xref: Reactome:REACT_90917 "Phosphorylation of Wee1 kinase by Chk1, Canis familiaris"
+xref: Reactome:REACT_91050 "SOS phosphorylation and dissociation (IRS, Crk), Mus musculus"
+xref: Reactome:REACT_91062 "Phosphorylation of Cyclin E2:Cdk2 complexes by Myt1, Bos taurus"
+xref: Reactome:REACT_91085 "Inactivation of Wee1 kinase, Danio rerio"
+xref: Reactome:REACT_91156 "Phosphorylation and activation of CHK2 by ATM, Gallus gallus"
+xref: Reactome:REACT_91157 "Phosphorylation (Ser5) of RNA pol II CTD, Saccharomyces cerevisiae"
+xref: Reactome:REACT_91196 "Phosphorylation of 4E-BP1 by activated mTORC1, Mus musculus"
+xref: Reactome:REACT_91197 "Phosphorylation and activation of eIF4B by activated S6K1, Mus musculus"
+xref: Reactome:REACT_91240 "Phosphorylation of Cdc25A at Ser-123 by Chk2, Xenopus tropicalis"
+xref: Reactome:REACT_91263 "Down Regulation of Emi1 through Phosphorylation of Emi1, Gallus gallus"
+xref: Reactome:REACT_91382 "SOS phosphorylation and dissociation (IRS), Danio rerio"
+xref: Reactome:REACT_91470 "Regulation of KIF20A (MKL2) by phosphorylation, Canis familiaris"
+xref: Reactome:REACT_91501 "PIP2 conversion to PIP3, Bos taurus"
+xref: Reactome:REACT_91541 "Phosphorylation of phospho-(Ser45,Thr41,Ser37) at Ser33 by GSK-3, Rattus norvegicus"
+xref: Reactome:REACT_91574 "Phosphorylation of DLC2 by MAPK-8, Rattus norvegicus"
+xref: Reactome:REACT_91643 "Phosphorylation of Cyclin D1 at T286 by glycogen synthase kinase-3 beta, Drosophila melanogaster"
+xref: Reactome:REACT_91684 "Phosphorylation of the SA2 Cohesin Complex, Drosophila melanogaster"
+xref: Reactome:REACT_91760 "Regulation of KIF23 (MKLP1) by phosphorylation, Danio rerio"
+xref: Reactome:REACT_91937 "Phosphorylation of APC component of the destruction complex, Bos taurus"
+xref: Reactome:REACT_92033 "Inactivation of Myt1 kinase, Caenorhabditis elegans"
+xref: Reactome:REACT_92108 "Myt-1 mediated phosphorylation of Cyclin A:Cdc2, Rattus norvegicus"
+xref: Reactome:REACT_92126 "Activation of S6K1, Oryza sativa"
+xref: Reactome:REACT_92148 "Autophosphorylation of PAK-2p34 in the activation loop, Danio rerio"
+xref: Reactome:REACT_92219 "Phosphorylation of PDE3B, Caenorhabditis elegans"
+xref: Reactome:REACT_92247 "Phosphorylation of the Emi1 DSGxxS degron by Plk1, Canis familiaris"
+xref: Reactome:REACT_92407 "Regulation of KIF23 (MKLP1) by phosphorylation, Canis familiaris"
+xref: Reactome:REACT_92735 "Autophosphorylation of PAK-2p34 in the activation loop, Taeniopygia guttata"
+xref: Reactome:REACT_92736 "Phosphorylation of L1 by ERK, Gallus gallus"
+xref: Reactome:REACT_92804 "Phosphorylation of Wee1 kinase by Chk1, Danio rerio"
+xref: Reactome:REACT_92852 "SOS phosphorylation and dissociation (SHC), Canis familiaris"
+xref: Reactome:REACT_92889 "Phosphorylation of TSC2 by PKB, Sus scrofa"
+xref: Reactome:REACT_92915 "Partial autophosphorylation of PAK-2 at Ser-19, Ser-20, Ser-55, Ser-192, and Ser-197, Danio rerio"
+xref: Reactome:REACT_92929 "RAF1 phosphorylates MEK1, Danio rerio"
+xref: Reactome:REACT_92951 "Phosphorylation and activation of Chk1 by ATM, Canis familiaris"
+xref: Reactome:REACT_93018 "RAF1 phosphorylates MEK1, Bos taurus"
+xref: Reactome:REACT_93105 "Phosphorylation of cPLA2 by ERK-2, Rattus norvegicus"
+xref: Reactome:REACT_93124 "CAK-mediated phosphorylation of Cyclin A:Cdc2 complexes, Mus musculus"
+xref: Reactome:REACT_93149 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Dictyostelium discoideum"
+xref: Reactome:REACT_93166 "Phosphorylation and activation of Chk1 by ATM, Taeniopygia guttata"
+xref: Reactome:REACT_93219 "Phosphorylation of Cyclin D1 at T286 by glycogen synthase kinase-3 beta, Xenopus tropicalis"
+xref: Reactome:REACT_93221 "Phosphoryation of phospho- (Ser45, Thr41) beta-catenin at Ser37 by GSK-3, Xenopus tropicalis"
+xref: Reactome:REACT_93346 "Wee1-mediated phosphorylation of Cyclin A:phospho-Cdc2 complexes, Mus musculus"
+xref: Reactome:REACT_93366 "Phosphorylation of cPLA2 by ERK-2, Canis familiaris"
+xref: Reactome:REACT_93414 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Drosophila melanogaster"
+xref: Reactome:REACT_93440 "Regulation of KIF20A (MKL2) by phosphorylation, Taeniopygia guttata"
+xref: Reactome:REACT_93441 "Regulation of KIF23 (MKLP1) by phosphorylation, Gallus gallus"
+xref: Reactome:REACT_93613 "CAK-mediated phosphorylation of Cyclin A:Cdk2, Rattus norvegicus"
+xref: Reactome:REACT_93615 "Phosphorylation of MDM2 at serine-395 by ATM kinase, Bos taurus"
+xref: Reactome:REACT_937 "Phosphorylation of BRCA1 at multiple sites by ATM, Homo sapiens"
+xref: Reactome:REACT_93706 "RAF1 phosphorylates MEK1, Canis familiaris"
+xref: Reactome:REACT_93746 "Phosphorylation of Cyclin A:Cdk2 at Tyr 15, Mus musculus"
+xref: Reactome:REACT_93878 "Phosphorylation of Cdc25A at Ser-123 in response to DNA damage, Gallus gallus"
+xref: Reactome:REACT_94017 "SOS phosphorylation and dissociation (IRS, Crk), Bos taurus"
+xref: Reactome:REACT_94113 "Phosphorylation of Cx43 by c-src, Canis familiaris"
+xref: Reactome:REACT_94151 "Phosphorylation of Wee1 kinase by Chk1, Xenopus tropicalis"
+xref: Reactome:REACT_94248 "SOS phosphorylation and dissociation (SHC), Bos taurus"
+xref: Reactome:REACT_94258 "Phosphorylation of p53 at ser-15 by ATM kinase, Sus scrofa"
+xref: Reactome:REACT_94298 "Phosphorylation of Cyclin B1 in the CRS domain, Danio rerio"
+xref: Reactome:REACT_94397 "Orc1 is phosphorylated by cyclin A/CDK2, Danio rerio"
+xref: Reactome:REACT_94428 "Phosphorylation of PD-1, Bos taurus"
+xref: Reactome:REACT_94452 "Phosphorylation of MDC1/NFBD1 by ATM (within 2 c-term BRCT domains), Bos taurus"
+xref: Reactome:REACT_94464 "Phosphorylation and activation of eIF4B by activated S6K1, Danio rerio"
+xref: Reactome:REACT_94562 "Phosphorylation of the Scc1:Cohesion Complex, Caenorhabditis elegans"
+xref: Reactome:REACT_94615 "SOS phosphorylation and dissociation (IRS, Crk), Rattus norvegicus"
+xref: Reactome:REACT_94784 "Phosphorylation of Cyclin D1 at T286 by glycogen synthase kinase-3 beta, Rattus norvegicus"
+xref: Reactome:REACT_94817 "Phosphorylation of the SA2 Cohesin Complex, Rattus norvegicus"
+xref: Reactome:REACT_94947 "Autophosphorylation of PAK-2p34 in the activation loop, Canis familiaris"
+xref: Reactome:REACT_95052 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Oryza sativa"
+xref: Reactome:REACT_95087 "Phosphorylation of the Scc1:Cohesion Complex, Bos taurus"
+xref: Reactome:REACT_95088 "Inactivation of Wee1 kinase, Mus musculus"
+xref: Reactome:REACT_95089 "Phosphorylation of Cyclin E:Cdk2 complexes by Wee-1, Bos taurus"
+xref: Reactome:REACT_95155 "Regulation of NUDC by phosphorylation, Taeniopygia guttata"
+xref: Reactome:REACT_95163 "CAK-mediated phosphorylation of Cyclin A:Cdk2, Mus musculus"
+xref: Reactome:REACT_95437 "Phosphorylation of phospho-(Ser45,Thr41,Ser37) at Ser33 by GSK-3, Drosophila melanogaster"
+xref: Reactome:REACT_95461 "Phosphorylation of proteins involved in the G1/S transition by Cyclin A:Cdk2, Bos taurus"
+xref: Reactome:REACT_95504 "Phosphorylation of Cdc25C at Ser216, Xenopus tropicalis"
+xref: Reactome:REACT_95769 "PIP2 conversion to PIP3, Xenopus tropicalis"
+xref: Reactome:REACT_96 "Phosphorylation of Cyclin D:Cdk4/6 complexes, Homo sapiens"
+xref: Reactome:REACT_96039 "Myt-1 mediated phosphorylation of Cyclin A:Cdc2, Canis familiaris"
+xref: Reactome:REACT_96088 "Phosphorylation of PDE3B, Sus scrofa"
+xref: Reactome:REACT_96097 "SOS phosphorylation and dissociation (IRS), Rattus norvegicus"
+xref: Reactome:REACT_96102 "Phosphorylation of Cx43 by c-src, Gallus gallus"
+xref: Reactome:REACT_96129 "Phosphorylation and activation of eIF4G by activated S6K1, Taeniopygia guttata"
+xref: Reactome:REACT_96200 "Regulation of NUDC by phosphorylation, Gallus gallus"
+xref: Reactome:REACT_96208 "Phosphorylation of COP1 at Ser-387 by ATM, Sus scrofa"
+xref: Reactome:REACT_96218 "Wee1-mediated phosphorylation of Cyclin A:phospho-Cdc2 complexes, Drosophila melanogaster"
+xref: Reactome:REACT_96356 "Free APC/C phosphorylated by Plk1, Rattus norvegicus"
+xref: Reactome:REACT_96461 "Phosphorylation of L1 by CK-II, Bos taurus"
+xref: Reactome:REACT_96468 "Autophosphorylation of PAK-2p34 in the activation loop, Mus musculus"
+xref: Reactome:REACT_96483 "Phosphorylation of COP1 at Ser-387 by ATM, Gallus gallus"
+xref: Reactome:REACT_96500 "RAF1 phosphorylates MEK2, Gallus gallus"
+xref: Reactome:REACT_96524 "Activation of Cdc25C, Xenopus tropicalis"
+xref: Reactome:REACT_96656 "Plk1-mediated phosphorylation of Nlp, Rattus norvegicus"
+xref: Reactome:REACT_96666 "Phosphorylation and activation of CHK2 by ATM, Saccharomyces cerevisiae"
+xref: Reactome:REACT_96758 "Phosphorylation of Cdc25A at Ser-123 by Chk2, Canis familiaris"
+xref: Reactome:REACT_96793 "Activation of S6K1, Danio rerio"
+xref: Reactome:REACT_96797 "CAK-mediated phosphorylation of Cyclin E:Cdk2, Rattus norvegicus"
+xref: Reactome:REACT_96877 "Phosphorylation of MDM2 at serine-395 by ATM kinase, Sus scrofa"
+xref: Reactome:REACT_96899 "Phosphorylation of TSC2 by PKB, Rattus norvegicus"
+xref: Reactome:REACT_96968 "Cdc6 protein is phosphorylated by CDK, Mus musculus"
+xref: Reactome:REACT_97193 "Phosphorylation and activation of eIF4G by activated S6K1, Canis familiaris"
+xref: Reactome:REACT_97218 "Orc1 is phosphorylated by cyclin A/CDK2, Xenopus tropicalis"
+xref: Reactome:REACT_97282 "Activation of S6K1, Sus scrofa"
+xref: Reactome:REACT_97299 "Phosphorylation of Cyclin E2:Cdk2 complexes by Myt1, Mus musculus"
+xref: Reactome:REACT_97458 "Activation of the Anaphase Promoting Complex (APC) by PLK1, Dictyostelium discoideum"
+xref: Reactome:REACT_97577 "Myt-1 mediated phosphorylation of Cyclin A:Cdc2, Bos taurus"
+xref: Reactome:REACT_97661 "Mcm2-7 is phosphorylated by DDK, Gallus gallus"
+xref: Reactome:REACT_97667 "Phosphorylation of complexed TSC2 by PKB, Canis familiaris"
+xref: Reactome:REACT_97748 "Phosphorylation of cPLA2 by ERK-2, Mus musculus"
+xref: Reactome:REACT_97759 "Phosphorylation of Cx43 by c-src, Danio rerio"
+xref: Reactome:REACT_97847 "Phosphorylation of Cdc25A at Ser-123 by Chk2, Mus musculus"
+xref: Reactome:REACT_97905 "Phosphorylation of BRCA1 at multiple sites by ATM, Xenopus tropicalis"
+xref: Reactome:REACT_98024 "Myt-1 mediated phosphorylation of Cyclin A:Cdc2, Mus musculus"
+xref: Reactome:REACT_98050 "Phosphorylation of Cdc25C at Ser216, Canis familiaris"
+xref: Reactome:REACT_98066 "Intermolecular autophosphorylation of ATM within dimeric ATM complexes, Saccharomyces cerevisiae"
+xref: Reactome:REACT_98109 "Regulation of NUDC by phosphorylation, Mus musculus"
+xref: Reactome:REACT_98176 "Phosphorylation of phospho-(Ser45,Thr41,Ser37) at Ser33 by GSK-3, Bos taurus"
+xref: Reactome:REACT_98213 "Phosphorylation of Cdc25A at Ser-123 in response to DNA damage, Xenopus tropicalis"
+xref: Reactome:REACT_98253 "RAF1 phosphorylates MEK2, Bos taurus"
+xref: Reactome:REACT_98296 "Phosphorylation of Cyclin B1 in the CRS domain, Drosophila melanogaster"
+xref: Reactome:REACT_98373 "Myt-1 mediated phosphorylation of Cyclin A:Cdc2, Drosophila melanogaster"
+xref: Reactome:REACT_98378 "Phosphorylation of COP1 at Ser-387 by ATM, Danio rerio"
+xref: Reactome:REACT_98395 "Phosphorylation and activation of Chk1 by ATM, Arabidopsis thaliana"
+xref: Reactome:REACT_98434 "Phosphorylation and inactivation of eEF2K by activated S6K1, Taeniopygia guttata"
+xref: Reactome:REACT_98436 "Phosphorylation of 4E-BP1 by activated mTORC1, Gallus gallus"
+xref: Reactome:REACT_98443 "Inactivation of Wee1 kinase, Gallus gallus"
+xref: Reactome:REACT_98493 "Partial autophosphorylation of PAK-2 at Ser-19, Ser-20, Ser-55, Ser-192, and Ser-197, Drosophila melanogaster"
+xref: Reactome:REACT_98558 "Autophosphorylation of PAK-2p34 in the activation loop, Saccharomyces cerevisiae"
+xref: Reactome:REACT_98560 "Phosphorylation and activation of CHK2 by ATM, Xenopus tropicalis"
+xref: Reactome:REACT_98663 "Regulation of KIF23 (MKLP1) by phosphorylation, Bos taurus"
+xref: Reactome:REACT_98708 "Phosphorylation of phospho-(Ser45 ) at Thr 41 by GSK-3, Drosophila melanogaster"
+xref: Reactome:REACT_98731 "Phosphorylation of Cdc25A at Ser-123 by Chk1, Danio rerio"
+xref: Reactome:REACT_98738 "Phosphorylation of TSC2 by PKB, Danio rerio"
+xref: Reactome:REACT_98741 "Phosphorylation of beta-catenin at Ser45 by CK1 alpha, Bos taurus"
+xref: Reactome:REACT_98779 "Phosphorylation of Cx43 by c-src, Taeniopygia guttata"
+xref: Reactome:REACT_988 "Phosphorylation of MDM2 at serine-395 by ATM kinase, Homo sapiens"
+xref: Reactome:REACT_98847 "Phosphorylation of complexed TSC2 by PKB, Mus musculus"
+xref: Reactome:REACT_98908 "Phosphorylation of phospho-(Ser45 ) at Thr 41 by GSK-3, Rattus norvegicus"
+xref: Reactome:REACT_98913 "Phosphorylation of PD-1, Canis familiaris"
+xref: Reactome:REACT_98971 "Phosphorylation of AKT2 by PDK1, Rattus norvegicus"
+xref: Reactome:REACT_98996 "Free APC/C phosphorylated by Plk1, Danio rerio"
+xref: Reactome:REACT_99025 "Intermolecular autophosphorylation of ATM within dimeric ATM complexes, Taeniopygia guttata"
+xref: Reactome:REACT_99053 "CAK-mediated phosphorylation of Cyclin E:Cdk2, Sus scrofa"
+xref: Reactome:REACT_99141 "Phosphorylation of NBS1 by ATM, Bos taurus"
+xref: Reactome:REACT_99158 "Inactivation of Wee1 kinase, Drosophila melanogaster"
+xref: Reactome:REACT_99207 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Taeniopygia guttata"
+xref: Reactome:REACT_99231 "Phosphorylation of AKT2 by PDK1, Danio rerio"
+xref: Reactome:REACT_99266 "Activation of the Anaphase Promoting Complex (APC) by PLK1, Caenorhabditis elegans"
+xref: Reactome:REACT_99302 "Phosphorylation of Cyclin D:Cdk4/6 complexes, Sus scrofa"
+xref: Reactome:REACT_99311 "RAF1 phosphorylates MEK1, Mus musculus"
+xref: Reactome:REACT_9955 "Phosphorylation of phospho-(Ser45 ) at Thr 41 by GSK-3, Homo sapiens"
+xref: Reactome:REACT_99556 "Phosphorylation of Ribosomal protein S6 by activated S6K1, Mus musculus"
+xref: Reactome:REACT_99560 "RAF1 phosphorylates MEK2, Canis familiaris"
+xref: Reactome:REACT_9959 "Phosphoryation of phospho- (Ser45, Thr41) beta-catenin at Ser37 by GSK-3, Homo sapiens"
+xref: Reactome:REACT_99595 "Phosphorylation of Cyclin A:Cdk2 at Tyr 15, Bos taurus"
+xref: Reactome:REACT_99713 "Phosphorylation of DLC2 by MAPK-8, Taeniopygia guttata"
+xref: Reactome:REACT_9978 "Phosphorylation of beta-catenin at Ser45 by CK1 alpha, Homo sapiens"
+xref: Reactome:REACT_99785 "Phosphorylation of phospho-(Ser45 ) at Thr 41 by GSK-3, Canis familiaris"
+xref: Reactome:REACT_9983 "Phosphorylation of APC component of the destruction complex, Homo sapiens"
+xref: Reactome:REACT_9987 "Phosphorylation of phospho-(Ser45,Thr41,Ser37) at Ser33 by GSK-3, Homo sapiens"
+xref: Reactome:REACT_99929 "Phosphorylation of beta-catenin at Ser45 by CK1 alpha, Gallus gallus"
+xref: Reactome:REACT_99966 "Intermolecular autophosphorylation of ATM within dimeric ATM complexes, Schizosaccharomyces pombe"
+xref: Reactome:REACT_9997 "Phosphorylation of Cx43 by c-src, Homo sapiens"
+is_a: GO:0016740 ! transferase activity
+relationship: part_of GO:0008152 ! metabolic process
+relationship: part_of GO:0009987 ! cellular process
+
+[Term]
+id: GO:0016740
+name: transferase activity
+namespace: molecular_function
+def: "Catalysis of the transfer of a group, e.g. a methyl group, glycosyl group, acyl group, phosphorus-containing, or other groups, from one compound (generally regarded as the donor) to another compound (generally regarded as the acceptor). Transferase is the systematic name for any enzyme of EC class 2." [ISBN:0198506732]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+xref: EC:2
+xref: Reactome:REACT_25050 "Molybdenum ion transfer onto molybdopterin, Homo sapiens"
+is_a: GO:0003824 ! catalytic activity
+
+[Term]
+id: GO:0016787
+name: hydrolase activity
+namespace: molecular_function
+def: "Catalysis of the hydrolysis of various bonds, e.g. C-O, C-N, C-C, phosphoric anhydride bonds, etc. Hydrolase is the systematic name for any enzyme of EC class 3." [ISBN:0198506732]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+xref: EC:3
+xref: Reactome:REACT_110436 "Hydrolysis of phosphatidylcholine, Bos taurus"
+xref: Reactome:REACT_111159 "Partial proteolysis of antigen in phagolysosomes, Homo sapiens"
+xref: Reactome:REACT_15331 "Hydrolysis of phosphatidylcholine, Homo sapiens"
+xref: Reactome:REACT_83734 "Hydrolysis of phosphatidylcholine, Danio rerio"
+xref: Reactome:REACT_84047 "Hydrolysis of phosphatidylcholine, Xenopus tropicalis"
+xref: Reactome:REACT_87959 "Hydrolysis of phosphatidylcholine, Gallus gallus"
+xref: Reactome:REACT_88159 "Hydrolysis of phosphatidylcholine, Canis familiaris"
+xref: Reactome:REACT_90118 "Hydrolysis of phosphatidylcholine, Mus musculus"
+xref: Reactome:REACT_91045 "Hydrolysis of phosphatidylcholine, Taeniopygia guttata"
+xref: Reactome:REACT_98572 "Hydrolysis of phosphatidylcholine, Rattus norvegicus"
+is_a: GO:0003824 ! catalytic activity
+
+[Term]
+id: GO:0019538
+name: protein metabolic process
+namespace: biological_process
+alt_id: GO:0006411
+def: "The chemical reactions and pathways involving a protein.  Includes protein modification." [GOC:ma]
+subset: goslim_agr
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "protein metabolic process and modification" EXACT []
+synonym: "protein metabolism" EXACT []
+synonym: "protein metabolism and modification" EXACT []
+xref: Wikipedia:Protein_metabolism
+is_a: GO:0008152 ! metabolic process
+
+[Term]
+id: GO:0019725
+name: cellular homeostasis
+namespace: biological_process
+def: "Any process involved in the maintenance of an internal steady state at the level of the cell." [GOC:isa_complete, GOC:jl, ISBN:0395825172]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_plant
+subset: gosubset_prok
+is_a: GO:0009987 ! cellular process
+relationship: occurs_in GO:0005623 ! cell
+
+[Term]
+id: GO:0019748
+name: secondary metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways resulting in many of the chemical changes of compounds that are not necessarily required for growth and maintenance of cells, and are often unique to a taxon. In multicellular organisms secondary metabolism is generally carried out in specific cell types, and may be useful for the organism as a whole. In unicellular organisms, secondary metabolism is often used for the production of antibiotics or for the utilization and acquisition of unusual nutrients." [GOC:go_curators]
+subset: goslim_aspergillus
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "secondary metabolism" EXACT []
+synonym: "secondary metabolite metabolic process" EXACT []
+synonym: "secondary metabolite metabolism" EXACT []
+xref: Wikipedia:Secondary_metabolism
+is_a: GO:0008152 ! metabolic process
+
+[Term]
+id: GO:0019825
+name: oxygen binding
+namespace: molecular_function
+def: "Interacting selectively and non-covalently with oxygen (O2)." [GOC:jl]
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "cytochrome P450" NARROW []
+synonym: "cytochrome P450 activity" RELATED []
+xref: Reactome:REACT_100179 "Cyclophosphamide is 4-hydroxylated by CYP2B6, Mus musculus"
+xref: Reactome:REACT_100188 "Acetaminophen oxidised to N-acetylbenzoquinoneimine (NAPQI), Danio rerio"
+xref: Reactome:REACT_100232 "CYP4B1 can 12-hydroxylate arachidonic acid, Xenopus tropicalis"
+xref: Reactome:REACT_100276 "Dehalogenation of carbon tetrachloride to form a free radical, Mus musculus"
+xref: Reactome:REACT_100352 "CYP2F1 dehydrogenates 3-methylindole, Sus scrofa"
+xref: Reactome:REACT_100647 "N-atom dealkylation of caffeine, Bos taurus"
+xref: Reactome:REACT_100686 "CYP4B1 can 12-hydroxylate arachidonic acid, Gallus gallus"
+xref: Reactome:REACT_100861 "CYP4B1 can 12-hydroxylate arachidonic acid, Sus scrofa"
+xref: Reactome:REACT_100981 "N-hydroxylation of 4-aminobiphenyl, Taeniopygia guttata"
+xref: Reactome:REACT_101073 "N-atom dealkylation of caffeine, Taeniopygia guttata"
+xref: Reactome:REACT_101109 "CYP1B1 4-hydroxylates estradiol-17beta, Canis familiaris"
+xref: Reactome:REACT_101424 "MEOS oxidizes ethanol to acetaldehyde, Bos taurus"
+xref: Reactome:REACT_101610 "CYP2C19 5-hydroxylates omeprazole, Rattus norvegicus"
+xref: Reactome:REACT_101735 "CYP2C18 initiates bioactivation of phenytoin by 4-hydroxylation, Taeniopygia guttata"
+xref: Reactome:REACT_102272 "CYP2C9 inactivates tolbutamide by 4methyl-hydroxylation, Bos taurus"
+xref: Reactome:REACT_102377 "Dehalogenation of the poly-halogenated hydrocarbon Halothane to form the acylhalide Trifluoroacetlychloride and hydrogen bromide, Sus scrofa"
+xref: Reactome:REACT_102634 "Cyclophosphamide is 4-hydroxylated by CYP2B6, Sus scrofa"
+xref: Reactome:REACT_102704 "CYP2C8 inactivates paclitaxel by 6alpha-hydroxylation, Mus musculus"
+xref: Reactome:REACT_102736 "S-atom dealkylation of 6-methylmercaptopurine, Sus scrofa"
+xref: Reactome:REACT_103035 "Ethylene is oxidized to Ethylene oxide by CYP1A1, Canis familiaris"
+xref: Reactome:REACT_103579 "Dehalogenation of the poly-halogenated hydrocarbon Halothane to form the acylhalide Trifluoroacetlychloride and hydrogen bromide, Rattus norvegicus"
+xref: Reactome:REACT_103850 "CYP2C18 initiates bioactivation of phenytoin by 4-hydroxylation, Sus scrofa"
+xref: Reactome:REACT_103936 "CYP4F12 hydroxylates arachidonic acid, Taeniopygia guttata"
+xref: Reactome:REACT_104062 "Vinyl chloride is oxidized to 2-Chloroethylene oxide, Rattus norvegicus"
+xref: Reactome:REACT_104186 "Cyclophosphamide is 4-hydroxylated by CYP2B6, Xenopus tropicalis"
+xref: Reactome:REACT_104401 "CYP4B1 can 12-hydroxylate arachidonic acid, Danio rerio"
+xref: Reactome:REACT_104682 "CYP4F12 hydroxylates arachidonic acid, Mus musculus"
+xref: Reactome:REACT_104739 "Cyclophosphamide is 4-hydroxylated by CYP2B6, Danio rerio"
+xref: Reactome:REACT_105445 "CYP3A4 can N-demethylate loperaminde, Drosophila melanogaster"
+xref: Reactome:REACT_105726 "Benzene is hydroxylated to phenol, Taeniopygia guttata"
+xref: Reactome:REACT_106173 "N-atom dealkylation of caffeine, Sus scrofa"
+xref: Reactome:REACT_106332 "CYP2U1 can omega-hydroxylate arachidonate, Rattus norvegicus"
+xref: Reactome:REACT_106588 "Acetaminophen oxidised to N-acetylbenzoquinoneimine (NAPQI), Canis familiaris"
+xref: Reactome:REACT_106593 "CYP4F8 hydroxylates prostaglandin H2, Danio rerio"
+xref: Reactome:REACT_106741 "CYP2C19 5-hydroxylates omeprazole, Mus musculus"
+xref: Reactome:REACT_106777 "Cyclophosphamide is 4-hydroxylated by CYP2B6, Canis familiaris"
+xref: Reactome:REACT_106979 "Ethylene is oxidized to Ethylene oxide by CYP1A1, Taeniopygia guttata"
+xref: Reactome:REACT_107183 "CYP2U1 can omega-hydroxylate arachidonate, Canis familiaris"
+xref: Reactome:REACT_107350 "CYP2C9 inactivates tolbutamide by 4methyl-hydroxylation, Taeniopygia guttata"
+xref: Reactome:REACT_107408 "CYP2C19 5-hydroxylates omeprazole, Sus scrofa"
+xref: Reactome:REACT_107478 "MEOS oxidizes ethanol to acetaldehyde, Danio rerio"
+xref: Reactome:REACT_107548 "N-hydroxylation of 4-aminobiphenyl, Rattus norvegicus"
+xref: Reactome:REACT_107861 "CYP2U1 can omega-hydroxylate arachidonate, Taeniopygia guttata"
+xref: Reactome:REACT_107973 "CYP2C19 5-hydroxylates omeprazole, Gallus gallus"
+xref: Reactome:REACT_108050 "Benzene is hydroxylated to phenol, Gallus gallus"
+xref: Reactome:REACT_108219 "N-hydroxylation of 4-aminobiphenyl, Mus musculus"
+xref: Reactome:REACT_108341 "N-atom dealkylation of caffeine, Mus musculus"
+xref: Reactome:REACT_108385 "Dehalogenation of carbon tetrachloride to form a free radical, Danio rerio"
+xref: Reactome:REACT_108547 "Vinyl chloride is oxidized to 2-Chloroethylene oxide, Danio rerio"
+xref: Reactome:REACT_108912 "Benzene is hydroxylated to phenol, Canis familiaris"
+xref: Reactome:REACT_108924 "Dehalogenation of the poly-halogenated hydrocarbon Halothane to form the acylhalide Trifluoroacetlychloride and hydrogen bromide, Gallus gallus"
+xref: Reactome:REACT_109005 "CYP2F1 dehydrogenates 3-methylindole, Danio rerio"
+xref: Reactome:REACT_109209 "MEOS oxidizes ethanol to acetaldehyde, Gallus gallus"
+xref: Reactome:REACT_109592 "Acetaminophen oxidised to N-acetylbenzoquinoneimine (NAPQI), Taeniopygia guttata"
+xref: Reactome:REACT_109788 "CYP2C18 initiates bioactivation of phenytoin by 4-hydroxylation, Rattus norvegicus"
+xref: Reactome:REACT_110347 "Acetaminophen oxidised to N-acetylbenzoquinoneimine (NAPQI), Gallus gallus"
+xref: Reactome:REACT_110759 "CYP3A5 oxidises aflatoxin B1 to aflatoxin-8,9-oxide, Mus musculus"
+xref: Reactome:REACT_112032 "CYP3A4 can N-demethylate loperaminde, Taeniopygia guttata"
+xref: Reactome:REACT_112331 "S-atom dealkylation of 6-methylmercaptopurine, Danio rerio"
+xref: Reactome:REACT_112347 "N-atom dealkylation of caffeine, Danio rerio"
+xref: Reactome:REACT_112584 "S-atom dealkylation of 6-methylmercaptopurine, Gallus gallus"
+xref: Reactome:REACT_112653 "Ethylene is oxidized to Ethylene oxide by CYP1A1, Gallus gallus"
+xref: Reactome:REACT_112751 "CYP1B1 4-hydroxylates estradiol-17beta, Danio rerio"
+xref: Reactome:REACT_112900 "N-atom dealkylation of caffeine, Gallus gallus"
+xref: Reactome:REACT_113220 "CYP3A5 oxidises aflatoxin B1 to aflatoxin-8,9-oxide, Taeniopygia guttata"
+xref: Reactome:REACT_113292 "N-hydroxylation of 4-aminobiphenyl, Danio rerio"
+xref: Reactome:REACT_113841 "Ethylene is oxidized to Ethylene oxide by CYP1A1, Danio rerio"
+xref: Reactome:REACT_114039 "N-hydroxylation of 4-aminobiphenyl, Gallus gallus"
+xref: Reactome:REACT_114317 "CYP3A7 can 6beta-hydroxylate testosterone, Taeniopygia guttata"
+xref: Reactome:REACT_1165 "N-atom dealkylation of caffeine, Homo sapiens"
+xref: Reactome:REACT_122 "Dehalogenation of carbon tetrachloride to form a free radical, Homo sapiens"
+xref: Reactome:REACT_13412 "CYP2U1 can omega-hydroxylate arachidonate, Homo sapiens"
+xref: Reactome:REACT_13485 "CYP4F12 hydroxylates arachidonic acid, Homo sapiens"
+xref: Reactome:REACT_13515 "Cyclophosphamide is 4-hydroxylated by CYP2B6, Homo sapiens"
+xref: Reactome:REACT_13607 "CYP2C9 inactivates tolbutamide by 4methyl-hydroxylation, Homo sapiens"
+xref: Reactome:REACT_13614 "CYP4F3 omega-hydroxylates leukotriene B4, thus inactivating it, Homo sapiens"
+xref: Reactome:REACT_13615 "CYP4B1 can 12-hydroxylate arachidonic acid, Homo sapiens"
+xref: Reactome:REACT_13624 "CYP4F8 hydroxylates prostaglandin H2, Homo sapiens"
+xref: Reactome:REACT_13651 "CYP2C8 inactivates paclitaxel by 6alpha-hydroxylation, Homo sapiens"
+xref: Reactome:REACT_13668 "CYP1B1 4-hydroxylates estradiol-17beta, Homo sapiens"
+xref: Reactome:REACT_13670 "CYP3A7 can 6beta-hydroxylate testosterone, Homo sapiens"
+xref: Reactome:REACT_13671 "CYP2F1 dehydrogenates 3-methylindole, Homo sapiens"
+xref: Reactome:REACT_13729 "CYP2C18 initiates bioactivation of phenytoin by 4-hydroxylation, Homo sapiens"
+xref: Reactome:REACT_13734 "CYP3A5 oxidises aflatoxin B1 to aflatoxin-8,9-oxide, Homo sapiens"
+xref: Reactome:REACT_13738 "CYP4F2 omega-hydroxylates leukotriene B4, thus inactivating it, Homo sapiens"
+xref: Reactome:REACT_13761 "CYP2C19 5-hydroxylates omeprazole, Homo sapiens"
+xref: Reactome:REACT_13765 "CYP3A4 can N-demethylate loperaminde, Homo sapiens"
+xref: Reactome:REACT_1437 "N-hydroxylation of 4-aminobiphenyl, Homo sapiens"
+xref: Reactome:REACT_1447 "Ethylene is oxidized to Ethylene oxide by CYP1A1, Homo sapiens"
+xref: Reactome:REACT_163 "Acetaminophen oxidised to N-acetylbenzoquinoneimine (NAPQI), Homo sapiens"
+xref: Reactome:REACT_1750 "Vinyl chloride is oxidized to 2-Chloroethylene oxide, Homo sapiens"
+xref: Reactome:REACT_1995 "S-atom dealkylation of 6-methylmercaptopurine, Homo sapiens"
+xref: Reactome:REACT_228 "Benzene is hydroxylated to phenol, Homo sapiens"
+xref: Reactome:REACT_28287 "CYP4B1 can 12-hydroxylate arachidonic acid, Rattus norvegicus"
+xref: Reactome:REACT_28569 "Cyclophosphamide is 4-hydroxylated by CYP2B6, Rattus norvegicus"
+xref: Reactome:REACT_29648 "CYP4F2 omega-hydroxylates leukotriene B4, thus inactivating it, Danio rerio"
+xref: Reactome:REACT_30083 "O-atom dealkylation of dextromethorphan, Taeniopygia guttata"
+xref: Reactome:REACT_30413 "S-atom dealkylation of 6-methylmercaptopurine, Taeniopygia guttata"
+xref: Reactome:REACT_305 "Dehalogenation of the poly-halogenated hydrocarbon Halothane to form the acylhalide Trifluoroacetlychloride and hydrogen bromide, Homo sapiens"
+xref: Reactome:REACT_30596 "N-atom dealkylation of caffeine, Xenopus tropicalis"
+xref: Reactome:REACT_30757 "CYP3A5 oxidises aflatoxin B1 to aflatoxin-8,9-oxide, Danio rerio"
+xref: Reactome:REACT_31096 "CYP3A7 can 6beta-hydroxylate testosterone, Drosophila melanogaster"
+xref: Reactome:REACT_31117 "CYP2C9 inactivates tolbutamide by 4methyl-hydroxylation, Sus scrofa"
+xref: Reactome:REACT_31871 "Benzene is hydroxylated to phenol, Sus scrofa"
+xref: Reactome:REACT_323 "O-atom dealkylation of dextromethorphan, Homo sapiens"
+xref: Reactome:REACT_32309 "CYP4A11 omega-hydroxylates laurate, Danio rerio"
+xref: Reactome:REACT_32769 "Dehalogenation of carbon tetrachloride to form a free radical, Sus scrofa"
+xref: Reactome:REACT_32803 "Dehalogenation of the poly-halogenated hydrocarbon Halothane to form the acylhalide Trifluoroacetlychloride and hydrogen bromide, Mus musculus"
+xref: Reactome:REACT_33304 "CYP4F3 omega-hydroxylates leukotriene B4, thus inactivating it, Bos taurus"
+xref: Reactome:REACT_33556 "CYP2U1 can omega-hydroxylate arachidonate, Bos taurus"
+xref: Reactome:REACT_33790 "Ethylene is oxidized to Ethylene oxide by CYP1A1, Rattus norvegicus"
+xref: Reactome:REACT_33813 "CYP2C9 inactivates tolbutamide by 4methyl-hydroxylation, Rattus norvegicus"
+xref: Reactome:REACT_33859 "Ethylene is oxidized to Ethylene oxide by CYP1A1, Sus scrofa"
+xref: Reactome:REACT_33898 "Vinyl chloride is oxidized to 2-Chloroethylene oxide, Mus musculus"
+xref: Reactome:REACT_33922 "CYP1B1 4-hydroxylates estradiol-17beta, Xenopus tropicalis"
+xref: Reactome:REACT_34265 "CYP2C18 initiates bioactivation of phenytoin by 4-hydroxylation, Danio rerio"
+xref: Reactome:REACT_34271 "Benzene is hydroxylated to phenol, Mus musculus"
+xref: Reactome:REACT_34597 "Dehalogenation of carbon tetrachloride to form a free radical, Canis familiaris"
+xref: Reactome:REACT_44575 "O-atom dealkylation of dextromethorphan, Rattus norvegicus"
+xref: Reactome:REACT_49029 "Ethylene is oxidized to Ethylene oxide by CYP1A1, Bos taurus"
+xref: Reactome:REACT_499 "MEOS oxidizes ethanol to acetaldehyde, Homo sapiens"
+xref: Reactome:REACT_54870 "Acetaminophen oxidised to N-acetylbenzoquinoneimine (NAPQI), Bos taurus"
+xref: Reactome:REACT_58290 "CYP1B1 4-hydroxylates estradiol-17beta, Mus musculus"
+xref: Reactome:REACT_58734 "CYP4A11 omega-hydroxylates laurate, Bos taurus"
+xref: Reactome:REACT_75504 "Dehalogenation of the poly-halogenated hydrocarbon Halothane to form the acylhalide Trifluoroacetlychloride and hydrogen bromide, Bos taurus"
+xref: Reactome:REACT_77501 "CYP4F2 omega-hydroxylates leukotriene B4, thus inactivating it, Mus musculus"
+xref: Reactome:REACT_77895 "Dehalogenation of the poly-halogenated hydrocarbon Halothane to form the acylhalide Trifluoroacetlychloride and hydrogen bromide, Taeniopygia guttata"
+xref: Reactome:REACT_77958 "O-atom dealkylation of dextromethorphan, Sus scrofa"
+xref: Reactome:REACT_78242 "Dehalogenation of carbon tetrachloride to form a free radical, Bos taurus"
+xref: Reactome:REACT_78392 "N-hydroxylation of 4-aminobiphenyl, Canis familiaris"
+xref: Reactome:REACT_78439 "CYP2C18 initiates bioactivation of phenytoin by 4-hydroxylation, Mus musculus"
+xref: Reactome:REACT_79087 "N-hydroxylation of 4-aminobiphenyl, Bos taurus"
+xref: Reactome:REACT_79814 "Benzene is hydroxylated to phenol, Rattus norvegicus"
+xref: Reactome:REACT_80448 "CYP2C8 inactivates paclitaxel by 6alpha-hydroxylation, Taeniopygia guttata"
+xref: Reactome:REACT_80600 "Vinyl chloride is oxidized to 2-Chloroethylene oxide, Gallus gallus"
+xref: Reactome:REACT_80785 "MEOS oxidizes ethanol to acetaldehyde, Canis familiaris"
+xref: Reactome:REACT_81228 "CYP2U1 can omega-hydroxylate arachidonate, Mus musculus"
+xref: Reactome:REACT_81599 "Dehalogenation of the poly-halogenated hydrocarbon Halothane to form the acylhalide Trifluoroacetlychloride and hydrogen bromide, Canis familiaris"
+xref: Reactome:REACT_81769 "S-atom dealkylation of 6-methylmercaptopurine, Canis familiaris"
+xref: Reactome:REACT_82090 "CYP2C8 inactivates paclitaxel by 6alpha-hydroxylation, Gallus gallus"
+xref: Reactome:REACT_82546 "CYP4F8 hydroxylates prostaglandin H2, Xenopus tropicalis"
+xref: Reactome:REACT_82713 "CYP2C9 inactivates tolbutamide by 4methyl-hydroxylation, Gallus gallus"
+xref: Reactome:REACT_82917 "CYP4A11 omega-hydroxylates laurate, Sus scrofa"
+xref: Reactome:REACT_83225 "CYP1B1 4-hydroxylates estradiol-17beta, Rattus norvegicus"
+xref: Reactome:REACT_83236 "CYP2C8 inactivates paclitaxel by 6alpha-hydroxylation, Danio rerio"
+xref: Reactome:REACT_83558 "N-atom dealkylation of caffeine, Canis familiaris"
+xref: Reactome:REACT_83900 "Dehalogenation of carbon tetrachloride to form a free radical, Rattus norvegicus"
+xref: Reactome:REACT_83932 "O-atom dealkylation of dextromethorphan, Xenopus tropicalis"
+xref: Reactome:REACT_83946 "Vinyl chloride is oxidized to 2-Chloroethylene oxide, Bos taurus"
+xref: Reactome:REACT_83985 "MEOS oxidizes ethanol to acetaldehyde, Rattus norvegicus"
+xref: Reactome:REACT_84011 "CYP2C18 initiates bioactivation of phenytoin by 4-hydroxylation, Bos taurus"
+xref: Reactome:REACT_84240 "CYP4A11 omega-hydroxylates laurate, Mus musculus"
+xref: Reactome:REACT_84540 "CYP3A5 oxidises aflatoxin B1 to aflatoxin-8,9-oxide, Gallus gallus"
+xref: Reactome:REACT_84651 "Ethylene is oxidized to Ethylene oxide by CYP1A1, Mus musculus"
+xref: Reactome:REACT_84804 "CYP4B1 can 12-hydroxylate arachidonic acid, Mus musculus"
+xref: Reactome:REACT_85142 "Acetaminophen oxidised to N-acetylbenzoquinoneimine (NAPQI), Mus musculus"
+xref: Reactome:REACT_85617 "CYP2C19 5-hydroxylates omeprazole, Danio rerio"
+xref: Reactome:REACT_85789 "CYP3A7 can 6beta-hydroxylate testosterone, Danio rerio"
+xref: Reactome:REACT_86584 "CYP2F1 dehydrogenates 3-methylindole, Canis familiaris"
+xref: Reactome:REACT_86609 "Dehalogenation of the poly-halogenated hydrocarbon Halothane to form the acylhalide Trifluoroacetlychloride and hydrogen bromide, Danio rerio"
+xref: Reactome:REACT_87066 "CYP2U1 can omega-hydroxylate arachidonate, Xenopus tropicalis"
+xref: Reactome:REACT_87553 "CYP1B1 4-hydroxylates estradiol-17beta, Taeniopygia guttata"
+xref: Reactome:REACT_87557 "MEOS oxidizes ethanol to acetaldehyde, Taeniopygia guttata"
+xref: Reactome:REACT_87585 "CYP2C9 inactivates tolbutamide by 4methyl-hydroxylation, Mus musculus"
+xref: Reactome:REACT_88131 "CYP4B1 can 12-hydroxylate arachidonic acid, Bos taurus"
+xref: Reactome:REACT_88365 "S-atom dealkylation of 6-methylmercaptopurine, Xenopus tropicalis"
+xref: Reactome:REACT_88376 "Acetaminophen oxidised to N-acetylbenzoquinoneimine (NAPQI), Rattus norvegicus"
+xref: Reactome:REACT_88388 "CYP1B1 4-hydroxylates estradiol-17beta, Sus scrofa"
+xref: Reactome:REACT_88780 "N-hydroxylation of 4-aminobiphenyl, Xenopus tropicalis"
+xref: Reactome:REACT_89077 "Benzene is hydroxylated to phenol, Bos taurus"
+xref: Reactome:REACT_89132 "Ethylene is oxidized to Ethylene oxide by CYP1A1, Xenopus tropicalis"
+xref: Reactome:REACT_89288 "MEOS oxidizes ethanol to acetaldehyde, Sus scrofa"
+xref: Reactome:REACT_89918 "CYP4A11 omega-hydroxylates laurate, Xenopus tropicalis"
+xref: Reactome:REACT_90187 "Cyclophosphamide is 4-hydroxylated by CYP2B6, Bos taurus"
+xref: Reactome:REACT_90287 "CYP4F2 omega-hydroxylates leukotriene B4, thus inactivating it, Xenopus tropicalis"
+xref: Reactome:REACT_90452 "CYP2C19 5-hydroxylates omeprazole, Taeniopygia guttata"
+xref: Reactome:REACT_90650 "N-atom dealkylation of caffeine, Rattus norvegicus"
+xref: Reactome:REACT_90911 "CYP4F8 hydroxylates prostaglandin H2, Mus musculus"
+xref: Reactome:REACT_91080 "CYP3A4 can N-demethylate loperaminde, Danio rerio"
+xref: Reactome:REACT_91491 "CYP3A4 can N-demethylate loperaminde, Gallus gallus"
+xref: Reactome:REACT_91742 "CYP4F3 omega-hydroxylates leukotriene B4, thus inactivating it, Rattus norvegicus"
+xref: Reactome:REACT_91815 "O-atom dealkylation of dextromethorphan, Gallus gallus"
+xref: Reactome:REACT_92052 "Acetaminophen oxidised to N-acetylbenzoquinoneimine (NAPQI), Sus scrofa"
+xref: Reactome:REACT_92115 "N-hydroxylation of 4-aminobiphenyl, Sus scrofa"
+xref: Reactome:REACT_92163 "CYP4A11 omega-hydroxylates laurate, Gallus gallus"
+xref: Reactome:REACT_92564 "O-atom dealkylation of dextromethorphan, Mus musculus"
+xref: Reactome:REACT_92660 "CYP3A7 can 6beta-hydroxylate testosterone, Mus musculus"
+xref: Reactome:REACT_92678 "CYP4F2 omega-hydroxylates leukotriene B4, thus inactivating it, Taeniopygia guttata"
+xref: Reactome:REACT_92793 "CYP2U1 can omega-hydroxylate arachidonate, Sus scrofa"
+xref: Reactome:REACT_92798 "CYP2C8 inactivates paclitaxel by 6alpha-hydroxylation, Bos taurus"
+xref: Reactome:REACT_93025 "CYP3A5 oxidises aflatoxin B1 to aflatoxin-8,9-oxide, Drosophila melanogaster"
+xref: Reactome:REACT_93071 "CYP2F1 dehydrogenates 3-methylindole, Rattus norvegicus"
+xref: Reactome:REACT_93076 "Vinyl chloride is oxidized to 2-Chloroethylene oxide, Sus scrofa"
+xref: Reactome:REACT_93786 "CYP3A4 can N-demethylate loperaminde, Mus musculus"
+xref: Reactome:REACT_94252 "CYP2F1 dehydrogenates 3-methylindole, Mus musculus"
+xref: Reactome:REACT_94389 "CYP1B1 4-hydroxylates estradiol-17beta, Gallus gallus"
+xref: Reactome:REACT_95074 "CYP2U1 can omega-hydroxylate arachidonate, Danio rerio"
+xref: Reactome:REACT_95175 "CYP4B1 can 12-hydroxylate arachidonic acid, Canis familiaris"
+xref: Reactome:REACT_95629 "CYP2F1 dehydrogenates 3-methylindole, Xenopus tropicalis"
+xref: Reactome:REACT_95768 "CYP4F8 hydroxylates prostaglandin H2, Taeniopygia guttata"
+xref: Reactome:REACT_95891 "O-atom dealkylation of dextromethorphan, Canis familiaris"
+xref: Reactome:REACT_96007 "CYP2C9 inactivates tolbutamide by 4methyl-hydroxylation, Danio rerio"
+xref: Reactome:REACT_96630 "O-atom dealkylation of dextromethorphan, Bos taurus"
+xref: Reactome:REACT_97001 "Vinyl chloride is oxidized to 2-Chloroethylene oxide, Canis familiaris"
+xref: Reactome:REACT_97031 "S-atom dealkylation of 6-methylmercaptopurine, Mus musculus"
+xref: Reactome:REACT_97724 "S-atom dealkylation of 6-methylmercaptopurine, Bos taurus"
+xref: Reactome:REACT_97732 "Benzene is hydroxylated to phenol, Danio rerio"
+xref: Reactome:REACT_97964 "CYP4F12 hydroxylates arachidonic acid, Xenopus tropicalis"
+xref: Reactome:REACT_97980 "CYP4F12 hydroxylates arachidonic acid, Danio rerio"
+xref: Reactome:REACT_98 "CYP4A11 omega-hydroxylates laurate, Homo sapiens"
+xref: Reactome:REACT_98236 "CYP1B1 4-hydroxylates estradiol-17beta, Bos taurus"
+xref: Reactome:REACT_98427 "CYP2C19 5-hydroxylates omeprazole, Bos taurus"
+xref: Reactome:REACT_98774 "CYP2C8 inactivates paclitaxel by 6alpha-hydroxylation, Sus scrofa"
+xref: Reactome:REACT_98874 "MEOS oxidizes ethanol to acetaldehyde, Mus musculus"
+xref: Reactome:REACT_98906 "S-atom dealkylation of 6-methylmercaptopurine, Rattus norvegicus"
+xref: Reactome:REACT_98989 "CYP2C18 initiates bioactivation of phenytoin by 4-hydroxylation, Gallus gallus"
+xref: Reactome:REACT_99056 "CYP3A7 can 6beta-hydroxylate testosterone, Gallus gallus"
+xref: Reactome:REACT_99083 "CYP2C8 inactivates paclitaxel by 6alpha-hydroxylation, Rattus norvegicus"
+xref: Reactome:REACT_99093 "Dehalogenation of carbon tetrachloride to form a free radical, Gallus gallus"
+xref: Reactome:REACT_99244 "Vinyl chloride is oxidized to 2-Chloroethylene oxide, Taeniopygia guttata"
+xref: Reactome:REACT_99362 "Dehalogenation of carbon tetrachloride to form a free radical, Taeniopygia guttata"
+xref: Reactome:REACT_99726 "CYP4A11 omega-hydroxylates laurate, Canis familiaris"
+is_a: GO:0005488 ! binding
+
+[Term]
+id: GO:0030154
+name: cell differentiation
+namespace: biological_process
+def: "The process in which relatively unspecialized cells, e.g. embryonic or regenerative cells, acquire specialized structural and/or functional features that characterize the cells, tissues, or organs of the mature organism or some other relatively stable phase of the organism's life history. Differentiation includes the processes involved in commitment of a cell to a specific fate and its subsequent development to the mature state." [ISBN:0198506732]
+subset: goslim_agr
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_plant
+subset: gosubset_prok
+xref: Wikipedia:Cellular_differentiation
+is_a: GO:0009987 ! cellular process
+
+[Term]
+id: GO:0030234
+name: enzyme regulator activity
+namespace: molecular_function
+alt_id: GO:0010576
+def: "Binds to and modulates the activity of an enzyme." [GOC:dph, GOC:mah, GOC:tb]
+comment: GO:0030234 is reserved for cases when the regulator directly interacts with the enzyme. When regulation of enzyme activity is achieved without enzyme binding, or when the mechanism of regulation is unknown, instead annotate to 'regulation of catalytic activity ; GO:0050790'.
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "catalytic regulator activity" EXACT [GOC:dph]
+synonym: "enzyme modulator" EXACT []
+synonym: "metalloenzyme regulator activity" NARROW []
+is_a: GO:0003674 ! molecular_function
+relationship: part_of GO:0008150 ! biological_process
+relationship: regulates GO:0003824 ! catalytic activity
+
+[Term]
+id: GO:0030246
+name: carbohydrate binding
+namespace: molecular_function
+alt_id: GO:0005529
+def: "Interacting selectively and non-covalently with any carbohydrate, which includes monosaccharides, oligosaccharides and polysaccharides as well as substances derived from monosaccharides by reduction of the carbonyl group (alditols), by oxidation of one or more hydroxy groups to afford the corresponding aldehydes, ketones, or carboxylic acids, or by replacement of one or more hydroxy group(s) by a hydrogen atom. Cyclitols are generally not regarded as carbohydrates." [CHEBI:16646, GOC:mah]
+subset: goslim_agr
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "selectin" RELATED []
+synonym: "sugar binding" EXACT []
+is_a: GO:0005488 ! binding
+
+[Term]
+id: GO:0030312
+name: external encapsulating structure
+namespace: cellular_component
+def: "A structure that lies outside the plasma membrane and surrounds the entire cell. This does not include the periplasmic space." [GOC:go_curators]
+comment: The outer membrane (of gram negative bacteria) or cell wall (of yeast or Gram positive bacteria) are defined as parts of this structure, see 'external encapsulating structure part'.
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005623 ! cell
+
+[Term]
+id: GO:0030528
+name: obsolete transcription regulator activity
+namespace: molecular_function
+def: "OBSOLETE. Plays a role in regulating transcription; may bind a promoter or enhancer DNA sequence or interact with a DNA-binding transcription factor." [GOC:mah]
+comment: This term was obsoleted because it is essentially identical to a Process term (specifically the Biological Process term which has been selected as a term to consider for reannotation), i.e. it is defined only in terms of the process it acts in and it does NOT convey any information about the molecular nature of the function or whether the function is based on binding DNA, on interacting with other proteins, or some other mechanism. To transfer all annotations without review, the BP term indicated is considered to be equivalent and thus the only appropriate destination for all annotations. To reannotate to a MF term, you will probably need to revisit the original literature or other primary data because this "MF" term was not defined in terms of mechanism of action and there are multiple possibilities in the revised MF structure. In reannotation, please also consider descendent terms of the suggested MF terms as a more specific term may be more appropriate than the MF terms indicated. Please be aware that you may wish to request a new term if the mechanism of action of this gene product is not yet represented or if you are annotating for an RNAP different than one for which there is a specific suggested term. Also note that if there is no information about how the gene product acts, it may be appropriate to annotate to the root term for molecular_function.
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "transcription regulator activity" EXACT []
+synonym: "transcriptional regulator activity" EXACT []
+is_obsolete: true
+consider: GO:0000988
+consider: GO:0001071
+consider: GO:0006351
+
+[Term]
+id: GO:0040007
+name: growth
+namespace: biological_process
+alt_id: GO:0048590
+def: "The increase in size or mass of an entire organism, a part of an organism or a cell." [GOC:bf, GOC:ma]
+comment: See also the biological process term 'cell growth ; GO:0016049'.
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "growth pattern" RELATED []
+synonym: "non-developmental growth" RELATED [GOC:mah]
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0040029
+name: regulation of gene expression, epigenetic
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of gene expression; the process is mitotically or meiotically heritable, or is stably self-propagated in the cytoplasm of a resting cell, and does not entail a change in DNA sequence." [PMID:10521337, PMID:11498582]
+subset: goslim_plant
+subset: gosubset_prok
+is_a: GO:0008150 ! biological_process
+relationship: regulates GO:0008152 ! metabolic process
+
+[Term]
+id: GO:0045182
+name: translation regulator activity
+namespace: molecular_function
+def: "Any molecular function involved in the initiation, activation, perpetuation, repression or termination of polypeptide synthesis at the ribosome." [GOC:ai]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "translation factor activity" EXACT []
+is_a: GO:0003674 ! molecular_function
+relationship: part_of GO:0008150 ! biological_process
+
+[Typedef]
+id: ends_during
+name: ends_during
+namespace: external
+xref: RO:0002093
+
+[Typedef]
+id: happens_during
+name: happens_during
+namespace: external
+xref: RO:0002092
+is_transitive: true
+is_a: ends_during ! ends_during
+
+[Typedef]
+id: has_part
+name: has_part
+namespace: external
+xref: BFO:0000051
+is_transitive: true
+
+[Typedef]
+id: negatively_regulates
+name: negatively regulates
+namespace: external
+xref: RO:0002212
+is_a: regulates ! regulates
+transitive_over: part_of ! part of
+
+[Typedef]
+id: never_in_taxon
+name: never_in_taxon
+namespace: external
+xref: RO:0002161
+expand_assertion_to: "Class: ?X DisjointWith: RO_0002162 some ?Y" []
+is_metadata_tag: true
+is_class_level: true
+
+[Typedef]
+id: occurs_in
+name: occurs in
+namespace: external
+xref: BFO:0000066
+holds_over_chain: part_of occurs_in
+transitive_over: part_of ! part of
+
+[Typedef]
+id: part_of
+name: part of
+namespace: external
+xref: BFO:0000050
+is_transitive: true
+inverse_of: has_part ! has_part
+
+[Typedef]
+id: positively_regulates
+name: positively regulates
+namespace: external
+xref: RO:0002213
+holds_over_chain: negatively_regulates negatively_regulates
+is_a: regulates ! regulates
+transitive_over: part_of ! part of
+
+[Typedef]
+id: regulates
+name: regulates
+namespace: external
+xref: RO:0002211
+is_transitive: true
+transitive_over: part_of ! part of
+
+[Typedef]
+id: starts_during
+name: starts_during
+namespace: external
+xref: RO:0002091
+
