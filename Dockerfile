@@ -5,9 +5,9 @@ MAINTAINER markw@illuminae.com
 USER root
 
 # Add IRuby dependencies
-RUN apt-get install software-properties-common
+# RUN apt-get install software-properties-common
 
-RUN apt-add-repository ppa:brightbox/ruby-ng
+RUN add-apt-repository ppa:brightbox/ruby-ng
 RUN apt-get update
 RUN apt-get install -y build-essential ruby2.2 ruby2.2-dev libzmq3 libzmq3-dev libtool autoconf automake && apt-get clean
 RUN ln -s /usr/bin/libtoolize /usr/bin/libtool # See https://github.com/zeromq/libzmq/issues/1385
