@@ -8,7 +8,8 @@ USER root
 
 RUN apt-get update
 RUN  apt-get install -y software-properties-common python-software-properties
-
+RUN cat /etc/apt/sources.list
+RUN cat /etc/apt/sources.list.d/*
 RUN add-apt-repository ppa:brightbox/ruby-ng
 RUN apt-get update
 RUN apt-get install -y build-essential ruby2.2 ruby2.2-dev libzmq3 libzmq3-dev libtool autoconf automake && apt-get clean
