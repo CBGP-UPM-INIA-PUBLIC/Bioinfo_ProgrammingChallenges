@@ -7,7 +7,7 @@ USER root
 # Add IRuby dependencies
 
 RUN apt-get update
-RUN  apt-get install software-properties-common python-software-properties
+RUN  apt-get install -y software-properties-common python-software-properties
 
 RUN add-apt-repository ppa:brightbox/ruby-ng
 RUN apt-get update
