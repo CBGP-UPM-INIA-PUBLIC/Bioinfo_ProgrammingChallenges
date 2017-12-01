@@ -5,6 +5,7 @@ MAINTAINER markw@illuminae.com
 USER root
 
 # Add IRuby dependencies
+RUN apt-get install software-properties-common
 
 RUN apt-add-repository ppa:brightbox/ruby-ng
 RUN apt-get update
