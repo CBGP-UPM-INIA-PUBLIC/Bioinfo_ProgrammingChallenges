@@ -18,6 +18,6 @@ RUN sudo update-alternatives --install /usr/bin/ruby ruby /usr/bin/ruby2.2 400  
 
 RUN gem update --no-document --system && gem install --no-document iruby rbczmq pry bio nokogiri rdf 
 
-USER main
+#USER main
 
 RUN iruby register
