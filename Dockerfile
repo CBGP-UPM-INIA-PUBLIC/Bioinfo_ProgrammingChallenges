@@ -23,7 +23,7 @@ RUN apt-get install -y ncbi-blast+ ncbi-blast+-legacy blast2 libxml2
 
 RUN gem update --no-document --system && gem install --no-document iruby rbczmq pry bio xml-simple gene_ontology 
 RUN gem install --no-document rdf -v 2.0.2
-RUN pip install sparqlkernel
+RUN pip install sparqlkernel 
 RUN jupyter sparqlkernel install --user
 
 USER main
