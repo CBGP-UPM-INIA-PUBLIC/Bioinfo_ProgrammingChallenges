@@ -22,6 +22,7 @@ RUN ln -s /usr/bin/libtoolize /usr/bin/libtool # See https://github.com/zeromq/l
 
 RUN gem update --no-document --system && gem install --no-document iruby rbczmq pry bio xml-simple gene_ontology 
 RUN gem install --no-document rdf -v 2.0.2
+RUN gem install --no-document linkeddata
 RUN apt-get install -y ncbi-blast+ ncbi-blast+-legacy blast2 libxml2
 
 USER main
