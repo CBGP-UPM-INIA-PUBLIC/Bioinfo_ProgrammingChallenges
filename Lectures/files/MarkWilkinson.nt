@@ -1,0 +1,3 @@
+<http://wilkinsonlab.info/Courses> <http://purl.org/dc/terms/creator> <http://wilkinsonlab.info/#mark> .
+<http://wilkinsonlab.info/#mark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://wilkinsonlab.info/#mark> <http://xmlns.com/foaf/0.1/name> "Mark Wilkinson" .

@@ -1,0 +1,24 @@
+#!/home/osboxes/.rvm/rubies/ruby-2.4.2/bin/ruby
+
+require 'sparql/client'
+
+puts "Content-Type: text/plain\n\n";
+
+blank,type, id = ENV["PATH_INFO"].split('/')
+endpoint = "http://sparql.uniprot.org/sparql"  # what location are we querying?
+
+query = <<END
+PREFIX up:<http://purl.uniprot.org/core/>
+SELECT ?p ?o
+WHERE {
+   	<http://purl.uniprot.org/uniprot/#{id}> a up:#{type} .
+   	<http://purl.uniprot.org/uniprot/#{id}> ?p ?o .
+} 
+END
+
+sparql = SPARQL::Client.new(endpoint)  # create a SPARQL client
+result = sparql.query(query)  # Execute query
+
+result.each do |solution|
+  puts "Property  #{solution[:p]}  with value #{solution[:o]}"  # call the pairs of variables in our query
+end
