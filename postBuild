@@ -1,0 +1,21 @@
+#!/bin/bash
+add-apt-repository ppa:chris-lea/zeromq
+apt-get update
+apt-get install -y libzmq3-dev libzmq3
+
+ln -s /usr/bin/libtoolize /usr/bin/libtool # See https://github.com/zeromq/libzmq/issues/1385
+echo 'install.packages(c("devtools", "dplyr","ggplot","gapminder"),repos="http://cran.r-project.org" )' | R --no-save
+echo 'devtools::install_github('IRkernel/IRkernel')' | R --no-save
+echo 'IRkernel::installspec()' | R --no-save
+
+# Add IRuby dependencies
+
+gem update --no-document --system && gem install --no-document iruby rbczmq pry bio xml-simple gene_ontology 
+gem install --no-document rdf -v 2.0.2
+gem install --no-document rdf-raptor -v 2.0.0 
+gem install --no-document sparql-client -v 2.0.2
+
+pip install sparqlkernel 
+jupyter sparqlkernel install --user
+iruby register
+

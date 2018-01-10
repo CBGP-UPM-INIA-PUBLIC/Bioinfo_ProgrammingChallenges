@@ -1,0 +1,15 @@
+build-essential 
+ruby 
+ruby-dev 
+libtool 
+autoconf 
+libcurl4-openssl-dev 
+libssl-dev
+r-base
+ncbi-blast+ 
+ncbi-blast+-legacy 
+blast2 
+libxml2
+clustalw
+software-properties-common 
+python-software-properties
