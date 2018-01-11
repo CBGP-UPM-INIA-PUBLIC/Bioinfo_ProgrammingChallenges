@@ -18,8 +18,7 @@ RUN apt-get install -y -t jessie-backports r-base r-base-dev
 RUN apt-get update
 RUN apt-get install -y libcurl4-openssl-dev libssl-dev 
 RUN apt-get install -y software-properties-common
-RUN apt-get install -y ncbi-blast+ ncbi-blast+-legacy blast2 libxml2
-RUN apt-get install -y clustalw
+
 RUN apt-get install -y build-essential ruby ruby-dev libcurl4-openssl-dev libssl-dev libzmq3 libzmq3-dev libtool autoconf automake && apt-get clean
 RUN ln -s /usr/bin/libtoolize /usr/bin/libtool # See https://github.com/zeromq/libzmq/issues/1385
 
@@ -29,32 +28,19 @@ RUN ln -s /usr/bin/libtoolize /usr/bin/libtool # See https://github.com/zeromq/l
 RUN echo 'install.packages(c("devtools", "uuid", "digest", "dplyr","ggplot2","gapminder"),repos="http://cran.r-project.org" )' | R --no-save
 RUN echo 'devtools::install_github("IRkernel/IRkernel")' | R --no-save
 RUN echo 'IRkernel::installspec()' | R --no-save
-
-
 # Add IRuby dependencies
+
 RUN gem update --no-document --system && gem install --no-document iruby rbczmq pry bio xml-simple gene_ontology 
 RUN gem install --no-document rdf -v 2.0.2
 RUN gem install --no-document rdf-raptor -v 2.0.0 
 RUN gem install --no-document sparql-client -v 2.0.2
-RUN iruby register
 
-
-# SPARQL kernel
-RUN pip install sparqlkernel 
-RUN jupyter sparqlkernel install --user
-
-
-#ENV NB_USER main
-#ENV NB_UID 100099
-#ENV HOME /home/${NB_USER}
-
-# RUN adduser --disabled-password --gecos "Default user"  --uid ${NB_UID}  ${NB_USER}
-
-# Make sure the contents of our repo are in ${HOME}
-COPY . /home/main
-RUN chown -R 1000 /home/main
-
+RUN apt-get install -y ncbi-blast+ ncbi-blast+-legacy blast2 libxml2
+RUN apt-get install -y clustalw
 
 USER main
+RUN pip install sparqlkernel 
+RUN jupyter sparqlkernel install --user
+RUN iruby register
 
-
+COPY . /home/main
