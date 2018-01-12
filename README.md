@@ -1,16 +1,24 @@
-Binder is a way to interact with the Jupyter notebooks inside of this repository - try it!  
-[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/markwilkinson/UPM_BioinfoCourse/master)
-
-
-You can also use <code>jupyter-repo2docker</code> to create your own docker image for this repository.
 
 # UPM_BioinfoCourse
+
 A BioRuby-based bioinformatics course (still under-development - not recommended for ANY purpose!)
 
-# UPM Students - INSTRUCTIONS
+## 3 ways to run this course:
+
+1)  Binder is a way to interact with the Jupyter notebooks inside of this repository - try it!  
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/markwilkinson/UPM_BioinfoCourse/master)
+
+2)  If you use Docker, you can run this course as a Docker image as follows:
+docker run -p 9000:9000 -it markw/bioruby_jupyter_v2:version4 jupyter notebook --ip 0.0.0.0 --port 9000   
+
+3)  Download the VM Ware image that has additional software such as Komodo edit and BlazeGraph installed (see instructions below)
+
+
+## UPM Students - INSTRUCTIONS
+
 Dear Students, 
 
-You will take this course using a Virtual Machine.  You should do the following:
+You will take this course using a VMWare Virtual Machine.  You should do the following:
 
 0. CREATE AN ACCOUNT ON GitHub (this website) if you haven't already got one...
 1. Download VMWare Player (if you haven't already got it): https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/14_0
