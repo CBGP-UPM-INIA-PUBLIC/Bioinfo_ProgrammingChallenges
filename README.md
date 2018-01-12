@@ -9,7 +9,8 @@ A BioRuby-based bioinformatics course (still under-development - not recommended
 [![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/markwilkinson/UPM_BioinfoCourse/master)
 
 2)  If you use Docker, you can run this course as a Docker image as follows:
-docker run -p 9000:9000 -it markw/upm_bioinformatics_course:version4 jupyter notebook --ip 0.0.0.0 --port 9000   
+
+     docker run -p 9000:9000 -it markw/upm_bioinformatics_course:version4 jupyter notebook --ip 0.0.0.0 --port 9000   
 
 3)  Download the VM Ware image that has additional software such as Komodo edit and BlazeGraph installed (see instructions below)
 
