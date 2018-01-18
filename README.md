@@ -25,7 +25,7 @@ You will take this course using a VMWare Virtual Machine.  You should do the fol
 1. Download VMWare Player (if you haven't already got it): https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/14_0
 2. You should download the VMWare Virtual Machine that I have created for this course, which is in this Zenodo deposit:  https://doi.org/10.5281/zenodo.1147435
 3. Unzip the virtual machine
-4. Start VMWare Player and select the virtual machine - start it.
+4. Start VMWare Player and select the virtual machine - start it (PASSWORD IS osboxes.org)
 5. In the top-right corner of the VM Desktop, you can select either US-style or Spanish-style keyboard
 6. Browse to:  https://github.com/markwilkinson/UPM_BioinformaticsCourse
 7. In the top-right corner, click "Fork", to make a copy of this repository in your own GitHub account
