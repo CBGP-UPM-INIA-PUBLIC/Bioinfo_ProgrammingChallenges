@@ -34,7 +34,7 @@ RUN gem update --no-document --system && gem install --no-document iruby rbczmq 
 RUN gem install --no-document rdf -v 2.0.2
 RUN gem install --no-document rdf-raptor -v 2.0.0 
 RUN gem install --no-document sparql-client -v 2.0.2
-RUN gem install --no-document sparql -v 2.0.0
+RUN gem install --no-document sparql -v 1.99.1
 
 RUN apt-get install -y ncbi-blast+ ncbi-blast+-legacy blast2 libxml2
 RUN apt-get install -y clustalw
