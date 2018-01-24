@@ -31,11 +31,12 @@ RUN echo 'IRkernel::installspec()' | R --no-save
 # Add IRuby dependencies
 
 RUN gem update --no-document --system && gem install --no-document iruby rbczmq pry bio xml-simple gene_ontology 
-RUN gem install --no-document rdf-aggregate-repo -v 2.0.0
+
 RUN gem install --no-document rdf -v 2.0.2
 RUN gem install --no-document rdf-raptor -v 2.0.0 
 RUN gem install --no-document sparql-client -v 2.0.2
 
+RUN gem install --no-document rdf-aggregate-repo -v 2.0.0
 RUN gem install --no-document sparql -v 2.0.0.beta1
 
 RUN apt-get install -y ncbi-blast+ ncbi-blast+-legacy blast2 libxml2
