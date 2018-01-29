@@ -50,4 +50,4 @@ RUN pip install sparqlkernel
 RUN jupyter sparqlkernel install --user
 RUN iruby register
 
-COPY --chown=user . /home/main
+COPY --chown=main . /home/main
