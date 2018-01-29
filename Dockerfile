@@ -43,6 +43,7 @@ RUN gem install --no-document sparql-client -v 2.0.2
 RUN apt-get install -y ncbi-blast+ ncbi-blast+-legacy blast2 libxml2
 RUN apt-get install -y clustalw
 
+
 USER main
 RUN pip install sparqlkernel 
 RUN jupyter sparqlkernel install --user
