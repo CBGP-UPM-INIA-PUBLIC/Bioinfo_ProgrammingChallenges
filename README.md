@@ -8,9 +8,11 @@ A BioRuby-based bioinformatics course (still under-development - not recommended
 1)  Binder is a way to interact with the Jupyter notebooks inside of this repository - try it!  
 [![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/markwilkinson/UPM_BioinfoCourse/master)
 
-2)  If you use Docker, you can run this course as a Docker image as follows:
+2)  If you use Docker, you can <code>docker pull</code>, and then <code>docker run</code> this course as a Docker image as follows:
 
-     docker run -p 9000:9000 -it markw/upm_bioinformatics_course:version4 jupyter notebook --ip 0.0.0.0 --port 9000   
+     <code>docker pull markw/upm_bioinformatics_course</code>
+
+     <code>docker run -p 9000:9000 -it markw/upm_bioinformatics_course jupyter notebook --ip 0.0.0.0 --port 9000</code>
 
 3)  Download the VM Ware image that has additional software such as Komodo edit and BlazeGraph installed (see instructions below)
 
