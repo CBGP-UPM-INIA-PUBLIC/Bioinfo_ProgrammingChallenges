@@ -51,7 +51,9 @@ RUN apt-get install -y clustalw
 USER jovyan
 RUN pip install sparqlkernel 
 RUN jupyter sparqlkernel install --user
+
 RUN iruby register --force
+RUN jupyter kernelspec install ~/.ipython/kernels/ruby
 
 ENV NB_USER jovyan
 ENV NB_UID 1000
