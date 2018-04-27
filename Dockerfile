@@ -54,4 +54,4 @@ RUN pip install sparqlkernel
 RUN jupyter sparqlkernel install --user
 RUN iruby register
 
-COPY --chown=jovyan.users . /home/jovyan
+COPY --chown=jovyan:users . /home/jovyan
