@@ -54,4 +54,13 @@ RUN pip install sparqlkernel
 RUN jupyter sparqlkernel install --user
 RUN iruby register
 
-COPY --chown=jovyan:users . /home/jovyan
+ENV NB_USER jovyan
+ENV NB_UID 1000
+ENV HOME /home/${NB_USER}
+
+COPY . ${HOME}
+USER root
+RUN chown -R ${NB_UID} ${HOME}
+USER ${NB_USER}
+
+CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
