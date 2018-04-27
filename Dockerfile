@@ -20,7 +20,7 @@ RUN apt-get update
 #RUN apt-get install -y libcurl4-openssl-dev libssl-dev 
 RUN apt-get install -y software-properties-common
 
-RUN apt-get install -y build-essential ruby ruby-dev libcurl4-openssl-dev libssl-dev libzmq3 libzmq3-dev libtool autoconf automake && apt-get clean
+RUN apt-get install -y build-essential ruby ruby-dev libcurl4-openssl-dev libssl-dev libtool autoconf automake && apt-get clean
 RUN ln -s /usr/bin/libtoolize /usr/bin/libtool # See https://github.com/zeromq/libzmq/issues/1385
 
 
