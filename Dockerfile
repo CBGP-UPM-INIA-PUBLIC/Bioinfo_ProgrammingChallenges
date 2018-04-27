@@ -24,7 +24,7 @@ RUN apt-get install -y software-properties-common
 RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 RUN \curl -sSL https://get.rvm.io | bash -s stable --ruby=2.4.0
 
-#RUN apt-get install -y build-essential ruby ruby-dev libcurl4-openssl-dev libssl-dev libtool autoconf automake && apt-get clean
+
 RUN apt-get install -y build-essential libcurl4-openssl-dev libssl-dev libtool autoconf automake && apt-get clean
 RUN ln -s /usr/bin/libtoolize /usr/bin/libtool # See https://github.com/zeromq/libzmq/issues/1385
 
@@ -32,15 +32,9 @@ RUN ln -s /usr/bin/libtoolize /usr/bin/libtool # See https://github.com/zeromq/l
 
 # RUN echo 'install.packages(c("repr", "IRdisplay", "evaluate", "crayon", "pbdZMQ", "devtools", "uuid", "digest", "dplyr","ggplot2","gapminder"),repos="http://cran.r-project.org" )' | R --no-save
 RUN echo 'install.packages(c("uuid", "digest","gapminder"),repos="http://cran.r-project.org" )' | R --no-save
-RUN echo 'devtools::install_github("IRkernel/IRkernel")' | R --no-save
-RUN echo 'IRkernel::installspec()' | R --no-save
-# Add IRuby dependencies
 
 RUN gem update --no-document --system && gem install --no-document iruby rbczmq pry bio xml-simple gene_ontology 
 
-#RUN gem install --no-document rdf -v 2.0.2
-#RUN gem install --no-document rdf-raptor -v 2.0.0 
-#RUN gem install --no-document sparql-client -v 2.0.2
 RUN gem install --no-document rdf
 RUN gem install --no-document rdf-raptor
 RUN gem install --no-document sparql-client
