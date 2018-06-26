@@ -20,7 +20,7 @@ RUN ln -s /usr/bin/libtoolize /usr/bin/libtool # See https://github.com/zeromq/l
 RUN apt-get autoremove -y
 
 
-# RUN echo 'install.packages(c("repr", "IRdisplay", "evaluate", "crayon", "pbdZMQ", "devtools", "uuid", "digest", "dplyr","ggplot2","gapminder"),repos="http://cran.r-project.org" )' | R --no-save
+RUN echo 'install.packages(c("repr", "IRdisplay", "evaluate", "crayon", "pbdZMQ", "devtools", "uuid", "digest", "dplyr","ggplot2","gapminder"),repos="http://cran.r-project.org" )' | R --no-save
 RUN echo 'install.packages(c("uuid", "digest","gapminder"),repos="http://cran.r-project.org" )' | R --no-save
 
 RUN gem update --no-document --system && gem install --no-document cztop iruby rbczmq pry bio xml-simple gene_ontology  nokogiri equivalent-xml
