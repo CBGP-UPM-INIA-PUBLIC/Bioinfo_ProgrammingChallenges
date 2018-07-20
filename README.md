@@ -11,9 +11,12 @@ A BioRuby-based bioinformatics course (still under-development - not recommended
 
 2)  If you use Docker, you can <code>docker pull</code>, and then <code>docker run</code> this course as a Docker image as follows:
 
-     <code>docker pull markw/upm_bioinformatics_course</code>
+     <code>docker pull  markw/upm_compbio_masters_programme</code>
 
-     <code>docker run -p 9000:9000 -it markw/upm_bioinformatics_course jupyter notebook --ip 0.0.0.0 --port 9000</code>
+     <code>docker run -p 9000:9000 -it markw/upm_compbio_masters_programme jupyter notebook --ip 0.0.0.0 --port 9000</code>
+     
+     Open the link displayed to begin browsing the (interactive) course in your Web browser.
+    
 
 3)  Download the VM Ware image that has additional software such as Komodo edit and BlazeGraph installed (see instructions below)
 
@@ -30,7 +33,7 @@ You will take this course using a VMWare Virtual Machine.  You should do the fol
 3. Unzip the virtual machine
 4. Start VMWare Player and select the virtual machine - start it (PASSWORD IS osboxes.org)
 5. In the top-right corner of the VM Desktop, you can select either US-style or Spanish-style keyboard
-6. Browse to:  https://github.com/markwilkinson/UPM_BioinformaticsCourse
+6. Browse to:  https://github.com/CBGP-UPM-INIA-PUBLIC/Bioinfo_ProgrammingChallenges
 7. In the top-right corner, click "Fork", to make a copy of this repository in your own GitHub account
 8. Browse to the copy in your GitHub account (you should already be there after Forking)
 9.  Click the big green "Clone" button and copy the address to your clipboard
