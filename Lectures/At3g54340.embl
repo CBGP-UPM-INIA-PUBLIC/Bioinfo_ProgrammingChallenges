@@ -4,10 +4,10 @@ AC   chromosome:TAIR10:3:20119140:20121314:1
 XX
 SV   chromosome:TAIR10:3:20119140:20121314:1
 XX
-DT   30-NOV-2017
+DT   15-JUL-2020
 XX
 DE   Arabidopsis thaliana chromosome 3 TAIR10 partial sequence
-DE   20119140..20121314 annotated by Araport
+DE   20119140..20121314 annotated by The Arabidopsis Information Resource
 XX
 KW   .
 XX
@@ -17,8 +17,9 @@ OC   Spermatophyta; Magnoliophyta; eudicotyledons; core eudicots; rosids;
 OC   eurosids II; Brassicales; Brassicaceae; Arabidopsis.
 XX
 CC   This sequence displays annotation from Ensembl Genomes, based on underlying
-CC   annotation from Araport ( https://www.araport.org/ ). See
-CC   http://www.ensemblgenomes.org for more information.
+CC   annotation from The Arabidopsis Information Resource (
+CC   https://www.araport.org/ ). See http://www.ensemblgenomes.org for more
+CC   information.
 XX
 CC   All feature locations are relative to the first (5') base of the sequence
 CC   in this file.  The sequence presented is always the forward strand of the
@@ -50,7 +51,7 @@ FT                   complement(1448..1509),complement(1264..1363),
 FT                   complement(1050..1091),complement(729..773),
 FT                   complement(289..483))
 FT                   /gene="AT3G54340"
-FT                   /protein_id="AT3G54340.1.1"
+FT                   /protein_id="AT3G54340.1"
 FT                   /note="transcript_id=AT3G54340.1"
 FT                   /db_xref="Uniprot/SWISSPROT:P35632"
 FT                   /db_xref="RefSeq_peptide:NP_191002.1"
@@ -61,11 +62,19 @@ FT                   /db_xref="EMBL:AY070397"
 FT                   /db_xref="EMBL:AY087369"
 FT                   /db_xref="EMBL:AY142590"
 FT                   /db_xref="EMBL:M86357"
+FT                   /db_xref="GO:0000976"
 FT                   /db_xref="GO:0000977"
+FT                   /db_xref="GO:0000977"
+FT                   /db_xref="GO:0000977"
+FT                   /db_xref="GO:0000981"
+FT                   /db_xref="GO:0003677"
 FT                   /db_xref="GO:0003677"
 FT                   /db_xref="GO:0003677"
 FT                   /db_xref="GO:0003700"
 FT                   /db_xref="GO:0003700"
+FT                   /db_xref="GO:0003700"
+FT                   /db_xref="GO:0005634"
+FT                   /db_xref="GO:0005634"
 FT                   /db_xref="GO:0005634"
 FT                   /db_xref="GO:0005634"
 FT                   /db_xref="GO:0005634"
@@ -73,11 +82,18 @@ FT                   /db_xref="GO:0006351"
 FT                   /db_xref="GO:0006355"
 FT                   /db_xref="GO:0006355"
 FT                   /db_xref="GO:0007275"
+FT                   /db_xref="GO:0007275"
+FT                   /db_xref="GO:0008134"
 FT                   /db_xref="GO:0009908"
 FT                   /db_xref="GO:0010093"
 FT                   /db_xref="GO:0010093"
 FT                   /db_xref="GO:0030154"
+FT                   /db_xref="GO:0030154"
+FT                   /db_xref="GO:0043565"
+FT                   /db_xref="GO:0044212"
 FT                   /db_xref="GO:0045944"
+FT                   /db_xref="GO:0045944"
+FT                   /db_xref="GO:0046983"
 FT                   /db_xref="GO:0046983"
 FT                   /db_xref="protein_id:AAD41557.1"
 FT                   /db_xref="protein_id:AAD51887.1"
@@ -128,20 +144,20 @@ FT                   IMFSSSNKLHEYISPNTTTKEIVDLYQTISDVDVWATQYERMQETKRKLLETNRNLRTQ
 FT                   IKQRLGECLDELDIQELRRLEDEMENTFKLVRERKFKSLGNQIETTKKKNKSQQDIQKN
 FT                   LIHELELRAEDPHYGLVDNGGDYDSVLGYQIEGSRAYALRFHQNHHHYYPNHGLHAPSA
 FT                   SDIITFHLLE"
-FT   exon            complement(1..483)
-FT                   /note="exon_id=AT3G54340.1.exon7"
-FT   exon            complement(1050..1091)
-FT                   /note="exon_id=AT3G54340.1.exon5"
-FT   exon            complement(729..773)
-FT                   /note="exon_id=AT3G54340.1.exon6"
 FT   exon            complement(1593..1659)
 FT                   /note="exon_id=AT3G54340.1.exon2"
-FT   exon            complement(1448..1509)
-FT                   /note="exon_id=AT3G54340.1.exon3"
 FT   exon            complement(1761..2175)
 FT                   /note="exon_id=AT3G54340.1.exon1"
+FT   exon            complement(729..773)
+FT                   /note="exon_id=AT3G54340.1.exon6"
+FT   exon            complement(1..483)
+FT                   /note="exon_id=AT3G54340.1.exon7"
 FT   exon            complement(1264..1363)
 FT                   /note="exon_id=AT3G54340.1.exon4"
+FT   exon            complement(1448..1509)
+FT                   /note="exon_id=AT3G54340.1.exon3"
+FT   exon            complement(1050..1091)
+FT                   /note="exon_id=AT3G54340.1.exon5"
 FT   mRNA            join(complement(AL132971.2:19369..19757),
 FT                   complement(AL132971.2:19047..19281),
 FT                   complement(AL132971.2:18782..18927),
@@ -530,158 +546,6 @@ FT                   /db_xref="The 1001 Genomes Project:ENSVATH02503655"
 FT   variation       2169..2169
 FT                   /replace="T/A"
 FT                   /db_xref="The 1001 Genomes Project:ENSVATH06313453"
-FT   misc_feature    36..1979
-FT                   /note="match: PUT-163a-Arabidopsis_thaliana-171595 :
-FT                   3..985(-1)"
-FT   misc_feature    227..1978
-FT                   /note="match: PUT-163a-Arabidopsis_thaliana-171708 :
-FT                   1..486(-1)"
-FT   misc_feature    111..428
-FT                   /note="match: PUT-163a-Arabidopsis_thaliana-298790 :
-FT                   1..319(1)"
-FT   misc_feature    448..1991
-FT                   /note="match: PUT-163a-Arabidopsis_thaliana-5380411836 :
-FT                   2..584(-1)"
-FT   misc_feature    34..2031
-FT                   /note="match: At.287 : 1..1037(-1)"
-FT   misc_feature    289..1948
-FT                   /note="match: TC293195 : 104..802(-1)"
-FT   misc_feature    62..1978
-FT                   /note="match: TC301920 : 3..958(-1)"
-FT   misc_feature    1078..1957
-FT                   /note="match: TC305197 : 244..677(-1)"
-FT   misc_feature    227..1978
-FT                   /note="match: TC305959 : 1..486(-1)"
-FT   misc_feature    1268..2031
-FT                   /note="match: TC306275 : 1..496(-1)"
-FT   misc_feature    34..1978
-FT                   /note="match: TA29636_3702 : 2..985(-1)"
-FT   misc_feature    227..1978
-FT                   /note="match: TA29642_3702 : 1..486(-1)"
-FT   misc_feature    AL132971.2:7054..8774
-FT                   /note="match: TA29643_3702 : 2..627(-1)"
-FT   misc_feature    1848..1903
-FT                   /note="match: PUT-161a-Medicago_truncatula-44769 :
-FT                   89..144(-1)"
-FT   misc_feature    1848..1903
-FT                   /note="match: Mtr.16663 : 58..113(-1)"
-FT   misc_feature    1848..1903
-FT                   /note="match: TC110754 : 89..144(-1)"
-FT   misc_feature    1848..1903
-FT                   /note="match: TA32762_3880 : 89..144(-1)"
-FT   misc_feature    1779..1941
-FT                   /note="match: PUT-161a-Arachis_hypogaea-2514 : 224..386(-
-FT                   1)"
-FT   misc_feature    1825..1939
-FT                   /note="match: PUT-157a-Gossypium-60066 : 34..148(-1)"
-FT   misc_feature    1825..1939
-FT                   /note="match: TC65864 : 34..148(-1)"
-FT   misc_feature    1825..1939
-FT                   /note="match: PUT-157a-Gossypium_raimondii-93 : 34..148(-
-FT                   1)"
-FT   misc_feature    1825..1939
-FT                   /note="match: TA14308_29730 : 34..148(-1)"
-FT   misc_feature    36..1979
-FT                   /note="match: PUT-163a-Arabidopsis_thaliana-171595 :
-FT                   3..985(-1)"
-FT   misc_feature    227..1978
-FT                   /note="match: PUT-163a-Arabidopsis_thaliana-171708 :
-FT                   1..486(-1)"
-FT   misc_feature    111..428
-FT                   /note="match: PUT-163a-Arabidopsis_thaliana-298790 :
-FT                   1..319(1)"
-FT   misc_feature    448..1991
-FT                   /note="match: PUT-163a-Arabidopsis_thaliana-5380411836 :
-FT                   2..584(-1)"
-FT   misc_feature    34..2031
-FT                   /note="match: At.287 : 1..1037(-1)"
-FT   misc_feature    289..1948
-FT                   /note="match: TC293195 : 104..802(-1)"
-FT   misc_feature    62..1978
-FT                   /note="match: TC301920 : 3..958(-1)"
-FT   misc_feature    1078..1957
-FT                   /note="match: TC305197 : 244..677(-1)"
-FT   misc_feature    227..1978
-FT                   /note="match: TC305959 : 1..486(-1)"
-FT   misc_feature    1268..2031
-FT                   /note="match: TC306275 : 1..496(-1)"
-FT   misc_feature    34..1978
-FT                   /note="match: TA29636_3702 : 2..985(-1)"
-FT   misc_feature    227..1978
-FT                   /note="match: TA29642_3702 : 1..486(-1)"
-FT   misc_feature    AL132971.2:7054..8774
-FT                   /note="match: TA29643_3702 : 2..627(-1)"
-FT   misc_feature    133..327
-FT                   /note="match: PUT-161a-Brassica_napus-32240 : 60..256(1)"
-FT   misc_feature    133..1960
-FT                   /note="match: PUT-161a-Brassica_napus-56781 : 67..914(-1)"
-FT   misc_feature    133..1960
-FT                   /note="match: PUT-161a-Brassica_napus-87128 : 29..871(-1)"
-FT   misc_feature    137..1958
-FT                   /note="match: PUT-161a-Brassica_napus-120979 : 61..920(-1)"
-FT   misc_feature    264..1958
-FT                   /note="match: PUT-161a-Brassica_napus-120980 : 50..738(-1)"
-FT   misc_feature    133..327
-FT                   /note="match: PUT-161a-Brassica_napus-137858 : 52..248(-1)"
-FT   misc_feature    137..782
-FT                   /note="match: PUT-161a-Brassica_napus-10137959 : 13..598(-
-FT                   1)"
-FT   misc_feature    1264..1948
-FT                   /note="match: Bna.7355 : 23..437(1)"
-FT   misc_feature    133..1804
-FT                   /note="match: Bna.25043 : 41..731(1)"
-FT   misc_feature    137..1958
-FT                   /note="match: TC20417 : 14..873(-1)"
-FT   misc_feature    264..1958
-FT                   /note="match: TC26043 : 14..702(-1)"
-FT   misc_feature    133..1960
-FT                   /note="match: TC58775 : 24..866(-1)"
-FT   misc_feature    137..1954
-FT                   /note="match: PUT-163a-Brassica_rapa-31219 : 26..880(-1)"
-FT   misc_feature    168..1839
-FT                   /note="match: PUT-163a-Brassica_rapa-25645021 : 13..699(1)"
-FT   misc_feature    289..474
-FT                   /note="match: PUT-163a-Brassica_rapa-25845014 : 1..162(-1)"
-FT   misc_feature    137..1954
-FT                   /note="match: Bra.647 : 26..879(-1)"
-FT   misc_feature    289..474
-FT                   /note="match: Bra.15464 : 1..162(-1)"
-FT   misc_feature    76..1954
-FT                   /note="match: Rra.2107 : 4..917(1)"
-FT   misc_feature    288..1960
-FT                   /note="match: PUT-163a-Raphanus_sativus-2148 : 26..714(-1)"
-FT   misc_feature    76..1962
-FT                   /note="match: PUT-163a-Raphanus_sativus-22799 : 39..957(-
-FT                   1)"
-FT   misc_feature    96..1093
-FT                   /note="match: PUT-163a-Raphanus_sativus-22813 : 46..521(1)"
-FT   misc_feature    96..1852
-FT                   /note="match: Rsa.8014 : 47..838(1)"
-FT   misc_feature    1769..1929
-FT                   /note="match: PUT-159a-Cichorium_intybus-7959 : 139..299(-
-FT                   1)"
-FT   misc_feature    1842..1941
-FT                   /note="match: PUT-157a-Ipomoea_nil-21407 : 90..189(-1)"
-FT   misc_feature    1842..1941
-FT                   /note="match: TA6369_35883 : 90..189(-1)"
-FT   misc_feature    AL132971.2:9169..9654
-FT                   /note="match: PUT-157a-Coffea_canephora-13381 : 63..392(-
-FT                   1)"
-FT   misc_feature    1818..1948
-FT                   /note="match: PUT-157a-Mimulus_guttatus-7984 : 1..131(-1)"
-FT   misc_feature    1826..1918
-FT                   /note="match: PUT-157a-Mimulus_guttatus-8568 : 183..275(-
-FT                   1)"
-FT   misc_feature    1854..1960
-FT                   /note="match: PUT-157a-Mimulus_guttatus-419381 : 20..120(-
-FT                   1)"
-FT   misc_feature    1854..1960
-FT                   /note="match: TA1209_4155 : 20..120(-1)"
-FT   misc_feature    1765..1941
-FT                   /note="match: PUT-157a-Antirrhinum_majus-12340 : 92..267(-
-FT                   1)"
-FT   misc_feature    1765..1941
-FT                   /note="match: TA4478_4151 : 92..267(-1)"
 FT   repeat_region   complement(823..829)
 FT                   /note="dust repeat: matches 20119962..20119968(1) of
 FT                   consensus"
